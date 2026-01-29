@@ -8,6 +8,7 @@
 body{
     background-color: #1e1e1e;
     overflow-x: hidden;
+    max-width: 100%;
     transition: background-color 0.5s ease-in; 
 }
 
@@ -267,7 +268,7 @@ body{
         border-radius: 2%;
         text-align: center;
         width: 65%;
-        height: 1500px;
+        height: 1700px;
     }
 
     #tituloNome{
