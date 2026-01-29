@@ -52,6 +52,16 @@ const personagemInfoAlunos = document.getElementById("personagemInfoAlunos")
 const personagemInfoFuncionarios = document.getElementById("personagemInfoFuncionarios")
 const personagemInfoPets = document.getElementById("personagemInfoPets")
 
+let funcShow = [
+    alexShow, alowShow, angelaShow, bellieShow, bleedsShow, crisShow, danielShow, evelynShow, felixShow,
+    kateShow, leoShow, loretteShow, lunaShow, melissaShow, nickShow, pauloShow, stellaShow, stephanieShow, ambrosioShow,
+    elisangelaShow, flarenceShow, geronimoShow, gertrudesShow, gomesShow, luddenShow, lunarisShow, marcioShow, soniaShow,
+    vincentShow, cuscolarShow, mortimerShow, nynphxShow, starryShow, tomShow, vivyShow, eugenioShow, frederickShow, jorgeShow, 
+    molduShow, vanessaShow
+]
+
+let personagemNum = 0
+
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -59,6 +69,7 @@ function sleep(ms) {
 
 function alexShow()
 {
+    personagemNum = 0
     showInfoAlunos()
 
     personagemNome.textContent = "Alexander Jackson";
@@ -88,6 +99,7 @@ function alexShow()
 
 function alowShow()
 {
+    personagemNum = 1
     showInfoAlunos()
 
     personagemNome.textContent = "Alow Noctua";
@@ -117,6 +129,7 @@ function alowShow()
 
 function angelaShow()
 {
+    personagemNum = 2
     showInfoAlunos()
 
     personagemNome.textContent = "Angela Cheonsa";
@@ -146,6 +159,7 @@ function angelaShow()
 
 function bellieShow()
 {
+    personagemNum = 3
     showInfoAlunos()
 
     personagemNome.textContent = "Bellie Belial";
@@ -175,6 +189,7 @@ function bellieShow()
 
 function bleedsShow()
 {
+    personagemNum = 4
     showInfoAlunos()
 
     personagemNome.textContent = "Bleeds Ooxrot";
@@ -204,6 +219,7 @@ function bleedsShow()
 
 function crisShow()
 {
+    personagemNum = 5
     showInfoAlunos()
 
     personagemNome.textContent = "Cristian Alecsant";
@@ -233,6 +249,7 @@ function crisShow()
 
 function danielShow()
 {
+    personagemNum = 6
     showInfoAlunos()
 
     personagemNome.textContent = "Daniel Rucsetan";
@@ -262,6 +279,7 @@ function danielShow()
 
 function evelynShow()
 {
+    personagemNum = 7
     showInfoAlunos()
 
     personagemNome.textContent = "Evelyn Muscann";
@@ -291,6 +309,7 @@ function evelynShow()
 
 function felixShow()
 {
+    personagemNum = 8
     showInfoAlunos()
 
     personagemNome.textContent = "Félix Squashtone";
@@ -320,6 +339,7 @@ function felixShow()
 
 function kateShow()
 {
+    personagemNum = 9
     showInfoAlunos()
 
     personagemNome.textContent = "Kate Jackson";
@@ -349,6 +369,7 @@ function kateShow()
 
 function leoShow()
 {
+    personagemNum = 10
     showInfoAlunos()
 
     personagemNome.textContent = "Leonard Griffin";
@@ -378,6 +399,7 @@ function leoShow()
 
 function loretteShow()
 {
+    personagemNum = 11
     showInfoAlunos()
 
     personagemNome.textContent = "Lorette Ey Mivida";
@@ -407,6 +429,7 @@ function loretteShow()
 
 function lunaShow()
 {
+    personagemNum = 12
     showInfoAlunos()
 
     personagemNome.textContent = "Luna Gutterson";
@@ -436,6 +459,7 @@ function lunaShow()
 
 function melissaShow()
 {
+    personagemNum = 13
     showInfoAlunos()
 
     personagemNome.textContent = "Melissa Luciole";
@@ -465,6 +489,7 @@ function melissaShow()
 
 function nickShow()
 {
+    personagemNum = 14
     showInfoAlunos()
 
     personagemNome.textContent = "Nick Eldridge";
@@ -494,6 +519,7 @@ function nickShow()
 
 function pauloShow()
 {
+    personagemNum = 15
     showInfoAlunos()
 
     personagemNome.textContent = "Paulo Santiago";
@@ -523,6 +549,7 @@ function pauloShow()
 
 function stellaShow()
 {
+    personagemNum = 16
     showInfoAlunos()
 
     personagemNome.textContent = "Stella Nightsky";
@@ -552,6 +579,7 @@ function stellaShow()
 
 function stephanieShow()
 {
+    personagemNum = 17
     showInfoAlunos()
 
     personagemNome.textContent = "Stephanie Valinskez";
@@ -581,6 +609,7 @@ function stephanieShow()
 
 function ambrosioShow()
 {
+    personagemNum = 18
     showInfoFuncionarios()
 
     personagemNome.textContent = "Ambrósio Becker";
@@ -610,6 +639,7 @@ function ambrosioShow()
 
 function elisangelaShow()
 {
+    personagemNum = 19
     showInfoFuncionarios()
 
     personagemNome.textContent = "Elisângela Luckwee";
@@ -639,6 +669,7 @@ function elisangelaShow()
 
 function geronimoShow()
 {
+    personagemNum = 20
     showInfoFuncionarios()
 
     personagemNome.textContent = "Gerônimo Abigale";
@@ -668,6 +699,7 @@ function geronimoShow()
 
 function flarenceShow()
 {
+    personagemNum = 21
     showInfoFuncionarios()
 
     personagemNome.textContent = "Flarence Mysteriuss";
@@ -697,6 +729,7 @@ function flarenceShow()
 
 function gertrudesShow()
 {
+    personagemNum = 22
     showInfoFuncionarios()
 
     personagemNome.textContent = "Gertrudes Sierra";
@@ -726,6 +759,7 @@ function gertrudesShow()
 
 function gomesShow()
 {
+    personagemNum = 23
     showInfoFuncionarios()
 
     personagemNome.textContent = "Gomes Rex";
@@ -755,6 +789,7 @@ function gomesShow()
 
 function luddenShow()
 {
+    personagemNum = 24
     showInfoFuncionarios()
 
     personagemNome.textContent = "Ludden Nichols";
@@ -784,6 +819,7 @@ function luddenShow()
 
 function lunarisShow()
 {
+    personagemNum = 25
     showInfoFuncionarios()
 
     personagemNome.textContent = "Lunaris Supernova";
@@ -813,6 +849,7 @@ function lunarisShow()
 
 function marcioShow()
 {
+    personagemNum = 26
     showInfoFuncionarios()
 
     personagemNome.textContent = "Márcio Alaan";
@@ -842,6 +879,7 @@ function marcioShow()
 
 function soniaShow()
 {
+    personagemNum = 27
     showInfoFuncionarios()
 
     personagemNome.textContent = "Sonia Bullspade";
@@ -871,6 +909,7 @@ function soniaShow()
 
 function vincentShow()
 {
+    personagemNum = 28
     showInfoFuncionarios()
 
     personagemNome.textContent = "Vincent Mysteriuss";
@@ -900,6 +939,7 @@ function vincentShow()
 
 function cuscolarShow()
 {
+    personagemNum = 29
     showInfoPets()
 
     personagemNome.textContent = "Cuscolar";
@@ -922,6 +962,7 @@ function cuscolarShow()
 
 function mortimerShow()
 {
+    personagemNum = 30
     showInfoPets()
 
     personagemNome.textContent = "Mortimer";
@@ -944,6 +985,7 @@ function mortimerShow()
 
 function nynphxShow()
 {
+    personagemNum = 31
     showInfoPets()
 
     personagemNome.textContent = "Nynphx";
@@ -966,6 +1008,7 @@ function nynphxShow()
 
 function starryShow()
 {
+    personagemNum = 32
     showInfoPets()
 
     personagemNome.textContent = "Starry";
@@ -988,6 +1031,7 @@ function starryShow()
 
 function tomShow()
 {
+    personagemNum = 33
     showInfoPets()
 
     personagemNome.textContent = "Tom";
@@ -1010,6 +1054,7 @@ function tomShow()
 
 function vivyShow()
 {
+    personagemNum = 34
     showInfoPets()
 
     personagemNome.textContent = "Vivy";
@@ -1032,6 +1077,7 @@ function vivyShow()
 
 function eugenioShow()
 {
+    personagemNum = 35
     showInfoAlunos()
 
     personagemNome.textContent = "Eugênio Willems";
@@ -1060,6 +1106,7 @@ function eugenioShow()
 
 function frederickShow()
 {
+    personagemNum = 36
     showInfoAlunos()
 
     personagemNome.textContent = "Frederick Markus";
@@ -1088,6 +1135,7 @@ function frederickShow()
 
 function jorgeShow()
 {
+    personagemNum = 37
     showInfoPets()
 
     personagemNome.textContent = "J.O.R.G.E.";
@@ -1110,6 +1158,7 @@ function jorgeShow()
 
 function molduShow()
 {
+    personagemNum = 38
     showInfoAlunos()
 
     personagemNome.textContent = "Moldu Dulivan";
@@ -1138,6 +1187,7 @@ function molduShow()
 
 function vanessaShow()
 {
+    personagemNum = 39
     showInfoAlunos()
 
     personagemNome.textContent = "Vanessa Steffan";
@@ -1252,7 +1302,6 @@ async function hidePersonagem()
         }
         await sleep(300)
         personagem.style.display = "none"
-        await sleep(300)
         imgPersonagem.style.zIndex = "1"
         personagemFront = false
     }
@@ -1365,4 +1414,32 @@ function clickPersonagem()
          personagemFront = false
     }
 
+}
+
+async function btnAnterior()
+{
+    hidePersonagem()
+    await sleep(300)
+    if(personagemNum === 0)
+    {
+       funcShow[39](); 
+    }
+    else
+    {
+        funcShow[personagemNum - 1]();
+    }
+}
+
+async function btnProximo()
+{
+    hidePersonagem()
+    await sleep(300)
+    if(personagemNum === 39)
+    {
+       funcShow[0](); 
+    }
+    else
+    {
+        funcShow[personagemNum + 1]();
+    }
 }
