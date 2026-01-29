@@ -6,6 +6,8 @@ const mainFuncionarios = document.getElementById("mainFuncionarios");
 const mainPets = document.getElementById("mainPets");
 const mainOutros = document.getElementById("mainOutros");
 
+const uparrow = document.getElementById("uparrow")
+
 const main = document.querySelectorAll("main")
 
 const imgPersonagem = document.getElementById("imgPersonagem");
@@ -1234,6 +1236,7 @@ async function toggleBoxes()
     mainFuncionarios.style.opacity = 0 
     mainPets.style.opacity = 0 
     mainOutros.style.opacity = 0
+    uparrow.style.display = "none"
 
     await sleep(300)
 
@@ -1254,6 +1257,7 @@ async function toggleBoxes()
         imgPersonagem.style.marginLeft = "-25%"
     }
     personagemShow = true
+
 }
 
 
@@ -1339,6 +1343,7 @@ async function btnTodos()
 {
     hidePersonagem()
 
+    uparrow.style.display = "block"
     mainAlunos.style.display = "grid"
     mainFuncionarios.style.display = "grid"
     mainPets.style.display = "grid"
@@ -1359,6 +1364,8 @@ async function btnAlunos()
     hidePets()
     hideOutros()
 
+    uparrow.style.display = "block"
+
     mainAlunos.style.display = "grid"
     await sleep(100)
     mainAlunos.style.opacity = 1
@@ -1370,6 +1377,8 @@ async function btnFuncionarios()
     hideAlunos()
     hidePets()
     hideOutros()
+
+    uparrow.style.display = "block"
 
     mainFuncionarios.style.display = "grid"
     await sleep(100)
@@ -1383,6 +1392,8 @@ async function btnPets()
     hideFuncionarios()
     hideOutros()
 
+    uparrow.style.display = "block"
+
     mainPets.style.display = "grid"
     await sleep(100)
     mainPets.style.opacity = 1
@@ -1394,6 +1405,8 @@ async function btnOutros()
     hideAlunos()
     hideFuncionarios()
     hidePets()
+
+    uparrow.style.display = "block"
 
     mainOutros.style.display = "grid"
     await sleep(100)
