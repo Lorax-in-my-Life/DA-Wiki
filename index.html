@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DA Wiki</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="header">
+        <img id="logoDA" src="logo.png" alt="">
+        <h1>Wiki</h1>
+        <div id="buttons_header">
+            <button onclick="btnTodos()">TODOS</button>
+            <button onclick="btnAlunos()">ALUNOS</button>
+            <button onclick="btnFuncionarios()">FUNCIONÁRIOS</button>
+            <button onclick="btnPets()">PETS</button>
+            <button onclick="btnOutros()">OUTROS</button>
+        </div>
+    </div>
+
+    <div id="personagem">
+        <img id="imgPersonagem" onclick="clickPersonagem()" src="" alt="">
+        <div id="descBox">
+            <p id="txtEspecial"></p>
+            <img id="foto" src="" alt="">
+            <div id="tituloNome">
+                <img id="emoji" src="" alt="">
+                <h1 id="personagemNome"></h1>
+                <img id="genero" src="" alt="">
+            </div>
+            <p id="personagemDesc"></p>
+            <div id="personagemInfoAlunos" class="personagemInfo">
+                <h1 class="tituloDesc">Espécie</h1>
+                    <p id="txtEspecie"></p>
+                <h1 class="tituloDesc">Família</h1>
+                    <p id="txtFamilia"></p>
+
+                <h1 class="tituloDesc">Relacionamentos</h1>
+
+                <div class="relacionamentos">
+
+                    <h4>Positivos</h4>
+                    <h4>Negativos</h4>
+                    <p id="txtPositivos"></p>
+                    <p id="txtNegativos"></p>
+
+                </div>
+
+                <h1 class="tituloDesc">Data de Aniversário</h1>
+                    <p id="txtData"></p>
+                <h1 class="tituloDesc">Apelidos</h1>
+                    <p id="txtApelidos"></p>
+                <h1 class="tituloDesc">Matérias favoritas</h1>
+                    <p id="txtMaterias"></p>
+                <h1 class="tituloDesc">Habilidades</h1>
+                    <p id="txtHab"></p>
+                <h1 class="tituloDesc">Interpretador</h1>
+                    <p id="txtInterpretador"></p>
+                <h1 class="tituloDesc">Assinatura</h1>
+                    <img id="imgAss" src="" alt="">
+            </div>
+
+            <div id="personagemInfoFuncionarios" class="personagemInfo">
+                <h1 class="tituloDesc">Espécie</h1>
+                    <p id="txtEspecie2"></p>
+                <h1 class="tituloDesc">Família</h1>
+                    <p id="txtFamilia2"></p>
+
+                <h1 class="tituloDesc">Relacionamentos</h1>
+
+                <div class="relacionamentos">
+
+                    <h4>Positivos</h4>
+                    <h4>Negativos</h4>
+                    <p id="txtPositivos2"></p>
+                    <p id="txtNegativos2"></p>
+
+                </div>
+
+                <h1 class="tituloDesc">Data de Aniversário</h1>
+                    <p id="txtData2"></p>
+                <h1 class="tituloDesc">Apelidos</h1>
+                    <p id="txtApelidos2"></p>
+                <h1 class="tituloDesc">Cargo</h1>
+                    <p id="txtCargo"></p>
+                <h1 class="tituloDesc">Habilidades</h1>
+                    <p id="txtHab2"></p>
+                <h1 class="tituloDesc">Interpretador</h1>
+                    <p id="txtInterpretador2"></p>
+                <h1 class="tituloDesc">Assinatura</h1>
+                    <img id="imgAss2" src="" alt="">
+            </div>
+
+            <div id="personagemInfoPets" class="personagemInfo">
+                <h1 class="tituloDesc">Espécie</h1>
+                    <p id="txtEspecie3"></p>
+                <h1 class="tituloDesc">Dono</h1>
+                    <p id="txtDono"></p>
+                <h1 class="tituloDesc">Interpretador</h1>
+                    <p id="txtInterpretador3"></p>
+
+                    <p id="txtDono"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="mainAlunos" class="main">
+
+        <h1 class="maintext">ALUNOS</h1>
+
+        <div id="boxGridAlunos" class="boxGrid">
+            <div id="character1" class="characterbox" onclick="alexShow()"><img src="personagens/alexander.png" alt=""><div class="namebox">ALEXANDER</div></div>
+            <div id="character2" class="characterbox" onclick="alowShow()"><img src="personagens/alow.png" alt=""><div class="namebox">ALOW</div></div>
+            <div id="character3" class="characterbox" onclick="angelaShow()"><img src="personagens/angela.png" alt=""><div class="namebox">ANGELA</div></div>
+            <div id="character4" class="characterbox" onclick="bellieShow()"><img src="personagens/bellie.png" alt=""><div class="namebox">BELLIE</div></div>
+
+            <div id="character5" class="characterbox" onclick="bleedsShow()"><img src="personagens/bleeds.png" alt=""><div class="namebox">BLEEDS</div></div>
+            <div id="character6" class="characterbox" onclick="crisShow()"><img src="personagens/cris.png" alt=""><div class="namebox">CRISTIAN</div></div>
+            <div id="character7" class="characterbox"><img src="" alt=""><img src="personagens/crystal.png" alt=""><div class="namebox">CRYSTAL</div></div>
+            <div id="character8" class="characterbox" onclick="danielShow()"><img src="personagens/daniel.png" alt=""><div class="namebox">DANIEL</div></div>
+            
+            <div id="character9" class="characterbox" onclick="evelynShow()"><img src="personagens/evelyn.png" alt=""><div class="namebox">EVELYN</div></div>
+            <div id="character10" class="characterbox" onclick="felixShow()"><img src="personagens/felix.png" alt=""><div class="namebox">FÉLIX</div></div>
+            <div id="character11" class="characterbox" onclick="kateShow()"><img src="personagens/kate.png" alt=""><div class="namebox">KATE</div></div>
+            <div id="character12" class="characterbox" onclick="leoShow()"><img src="personagens/leo.png" alt=""><div class="namebox">LEONARD</div></div>
+            
+            <div id="character13" class="characterbox" onclick="loretteShow()"><img src="personagens/lorette.png" alt=""><div class="namebox">LORETTE</div></div>
+            <div id="character14" class="characterbox" onclick="lunaShow()"><img src="personagens/luna.png" alt=""><div class="namebox">LUNA</div></div>
+            <div id="character15" class="characterbox" onclick="melissaShow()"><img src="personagens/melissa.png" alt=""><div class="namebox">MELISSA</div></div>
+            <div id="character16" class="characterbox" onclick="nickShow()"><img src="personagens/nick.png" alt=""><div class="namebox">NICK</div></div>
+            
+            <div id="character17" class="characterbox" onclick="pauloShow()"><img src="personagens/paulo.png" alt=""><div class="namebox">PAULO</div></div>
+            <div id="character18" class="characterbox" onclick="stellaShow()"><img src="personagens/stella.png" alt=""><div class="namebox">STELLA</div></div>
+            <div id="character19" class="characterbox" onclick="stephanieShow()"><img src="personagens/stephanie.png" alt=""><div class="namebox">STEPHANIE</div></div>
+        </div>
+        
+    </div>
+
+    <div id="mainFuncionarios" class="main">
+
+        <h1 class="maintext">FUNCIONÁRIOS</h1>
+
+        <div id="boxGridFuncionarios" class="boxGrid">
+            <div id="character1" class="characterbox" onclick="ambrosioShow()"><img src="personagens/ambrosio.png" alt=""><div class="namebox">AMBRÓSIO</div></div>
+            <div id="character2" class="characterbox" onclick="elisangelaShow()"><img src="personagens/elisangela.png" alt=""><div class="namebox">ELISÂNGELA</div></div>
+            <div id="character3" class="characterbox" onclick="flarenceShow()"><img src="personagens/flarence.png" alt=""><div class="namebox">FLARENCE</div></div>
+            <div id="character4" class="characterbox" onclick="geronimoShow()"><img src="personagens/geronimo.png" alt=""><div class="namebox">GERÔNIMO</div></div>
+
+            <div id="character5" class="characterbox" onclick="gertrudesShow()"><img src="personagens/gertrudes.png" alt=""><div class="namebox">GERTRUDES</div></div>
+            <div id="character6" class="characterbox" onclick="gomesShow()"><img src="personagens/gomes.png" alt=""><div class="namebox">GOMES</div></div>
+            <div id="character7" class="characterbox" onclick="luddenShow()"><img src="personagens/ludden.png" alt=""><div class="namebox">LUDDEN</div></div>
+            <div id="character8" class="characterbox" onclick="lunarisShow()"><img src="personagens/lunaris.png" alt=""><div class="namebox">LUNARIS</div></div>
+
+            <div id="character9" class="characterbox" onclick="marcioShow()"><img src="personagens/marcio.png" alt=""><div class="namebox">MÁRCIO</div></div>
+            <div id="character10" class="characterbox" onclick="soniaShow()"><img src="personagens/sonia.png" alt=""><div class="namebox">SÔNIA</div></div>
+            <div id="character11" class="characterbox" onclick="vincentShow()"><img src="personagens/vincent.png" alt=""><div class="namebox">VINCENT</div></div>
+
+        </div>
+        
+    </div>
+
+    <div id="mainPets" class="main">
+
+        <h1 class="maintext">PETS</h1>
+
+        <div id="boxGridPets" class="boxGrid">
+            <div id="character1" class="characterbox" onclick="cuscolarShow()"><img src="personagens/cuscolar.png" alt=""><div class="namebox">CUSCOLAR</div></div>
+            <div id="character2" class="characterbox" onclick="mortimerShow()"><img src="personagens/mortimer.png" alt=""><div class="namebox">MORTIMER</div></div>
+            <div id="character3" class="characterbox" onclick="nynphxShow()"><img src="personagens/nynphx.png" alt=""><div class="namebox">NYNPHX</div></div>
+            <div id="character4" class="characterbox" onclick="starryShow()"><img src="personagens/starry.png" alt=""><div class="namebox">STARRY</div></div>
+
+            <div id="character5" class="characterbox" onclick="tomShow()"><img src="personagens/tom.png" alt=""><div class="namebox">TOM</div></div>
+            <div id="character6" class="characterbox" onclick="vivyShow()"><img src="personagens/vivy.png" alt=""><div class="namebox">VIVY</div></div>
+
+        </div>
+        
+    </div>
+
+    <div id="mainOutros" class="main">
+
+        <h1 class="maintext">OUTROS</h1>
+
+        <div id="boxGridOutros" class="boxGrid">
+
+            <div id="character1" class="characterbox" onclick="eugenioShow()"><img src="personagens/eugenio.png" alt=""><div class="namebox">EUGÊNIO</div></div>
+            <div id="character2" class="characterbox" onclick="frederickShow()"><img src="personagens/frederick.png" alt=""><div class="namebox">FREDERICK</div></div>
+            <div id="character3" class="characterbox" onclick="jorgeShow()"><img src="personagens/jorge.png" alt=""><div class="namebox">J.O.R.G.E</div></div>
+            <div id="character4" class="characterbox" onclick="molduShow()"><img src="personagens/moldu.png" alt=""><div class="namebox">MOLDU</div></div>
+
+            <div id="character5" class="characterbox" onclick="vanessaShow()"><img src="personagens/vanessa.png" alt=""><div class="namebox">VANESSA</div></div>
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>

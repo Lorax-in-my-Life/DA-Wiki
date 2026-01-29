@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    font-family: "Schoolbell", cursive;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+body{
+    background-color: #1e1e1e;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease-in; 
+}
+
+#header{
+    background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
+    width: 100%;
+    height: 75px;
+    display: flex;
+}
+
+#buttons_header button{
+    background-image: linear-gradient(to bottom,rgb(83, 33, 220) 80%, rgb(7, 26, 96));
+    color: white;
+    font-size: large;
+    height: 80%;
+    padding: 1%;
+    outline: none;
+    justify-content: space-between;
+    margin-left: 2%;
+    width: 15%;
+    font-size: 24px;
+    border: none;
+    border-radius: 5%;
+}
+
+#header h1{
+    margin-top: 1%;
+    font-weight: bold;
+    margin-right: 7%;  
+    color: blue;
+}
+
+#buttons_header
+{
+    margin-top: 3%;
+    width: 80%;
+    height: 75px;
+}
+
+.main
+{
+    opacity: 1;
+    transition: opacity 0.2s ease-out; 
+    height: 100%;
+}
+
+.boxGrid{
+    width: 100%;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    column-gap: 4%;
+    row-gap: 10%;
+    padding: 4%;
+}
+
+#boxGridAlunos{
+    grid-template-rows: repeat(5, 40%);
+    margin-bottom: 1050px;
+}
+
+#boxGridFuncionarios{
+    grid-template-rows: repeat(3, 40%);
+    margin-bottom: 22%;
+}
+
+#boxGridPets{
+    grid-template-rows: repeat(2, 40%);
+    margin-bottom: -5%;
+}
+
+#boxGridOutros{
+    grid-template-rows: repeat(2, 40%);
+}
+
+.characterbox{
+    background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
+    border-radius: 10%;
+    text-align: center;
+    align-content: center;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+
+.characterbox:hover{
+    transform: scale(1.1)
+}
+
+.characterbox img{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.maintext{
+    text-align: center;
+    margin: 5%;
+    font-size: 60px;
+    color: white;
+}
+
+.namebox{
+    z-index: 2;
+    background-color: rgb(83, 33, 220);
+    color: rgb(255, 255, 255);
+    width: 45%;
+    height: 10%;
+    text-align: center;
+    align-content: center;
+    margin-left: 60%;
+    margin-top: -5%;
+    border-radius: 5%;
+}
+
+#personagem{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#imgPersonagem
+{
+    margin-left: -100%;
+    transition: margin-left 0.3s ease;
+    filter: drop-shadow(20px 0px 0 rgb(255, 255, 255));
+    height: 100%;
+}
+
+#personagemNome{
+    font-size: 48px;
+    margin-right: 2%;
+}
+
+#descBox
+{
+    z-index: 2;
+    padding: 2%;
+    margin-top: 10%;
+    margin-left: -15%;
+    background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
+    border-radius: 5%;
+    text-align: center;
+    width: 45%;
+    margin-bottom: 10%;
+    height: 1300px;
+}
+
+#personagemDesc{
+    margin-bottom: 5%;
+}
+
+.tituloDesc
+{
+    font-size: 24px;
+}
+
+#imgAss, #imgAss2, #emoji, #genero
+{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+#tituloNome{
+    margin-bottom: 5%;
+    height: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#foto
+{
+    position: relative;
+    z-index: 3;
+    width: 30%;
+    rotate: 7deg;
+    margin-right: -70%;
+    margin-top: -10%
+}
+
+#logoDA{
+    margin-left: 1%;
+}
+
+#txtEspecial{
+    color: white;
+    margin-top: -15%;
+    font-size: 24px;
+    text-align: center;
+    margin-left: -95%;
+}
+
+
+.relacionamentos
+{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+@media (max-width: 600px)
+{
+    .boxGrid{
+        width: 100%;
+        height: 98vh;
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 5%;
+        row-gap: 5%;
+        padding: 5%;
+    }
+
+    #boxGridAlunos{
+        grid-template-rows: repeat(10, 20%);
+        margin-bottom: 1350px;
+    }
+
+    #boxGridFuncionarios{
+        grid-template-rows: repeat(6, 20%);
+        margin-bottom: 100%;
+    }
+
+    #boxGridPets{
+        grid-template-rows: repeat(3, 20%);
+        margin-bottom: -55%;
+    }
+
+    #boxGridOutros{
+        grid-template-rows: repeat(3, 20%);
+        margin-bottom: -200%;
+    }
+
+    #imgPersonagem
+    {
+        margin-left: -200%;
+        transition: margin-left 0.3s ease;
+        filter: drop-shadow(20px 0px 0 rgb(255, 255, 255));
+        height: 100%;
+        top: 0;
+    }
+
+    #personagemNome{
+        font-size: 32px;
+        margin-right: 2%;
+    }
+
+    #descBox
+    {
+        z-index: 2;
+        padding: 2%;
+        margin-top: 20%;
+        margin-left: -150%;
+        background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
+        border-radius: 2%;
+        text-align: center;
+        width: 65%;
+        height: 1500px;
+    }
+
+    #tituloNome{
+        margin-top: -5%;
+        margin-bottom: 10%;
+        height: 7%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #foto
+    {
+        position: relative;
+        z-index: 3;
+        width: 50%;
+        rotate: 7deg;
+        margin-right: -70%;
+        margin-top: -20%
+    }
+    
+    #buttons_header
+    {
+        width: 80%;
+        height: 75px;
+    }
+
+    #buttons_header button{
+        background-image: linear-gradient(to bottom,rgb(83, 33, 220) 80%, rgb(7, 26, 96));
+        color: white;
+        height: 35%;
+        padding: 1%;
+        outline: none;
+        justify-content: space-between;
+        margin-left: 2%;
+        width: 30%;
+        font-size: 12px;
+        border: none;
+        border-radius: 5%;
+        margin-bottom: 2%;
+    }
+
+    #header h1{
+        margin-top: 4%;
+        font-weight: bold;
+        margin-right: 2%;  
+        color: blue;
+    }
+
+    .namebox{
+        z-index: 2;
+        background-color: rgb(83, 33, 220);
+        color: rgb(255, 255, 255);
+        width: 65%;
+        height: 20%;
+        text-align: center;
+        align-content: center;
+        margin-left: 30%;
+        margin-top: -5%;
+        border-radius: 5%;
+    }
+
+    #logoDA{
+        margin-left: 2%;
+    }
+
+    #txtEspecial{
+        color: white;
+        margin-top: -15%;
+        font-size: 12px;
+        text-align: center;
+        margin-left: -45%;
+    }
+}
