@@ -1099,7 +1099,7 @@ function markShow()
     txtMaterias.textContent = "TBA"
     txtHab.textContent = "Forma de lobo total"
     imgAss.src = "assinaturas/TBA.png"
-    txtInterpretador.textContent = "Nicky"
+    txtInterpretador.textContent = "Math"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#0931ab"
