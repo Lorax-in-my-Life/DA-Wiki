@@ -768,8 +768,8 @@ function elisangelaShow()
     personagemNome.textContent = "Elisângela";
     personagemDesc.textContent = 'Uma enfermeira descolada,sempre sabe exatamente do que os alunos precisam,mas não se engane,ela não é apenas uma enfermeira,ela também sabe dar conselhos muito bons para resolver problemas.Ela já estudou na Mystic University,e logo que terminou os estudos,já aceitou a vaga de emprego para poder ajudar os próximos alunos.'
     
-    imgPersonagem.src = "personagens/elisangela.png"
-    emoji.src = "emojis/elisangela.png"
+    imgPersonagem.src = "MU/personagens/elisangela.png"
+    emoji.src = "MU/emojis/elisangela.png"
     genero.src = "genero/fem.png"
 
     txtEspecial.textContent = ""
