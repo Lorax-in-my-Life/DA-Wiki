@@ -1437,7 +1437,7 @@ async function btnAnterior()
     await sleep(300)
     if(personagemNum === 0)
     {
-       funcShow[39](); 
+       funcShow[34](); 
     }
     else
     {
@@ -1449,7 +1449,7 @@ async function btnProximo()
 {
     hidePersonagem()
     await sleep(300)
-    if(personagemNum === 39)
+    if(personagemNum === 34)
     {
        funcShow[0](); 
     }
