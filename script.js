@@ -175,12 +175,12 @@ function bellieShow()
     txtEspecie.textContent = "Demônio Sedutora"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "Leonard(Namorado)"
-    txtNegativos.innerHTML = "TBA"
-    txtData.textContent = "TBA"
-    txtApelidos.textContent = "TBA"
-    txtMaterias.textContent = "TBA"
+    txtNegativos.innerHTML = "Flarence"
+    txtData.textContent = "7 de Dezembro"
+    txtApelidos.textContent = "Bell"
+    txtMaterias.textContent = "Educação Física e Dança"
     txtHab.textContent = "Forma demoníaca, controle mental e superforça"
-    imgAss.src = "assinaturas/TBA.png"
+    imgAss.src = "assinaturas/bellie.png"
     txtInterpretador.textContent = "Bellow"
 
     toggleBoxes()
