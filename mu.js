@@ -770,7 +770,6 @@ function elisangelaShow()
     
     imgPersonagem.src = "personagens/elisangela.png"
     emoji.src = "emojis/elisangela.png"
-    foto.src = "fotos/elisangela.png"
     genero.src = "genero/fem.png"
 
     txtEspecial.textContent = ""
