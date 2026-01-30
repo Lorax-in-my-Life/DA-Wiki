@@ -36,6 +36,7 @@ const txtMaterias = document.getElementById("txtMaterias");
 const txtHab = document.getElementById("txtHab");
 const imgAss = document.getElementById("imgAss");
 const txtInterpretador = document.getElementById("txtInterpretador");
+const txtDesign = document.getElementById("txtDesign"); 
 
 
 
@@ -50,6 +51,7 @@ const txtHab2 = document.getElementById("txtHab2");
 const imgAss2 = document.getElementById("imgAss2");
 const txtInterpretador2 = document.getElementById("txtInterpretador2");
 const txtCargo = document.getElementById("txtCargo");
+const txtDesign2 = document.getElementById("txtDesign2"); 
 
 const txtEspecie3 = document.getElementById("txtEspecie3");
 const txtDono = document.getElementById("txtDono");
@@ -58,6 +60,7 @@ const txtInterpretador3 = document.getElementById("txtInterpretador3");
 const personagemInfoAlunos = document.getElementById("personagemInfoAlunos")
 const personagemInfoFuncionarios = document.getElementById("personagemInfoFuncionarios")
 const personagemInfoPets = document.getElementById("personagemInfoPets")
+const txtDesign3 = document.getElementById("txtDesign3"); 
 
 let funcShow = [
     alexShow, angelaShow, bellieShow, crisShow, danielShow, eugenioShow, evelynShow, felixShow, hankShow, kateShow,
@@ -114,6 +117,7 @@ function alexShow()
     txtHab.textContent = "Forma de dragão, voar e mente colmeia com Kate"
     imgAss.src = "assinaturas/alexander.png"
     txtInterpretador.textContent = "Jack"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#23a35d"
@@ -149,6 +153,7 @@ function angelaShow()
     txtHab.textContent = "Poderes psíquicos, criar cópias de objetos ou membros extras, ler mentes"
     imgAss.src = "assinaturas/angela.png"
     txtInterpretador.textContent = "Anjel"
+    txtDesign.textContent = "Sky"
     
     toggleBoxes()
     document.body.style.backgroundColor = "#cb5fb5"
@@ -184,6 +189,7 @@ function bellieShow()
     txtHab.textContent = "Forma demoníaca e sedução"
     imgAss.src = "assinaturas/bellie.png"
     txtInterpretador.textContent = "Bellow"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#6b3651"
@@ -219,6 +225,7 @@ function crisShow()
     txtHab.textContent = "Poções"
     imgAss.src = "assinaturas/cristian.png"
     txtInterpretador.textContent = "Canto"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#baba2f"
@@ -254,6 +261,7 @@ function danielShow()
     txtHab.textContent = "Forma demoníaca"
     imgAss.src = "assinaturas/daniel.png"
     txtInterpretador.textContent = "Dandi"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#dd1662"
@@ -289,6 +297,7 @@ function eugenioShow()
     txtHab.textContent = "Se transformar ele em qualquer criatura existente e sumonar objetos em forma de polígonos com seu relógio"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Will"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#ed60c0"
@@ -324,6 +333,7 @@ function evelynShow()
     txtHab.textContent = "Conduzir energia com o pelo e soltar descargas elétricas ao seu redor"
     imgAss.src = "assinaturas/evelyn.png"
     txtInterpretador.textContent = "Sky"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#e69437"
@@ -355,6 +365,7 @@ function felixShow()
     txtHab.textContent = "Nenhuma"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Saucer"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#528f7e"
@@ -386,6 +397,7 @@ function hankShow()
     txtHab.textContent = "Força física e senso de localização"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Hotekal"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#d23d56"
@@ -421,6 +433,7 @@ function kateShow()
     txtHab.textContent = "Forma de dragão, voar e mente colmeia com Alexander"
     imgAss.src = "assinaturas/kate.png"
     txtInterpretador.textContent = "Jack"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#c91ed2"
@@ -456,6 +469,7 @@ function leoShow()
     txtHab.textContent = "Mordida muito forte e grande, força e no futuro poderá controlar a água"
     imgAss.src = "assinaturas/leonard.png"
     txtInterpretador.textContent = "Liro"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#3d66e3"
@@ -492,6 +506,7 @@ function loretteShow()
     txtHab.textContent = "Regeneração veloz, tufos de cabelo grudentos"
     imgAss.src = "assinaturas/lorette.png"
     txtInterpretador.textContent = "Lorax"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#e27ab7"
@@ -529,6 +544,7 @@ function molduShow()
     txtHab.textContent = "Planar, visão de calor e visão noturna e boa audição"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Dudubodu"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#3f484a"
@@ -560,6 +576,7 @@ function nickShow()
     txtHab.textContent = "TBA"
     imgAss.src = "assinaturas/nick.png"
     txtInterpretador.textContent = "Jack"
+    txtDesign.textContent = "Jack"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#b58f36"
@@ -595,6 +612,7 @@ function pattyShow()
     txtHab.textContent = "Força e materializar coisas"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Floox"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#994283"
@@ -630,6 +648,7 @@ function pauloShow()
     txtHab.textContent = "Boa visão embaixo d'água, membros elásticos e regeneração consideravelmente rápida"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Pablito"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#137747"
@@ -665,6 +684,7 @@ function stephanieShow()
     txtHab.textContent = "Controlar areia, veloz e pode se transformar em raposa"
     imgAss.src = "assinaturas/stephanie.png"
     txtInterpretador.textContent = "Sky"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#d3a259"
@@ -699,6 +719,7 @@ function vanessaShow()
     txtHab.textContent = "Manipular os outros com seu canto"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "St"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#719999"
@@ -730,7 +751,8 @@ function ambrosioShow()
     txtCargo.textContent = "Bibliotecário"
     txtHab2.textContent = "TBA"
     imgAss2.src = "assinaturas/TBA.png"
-    txtInterpretador2.textContent = "TBA"
+    txtInterpretador2.textContent = "Jack"
+    txtDesign2.textContent = "Jack"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#3b270d"
@@ -762,7 +784,8 @@ function elisangelaShow()
     txtCargo.textContent = "Enfermeira"
     txtHab2.textContent = "TBA"
     imgAss2.src = "assinaturas/TBA.png"
-    txtInterpretador2.textContent = "TBA"
+    txtInterpretador2.textContent = "Dandi/St"
+    txtDesign2.textContent = "Dandi"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#d11b1b"
@@ -793,7 +816,8 @@ function geronimoShow()
     txtCargo.textContent = "Zelador"
     txtHab2.textContent = "TBA"
     imgAss2.src = "assinaturas/TBA.png"
-    txtInterpretador2.textContent = "TBA"
+    txtInterpretador2.textContent = "Dudubodu"
+    txtDesign2.textContent = "Anjel"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#4366ab"
@@ -824,7 +848,8 @@ function gertrudesShow()
     txtCargo.textContent = "Cozinheira"
     txtHab2.textContent = "TBA"
     imgAss2.src = "assinaturas/TBA.png"
-    txtInterpretador2.textContent = "TBA"
+    txtInterpretador2.textContent = "Canto"
+    txtDesign2.textContent = "Canto"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#38c89a"
@@ -856,6 +881,7 @@ function gomesShow()
     txtHab2.textContent = "Força"
     imgAss2.src = "assinaturas/TBA.png"
     txtInterpretador2.textContent = "Sky"
+    txtDesign2.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#487cca"
@@ -891,6 +917,7 @@ function marcioShow()
     txtHab2.textContent = "Teleportar e criar objetos"
     imgAss2.src = "assinaturas/TBA.png"
     txtInterpretador2.textContent = "Bellow"
+    txtDesign2.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#aac3e1"
@@ -921,7 +948,8 @@ function soniaShow()
     txtCargo.textContent = "Cozinheira"
     txtHab2.textContent = "TBA"
     imgAss2.src = "assinaturas/TBA.png"
-    txtInterpretador2.textContent = "TBA"
+    txtInterpretador2.textContent = "Liro"
+    txtDesign2.textContent = "Dandi"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#638246"
@@ -957,6 +985,7 @@ function vincentShow()
     txtHab2.textContent = "Vagar sobre, manipular sombras e forma monstruosa"
     imgAss2.src = "assinaturas/TBA.png"
     txtInterpretador2.textContent = "Sky"
+    txtDesign2.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#1f492c"
@@ -985,6 +1014,7 @@ function cuscolarShow()
     txtEspecie3.textContent = "Desconhecido"
     txtDono.textContent = "Ninguém"
     txtInterpretador3.textContent = "Liro"
+    txtDesign3.textContent = "St"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#616f94"
@@ -1013,6 +1043,7 @@ function jorgeShow()
     txtEspecie3.textContent = "TBA"
     txtDono.textContent = "Eugênio"
     txtInterpretador3.textContent = "Will"
+    txtDesign3.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#36d8d5"
@@ -1041,6 +1072,7 @@ function starryShow()
     txtEspecie3.textContent = "TBA"
     txtDono.textContent = "Stephanie"
     txtInterpretador3.textContent = "Sky"
+    txtDesign3.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#ddc92e"
@@ -1069,6 +1101,7 @@ function vivyShow()
     txtEspecie3.textContent = "TBA"
     txtDono.textContent = "Cristian"
     txtInterpretador3.textContent = "Canto"
+    txtDesign3.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#25cf19"
@@ -1100,6 +1133,7 @@ function markShow()
     txtHab.textContent = "Forma de lobo total"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Math"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#0931ab"
@@ -1131,6 +1165,7 @@ function melissaShow()
     txtHab.textContent = "Emitir vibrações que lembram música eletrônica com suas antenas e flutuar"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Miguelito"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#9d4cb1"
@@ -1162,6 +1197,7 @@ function stellaShow()
     txtHab.textContent = "Andar nas paredes, camuflagem e veneno."
     imgAss.src = "assinaturas/stella.png"
     txtInterpretador.textContent = "Sky"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#20a73d"
@@ -1193,6 +1229,7 @@ function timotheyShow()
     txtHab.textContent = "Aderência na cauda"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Toey"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#e7786e"
@@ -1224,6 +1261,7 @@ function zugShow()
     txtHab.textContent = "Mudar de forma e tamanho"
     imgAss.src = "assinaturas/TBA.png"
     txtInterpretador.textContent = "Guto"
+    txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#4de4ec"
