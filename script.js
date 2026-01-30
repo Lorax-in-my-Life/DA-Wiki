@@ -1,6 +1,8 @@
 let personagemShow = false
 let personagemFront = false
 
+const logoDA = document.getElementById("logoDA")
+
 const mainAlunos = document.getElementById("mainAlunos");
 const mainFuncionarios = document.getElementById("mainFuncionarios");
 const mainPets = document.getElementById("mainPets");
@@ -67,6 +69,20 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function load()
+{
+    mainAlunos.style.opacity = 1
+    mainFuncionarios.style.opacity = 1
+    mainPets.style.opacity = 1
+    mainOutros.style.opacity = 1
+}
+
+
+
+
+
+
+
 function alexShow()
 {
     personagemNum = 0
@@ -110,7 +126,7 @@ function alowShow()
     foto.src = "fotos/alow.png"
     genero.src = "genero/nb.png"
 
-    txtEspecial.textContent = ""
+    txtEspecial.textContent = "ABRAM ALAS PARA ESPETACULAR ALOW!"
     
     txtEspecie.textContent = "Criatura Celestial"
     txtFamilia.textContent = "TBA"
@@ -140,7 +156,7 @@ function angelaShow()
     foto.src = "fotos/angela.png"
     genero.src = "genero/fem.png"
 
-    txtEspecial.textContent = ""
+    txtEspecial.textContent = "Deixe seu sorriso mudar o mundo, Mas não deixe o mundo mudar seu sorriso."
     
     txtEspecie.textContent = "TBA"
     txtFamilia.textContent = "TBA"
@@ -230,7 +246,7 @@ function crisShow()
     foto.src = "fotos/cris.png"
     genero.src = "genero/masc.png"
 
-    txtEspecial.textContent = ""
+    txtEspecial.textContent = "Gadzooks!"
     
     txtEspecie.textContent = "TBA"
     txtFamilia.textContent = "Gertrudes(Tia), Vanny Alecsant(Mãe), Jason Bush(Pai)"
@@ -320,7 +336,7 @@ function felixShow()
     foto.src = "fotos/felix.png"
     genero.src = "genero/nb.png"
 
-    txtEspecial.textContent = ""
+    txtEspecial.textContent = "esse passarinho tá descontrolado!"
     
     txtEspecie.textContent = "Gato"
     txtFamilia.textContent = "Colt Squashtone(Pai)"
@@ -386,7 +402,7 @@ function leoShow()
     txtFamilia.textContent = "Luna Griffin(Irmã Gêmea), Cuscolar(Filho Adotado)"
     txtPositivos.innerHTML = "Bellie(Namorada)"
     txtNegativos.innerHTML = "TBA"
-    txtData.textContent = "TBA"
+    txtData.textContent = "13 de Julho"
     txtApelidos.textContent = "Leo"
     txtMaterias.textContent = "Educação Física"
     txtHab.textContent = "Mordida muito forte e grande, força e no futuro poderá controlar a água"
@@ -440,7 +456,7 @@ function lunaShow()
     foto.src = "fotos/luna.png"
     genero.src = "genero/nb.png"
 
-    txtEspecial.textContent = "AKAKAKAKAAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKA"
+    txtEspecial.textContent = "AH!"
     
     txtEspecie.textContent = "Planta Aquática"
     txtFamilia.textContent = "TBA"
@@ -500,7 +516,7 @@ function nickShow()
     foto.src = "fotos/nick.png"
     genero.src = "genero/masc.png"
 
-    txtEspecial.textContent = ""
+    txtEspecial.textContent = "Willkommen, bienvenue, welcome!"
     
     txtEspecie.textContent = "TBA"
     txtFamilia.textContent = "Mãe, pai e irmão mais velho(Nomes desconhecidos)"
@@ -597,7 +613,7 @@ function stephanieShow()
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
     txtData.textContent = "1 de Março"
-    txtApelidos.textContent = "Steph(Todos)"
+    txtApelidos.textContent = "Steph"
     txtMaterias.textContent = "Nenhuma"
     txtHab.textContent = "Controlar areia, veloz e pode se transformar em raposa"
     imgAss.src = "assinaturas/stephanie.png"
@@ -863,7 +879,7 @@ function marcioShow()
     txtEspecial.textContent = ""
     
     txtEspecie2.textContent = "TBA"
-    txtFamilia2.textContent = "TBA"
+    txtFamilia2.textContent = "Ambrósio(Irmão)"
     txtPositivos2.innerHTML = "Vincent(Amigo)"
     txtNegativos2.innerHTML = "TBA"
     txtData2.textContent = "TBA"
@@ -1090,9 +1106,10 @@ function eugenioShow()
 
     txtEspecial.textContent = ""
     
+    txtEspecie.textContent = "TBA"
     txtFamilia.textContent = "TBA"
-    txtPositivos2.innerHTML = "TBA"
-    txtNegativos2.innerHTML = "TBA"
+    txtPositivos.innerHTML = "TBA"
+    txtNegativos.innerHTML = "TBA"
     txtData.textContent = "TBA"
     txtApelidos.textContent = "TBA"
     txtMaterias.textContent = "TBA"
@@ -1119,9 +1136,10 @@ function frederickShow()
 
     txtEspecial.textContent = ""
     
+    txtEspecie.textContent = "TBA"
     txtFamilia.textContent = "TBA"
-    txtPositivos2.innerHTML = "TBA"
-    txtNegativos2.innerHTML = "TBA"
+    txtPositivos.innerHTML = "TBA"
+    txtNegativos.innerHTML = "TBA"
     txtData.textContent = "TBA"
     txtApelidos.textContent = "TBA"
     txtMaterias.textContent = "TBA"
@@ -1171,9 +1189,10 @@ function molduShow()
 
     txtEspecial.textContent = ""
     
+    txtEspecie.textContent = "TBA"
     txtFamilia.textContent = "TBA"
-    txtPositivos2.innerHTML = "TBA"
-    txtNegativos2.innerHTML = "TBA"
+    txtPositivos.innerHTML = "TBA"
+    txtNegativos.innerHTML = "TBA"
     txtData.textContent = "TBA"
     txtApelidos.textContent = "TBA"
     txtMaterias.textContent = "TBA"
@@ -1200,9 +1219,10 @@ function vanessaShow()
 
     txtEspecial.textContent = ""
     
+    txtEspecie.textContent = "TBA"
     txtFamilia.textContent = "TBA"
-    txtPositivos2.innerHTML = "TBA"
-    txtNegativos2.innerHTML = "TBA"
+    txtPositivos.innerHTML = "TBA"
+    txtNegativos.innerHTML = "TBA"
     txtData.textContent = "TBA"
     txtApelidos.textContent = "TBA"
     txtMaterias.textContent = "TBA"
@@ -1443,4 +1463,20 @@ async function btnProximo()
     {
         funcShow[personagemNum + 1]();
     }
+}
+
+async function changeLogo()
+{
+    logoDA.style.rotate = "360deg"
+    logoDA.src = "MU/logoMU.png"
+
+    mainAlunos.style.opacity = 0
+    mainFuncionarios.style.opacity = 0 
+    mainPets.style.opacity = 0 
+    mainOutros.style.opacity = 0
+    personagem.style.opacity = 0
+
+    document.body.style.backgroundColor = "#3b6de1"
+    await sleep(500)
+    window.location.href = "mu.html";
 }

@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="load()">
 
     <div id="header">
-        <img id="logoDA" src="logo.png" alt="">
+        <img id="logoDA" onclick="changeLogo()" src="logo.png" alt="">
         <h1>Wiki</h1>
         <div id="buttons_header">
             <button onclick="btnTodos()">TODOS</button>
@@ -26,7 +26,7 @@
     </div>
 
     <a href="#header" id="uparrow"><div><img src="uparrow.png" alt=""></div></a>
-
+    
     <div id="personagem">
         <img id="imgPersonagem" onclick="clickPersonagem()" src="" alt="">
         <div id="descBox">
@@ -41,6 +41,7 @@
                 <button onclick="btnAnterior()">ANTERIOR</button>
                 <button onclick="btnProximo()">PRÓXIMO</button>
             </div>
+
             <p id="personagemDesc"></p>
             <div id="personagemInfoAlunos" class="personagemInfo">
                 <h1 class="tituloDesc">Espécie</h1>
@@ -166,7 +167,7 @@
             <div id="character8" class="characterbox" onclick="lunarisShow()"><img src="personagens/lunaris.png" alt=""><div class="namebox">LUNARIS</div></div>
 
             <div id="character9" class="characterbox" onclick="marcioShow()"><img src="personagens/marcio.png" alt=""><div class="namebox">MÁRCIO</div></div>
-            <div id="character10" class="characterbox" onclick="soniaShow()"><img src="personagens/sonia.png" alt=""><div class="namebox">SÔNIA</div></div>
+            <div id="character10" class="characterbox" onclick="soniaShow()"><img src="personagens/sonia.png" alt=""><div class="namebox">SONIA</div></div>
             <div id="character11" class="characterbox" onclick="vincentShow()"><img src="personagens/vincent.png" alt=""><div class="namebox">VINCENT</div></div>
 
         </div>
@@ -198,7 +199,7 @@
 
             <div id="character1" class="characterbox" onclick="eugenioShow()"><img src="personagens/eugenio.png" alt=""><div class="namebox">EUGÊNIO</div></div>
             <div id="character2" class="characterbox" onclick="frederickShow()"><img src="personagens/frederick.png" alt=""><div class="namebox">FREDERICK</div></div>
-            <div id="character3" class="characterbox" onclick="jorgeShow()"><img src="personagens/jorge.png" alt=""><div class="namebox">J.O.R.G.E</div></div>
+            <div id="character3" class="characterbox" onclick="jorgeShow()"><img src="personagens/jorge.png" alt=""><div class="namebox">J.O.R.G.E.</div></div>
             <div id="character4" class="characterbox" onclick="molduShow()"><img src="personagens/moldu.png" alt=""><div class="namebox">MOLDU</div></div>
 
             <div id="character5" class="characterbox" onclick="vanessaShow()"><img src="personagens/vanessa.png" alt=""><div class="namebox">VANESSA</div></div>
