@@ -173,7 +173,7 @@ function bellieShow()
     txtEspecial.textContent = ""
     
     txtEspecie.textContent = "Demônio Sedutora"
-    txtFamilia.textContent = "TBA"
+    txtFamilia.textContent = "Merline Belial(Mãe)"
     txtPositivos.innerHTML = "Leonard(Namorado)"
     txtNegativos.innerHTML = "Flarence"
     txtData.textContent = "7 de Dezembro"
@@ -323,8 +323,8 @@ function felixShow()
     txtEspecial.textContent = ""
     
     txtEspecie.textContent = "Gato"
-    txtFamilia.textContent = "TBA"
-    txtPositivos.innerHTML = "TBA"
+    txtFamilia.textContent = "Colt Squashtone(Pai)"
+    txtPositivos.innerHTML = "Cristian(Amigo)"
     txtNegativos.innerHTML = "TBA"
     txtData.textContent = "4 de Novembro"
     txtApelidos.textContent = "Nenhum"
@@ -413,7 +413,7 @@ function loretteShow()
     txtEspecial.textContent = "You can't get away from me! Ever! hihihihihi"
     
     txtEspecie.textContent = "TBA"
-    txtFamilia.textContent = "TBA"
+    txtFamilia.textContent = "Julian Otolive(Pai), Lucia Ey Mivida(Mãe)"
     txtPositivos.innerHTML = "Luna (Melhor amigo)<br>Nick(Incerto)"
     txtNegativos.innerHTML = "Daniel"
     txtData.textContent = "10 de Abril"
@@ -563,7 +563,7 @@ function stellaShow()
     txtEspecial.textContent = ""
     
     txtEspecie.textContent = "TBA"
-    txtFamilia.textContent = "TBA"
+    txtFamilia.textContent = "Rayanne Nightsky e Scarlett Nightsky(Mães)"
     txtPositivos.innerHTML = "Melissa(Namorada)"
     txtNegativos.innerHTML = "TBA"
     txtData.textContent = "28 de Agosto"
