@@ -150,7 +150,7 @@ function angelaShow()
     txtApelidos.textContent = "Angy"
     txtMaterias.textContent = "TBA"
     txtHab.textContent = "Poderes psíquicos, criar cópias de objetos ou membros extras, ler mentes"
-    imgAss.src = "assinaturas/TBA.png"
+    imgAss.src = "assinaturas/angela.png"
     txtInterpretador.textContent = "Anjel"
     
     toggleBoxes()
@@ -300,7 +300,7 @@ function evelynShow()
     txtApelidos.textContent = "Eve"
     txtMaterias.textContent = "TBA"
     txtHab.textContent = "Pelos que são choque, super velocidade e super pulo"
-    imgAss.src = "assinaturas/TBA.png"
+    imgAss.src = "assinaturas/evelyn.png"
     txtInterpretador.textContent = "Anjel"
 
     toggleBoxes()
