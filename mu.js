@@ -1587,6 +1587,11 @@ function btnNormal()
         imgPersonagem.src = "MU/personagens/stephanie.png"
         document.body.style.backgroundColor = "#d3a259"
     }
+    else if (personagemNum === 17)
+    {
+        imgPersonagem.src = "MU/personagens/vanessa.png"
+        document.body.style.backgroundColor = "#719999"
+    }
     else if (personagemNum === 23)
     {
         imgPersonagem.src = "MU/personagens/marcio.png"
@@ -1774,6 +1779,11 @@ function btnShenanigans()
     {
         imgPersonagem.src = "MU/formas/stephanieA.png"
         document.body.style.backgroundColor = "#d3a259"
+    }
+    else if (personagemNum === 17)
+    {
+        imgPersonagem.src = "MU/formas/vanessaA.png"
+        document.body.style.backgroundColor = "#20be9c"
     }
     else if (personagemNum === 23)
     {
