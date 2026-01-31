@@ -844,7 +844,7 @@ async function lunaShow()
         {
             newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Luna 3 (Feito por Canto)\")")
         }
-        else if(i === 4)
+        else if(i === 3)
         {
             newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do emoji de Luna (Feito por Canto)\")")
         }
@@ -1985,7 +1985,7 @@ async function eugenioShow()
         {
             newimg.setAttribute("onclick", "clickGaleria(this, \"Eugênio do evento de espaço (Feito por St)\")")
         }
-        else if(i === 4)
+        else if(i === 3)
         {
             newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do emoji do Eugênio (Feito por Canto)\")")
         }
