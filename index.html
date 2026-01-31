@@ -13,6 +13,13 @@
 </head>
 <body onload="load()">
 
+    <div id="modal">
+        <div id="modalBox" onclick="fechaModal()">
+            <img id="modalImg" src="" alt="">
+            <h1 id="modalTxt"></h1>
+        </div>
+    </div>
+
     <div id="header">
         <img id="logoDA" onclick="changeLogo()" src="logo.png" alt="">
         <h1>Wiki</h1>
@@ -118,11 +125,14 @@
                     <p id="txtInterpretador3"></p>
                 <h1 class="tituloDesc">Design</h1>
                     <p id="txtDesign3"></p>
-
-                    <p id="txtDono"></p>
             </div>
 
         </div>
+    </div>
+
+    <div id="galeriaFull">
+        <h1 class="maintext">GALERIA</h1>
+        <div id="galeria"></div>
     </div>
 
     <div id="mainAlunos" class="main">
@@ -137,7 +147,7 @@
 
             <div id="character5" class="characterbox" onclick="bleedsShow()"><img src="personagens/bleeds.png" alt=""><div class="namebox">BLEEDS</div></div>
             <div id="character6" class="characterbox" onclick="crisShow()"><img src="personagens/cris.png" alt=""><div class="namebox">CRISTIAN</div></div>
-            <div id="character7" class="characterbox"><img src="" alt=""><img src="personagens/crystal.png" alt=""><div class="namebox">CRYSTAL</div></div>
+            <div id="character7" class="characterbox" onclick="crystalShow()"><img src="personagens/crystal.png" alt=""><div class="namebox">CRYSTAL</div></div>
             <div id="character8" class="characterbox" onclick="danielShow()"><img src="personagens/daniel.png" alt=""><div class="namebox">DANIEL</div></div>
             
             <div id="character9" class="characterbox" onclick="evelynShow()"><img src="personagens/evelyn.png" alt=""><div class="namebox">EVELYN</div></div>

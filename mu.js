@@ -363,7 +363,7 @@ function felixShow()
     txtApelidos.textContent = "Nenhum"
     txtMaterias.textContent = "Música e Artes"
     txtHab.textContent = "Nenhuma"
-    imgAss.src = "assinaturas/TBA.png"
+    imgAss.src = "assinaturas/felix.png"
     txtInterpretador.textContent = "Saucer"
     txtDesign.textContent = "Sky"
 
@@ -600,7 +600,7 @@ function pattyShow()
     emoji.src = "MU/emojis/patty.png"
     genero.src = "genero/fem.png"
 
-    txtEspecial.textContent = ""
+    txtEspecial.textContent = "ugh... oi"
     
     txtEspecie.textContent = "Troll das Trevas"
     txtFamilia.textContent = "TBA"

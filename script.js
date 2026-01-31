@@ -58,7 +58,7 @@ const personagemInfoFuncionarios = document.getElementById("personagemInfoFuncio
 const personagemInfoPets = document.getElementById("personagemInfoPets")
 
 let funcShow = [
-    alexShow, alowShow, angelaShow, bellieShow, bleedsShow, crisShow, danielShow, evelynShow, felixShow,
+    alexShow, alowShow, angelaShow, bellieShow, bleedsShow, crisShow, crystalShow, danielShow, evelynShow, felixShow,
     kateShow, leoShow, loretteShow, lunaShow, melissaShow, nickShow, pauloShow, stellaShow, stephanieShow, ambrosioShow,
     elisangelaShow, flarenceShow, geronimoShow, gertrudesShow, gomesShow, luddenShow, lunarisShow, marcioShow, soniaShow,
     vincentShow, cuscolarShow, mortimerShow, nynphxShow, starryShow, tomShow, vivyShow, eugenioShow, frederickShow, jorgeShow, 
@@ -66,6 +66,12 @@ let funcShow = [
 ]
 
 let personagemNum = 0
+
+const galeriaFull = document.getElementById("galeriaFull")
+const galeria = document.getElementById("galeria")
+const modal = document.getElementById("modal")
+const modalImg = document.getElementById("modalImg")
+const modalTxt = document.getElementById("modalTxt")
 
 
 function sleep(ms) {
@@ -86,7 +92,7 @@ function load()
 
 
 
-function alexShow()
+async function alexShow()
 {
     personagemNum = 0
     showInfoAlunos()
@@ -115,9 +121,27 @@ function alexShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#104912"
+
+    await sleep(1000)
+    for (let i = 0; i < 2; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/alexkate" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept dos gêmeos 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept dos gêmeos 2\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function alowShow()
+async function alowShow()
 {
     personagemNum = 1
     showInfoAlunos()
@@ -146,9 +170,47 @@ function alowShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#0b0b52"
+
+    await sleep(1000)
+    for (let i = 0; i < 7; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/alow" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Alow na capa da primeira Temporada\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Silhueta de Alow\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Alow 1\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Alow 2\")")
+        }
+        else if(i === 4)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Alow 3\")")
+        }
+        else if(i === 5)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Alow 4\")")
+        }
+        else if(i === 6)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Alow com tema de Tempos Antigos\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function angelaShow()
+async function angelaShow()
 {
     personagemNum = 2
     showInfoAlunos()
@@ -177,9 +239,35 @@ function angelaShow()
     
     toggleBoxes()
     document.body.style.backgroundColor = "#7e1c65"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/angela" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Angela 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Angela 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Pé da Angela\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Angela do evento de espaço (Feito por Anjel)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function bellieShow()
+async function bellieShow()
 {
     personagemNum = 3
     showInfoAlunos()
@@ -208,9 +296,43 @@ function bellieShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#2f1d1d"
+
+    await sleep(1000)
+    for (let i = 0; i < 6; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/bellie" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Bellie 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Bellie 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Bellie 3\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Bellie 4\")")
+        }
+        else if(i === 4)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Bellie do evento de espaço (Feito por Dandi)\")")
+        }
+        else if(i === 5)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Bellie do evento de espaço (Feito por Anjel)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function bleedsShow()
+async function bleedsShow()
 {
     personagemNum = 4
     showInfoAlunos()
@@ -223,7 +345,7 @@ function bleedsShow()
     foto.src = "fotos/bleeds.png"
     genero.src = "genero/fem.png"
     
-    txtEspecial.textContent = "Sou uma pedra que canta e anda e bebe terra yum yum pedra"
+    txtEspecial.textContent = "ugh... oi"
 
     txtEspecie.textContent = "TBA"
     txtFamilia.textContent = "TBA"
@@ -239,9 +361,23 @@ function bleedsShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#4f1e3f"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/bleeds" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Design da Bleeds (Feito por Floox)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function crisShow()
+async function crisShow()
 {
     personagemNum = 5
     showInfoAlunos()
@@ -270,11 +406,106 @@ function crisShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#4f4f1e"
+
+    await sleep(1000)
+    for (let i = 0; i < 2; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/cris" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Cristian\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Cristian do evento de espaço (Feito por Anjel)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function danielShow()
+async function crystalShow()
 {
     personagemNum = 6
+    showInfoAlunos()
+
+    personagemNome.textContent = "Crystal Blosser";
+    personagemDesc.textContent = "Uma inventora e tanto, capaz de transformar qualquer ferro velho em uma máquina capaz de fazer qualquer coisa que quiser, uma pena que ela não é uma aluna de verdade e sim uma infiltrada na universidade aguardando o Equinócio. Ela é um demônio temporal, capaz de mudar o tempo de um certo local para o passado ou para futuro, além de poder retroceder ou avançar outras criaturas no tempo, mas é algo que ela ainda treina; apesar desses poderes especiais e poderes normais de demônio, ela possui um arco e flecha capaz de realizar seus poderes a longa distância, seja em objetos, lugares ou criaturas, já que suas flechas somem assim que aplicam o efeito ou realizam o feitiço. Como qualquer criatura nascida originalmente na dimensão do tempo, ela faz parte do departamento temporal, seu cargo lá é construir portais e outras máquinas poderosas, carregar peças foi como um treinamento para ela e sua força inigualável, mas como ainda é uma simples adolescente, não sabe as consequências que podem ocorrer na linha do tempo caso ela faça algo que não deveria. "
+    
+    imgPersonagem.src = "personagens/crystal.png"
+    emoji.src = "emojis/crystal.png"
+    foto.src = "fotos/crystal.png"
+    genero.src = "genero/fem.png"
+
+    txtEspecial.textContent = ""
+    
+    txtEspecie.textContent = "Demônio Temporal"
+    txtFamilia.textContent = "TBA"
+    txtPositivos.innerHTML = "TBA"
+    txtNegativos.innerHTML = "TBA"
+    txtData.textContent = "TBA"
+    txtApelidos.textContent = "TBA"
+    txtMaterias.textContent = "TBA"
+    txtHab.textContent = "Mudar o tempo de um local, retroceder ou avançar criaturas no tempo e causar estes efeitos a partir de flechas"
+    imgAss.src = "assinaturas/TBA.png"
+    txtInterpretador.textContent = "Sky"
+    txtDesign.textContent = "Sky"
+
+    toggleBoxes()
+    document.body.style.backgroundColor = "#561041"
+
+    await sleep(1000)
+    for (let i = 0; i < 9; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/crystal" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Crimson\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Crystal sem o casaco\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Crystal 1\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Crystal 2\")")
+        }
+        else if(i === 4)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept das cores da Crystal 1\")")
+        }
+        else if(i === 5)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept das cores da Crystal 2\")")
+        }
+        else if(i === 6)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept das cores da Crystal 3\")")
+        }
+        else if(i === 7)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept das cores da Crystal 4\")")
+        }
+        else if(i === 8)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Design final da Crystal sem sombreamento\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
+}
+
+async function danielShow()
+{
+    personagemNum = 7
     showInfoAlunos()
 
     personagemNome.textContent = "Daniel Rucsetan";
@@ -301,11 +532,12 @@ function danielShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#4f1e26"
+    
 }
 
-function evelynShow()
+async function evelynShow()
 {
-    personagemNum = 7
+    personagemNum = 8
     showInfoAlunos()
 
     personagemNome.textContent = "Evelyn Muscann";
@@ -332,11 +564,33 @@ function evelynShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#391e4f"
+
+    await sleep(1000)
+    for (let i = 0; i < 3; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/evelyn" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Evelyn 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Evelyn 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Evelyn do evento de espaço (Feito por St)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function felixShow()
+async function felixShow()
 {
-    personagemNum = 8
+    personagemNum = 9
     showInfoAlunos()
 
     personagemNome.textContent = "Félix Squashtone";
@@ -351,23 +605,45 @@ function felixShow()
     
     txtEspecie.textContent = "Gato"
     txtFamilia.textContent = "Colt Squashtone(Pai)"
-    txtPositivos.innerHTML = "Cristian(Amigo)"
+    txtPositivos.innerHTML = "Cristian(Amigo)<br>Lorette(Amiga)"
     txtNegativos.innerHTML = "TBA"
     txtData.textContent = "4 de Novembro"
     txtApelidos.textContent = "Nenhum"
     txtMaterias.textContent = "Música e Artes"
     txtHab.textContent = "Nenhuma"
-    imgAss.src = "assinaturas/TBA.png"
+    imgAss.src = "assinaturas/felix.png"
     txtInterpretador.textContent = "Saucer"
     txtDesign.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#18483a"
+
+    await sleep(1000)
+    for (let i = 0; i < 3; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/felix" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Felix 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Felix 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Felix 3\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function kateShow()
+async function kateShow()
 {
-    personagemNum = 9
+    personagemNum = 10
     showInfoAlunos()
 
     personagemNome.textContent = "Kate Jackson";
@@ -394,11 +670,29 @@ function kateShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#461049"
+
+    await sleep(1000)
+    for (let i = 0; i < 2; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/alexkate" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept dos gêmeos 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept dos gêmeos 2\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function leoShow()
+async function leoShow()
 {
-    personagemNum = 10
+    personagemNum = 11
     showInfoAlunos()
 
     personagemNome.textContent = "Leonard Griffin";
@@ -425,11 +719,37 @@ function leoShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#11364a"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/leo" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Leo 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Leonard do evento de espaço 1 (Feito por Lorax)\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Leonard do evento de espaço (Feito por Dandi)\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Leonard do evento de espaço 2 (Feito por Anjel)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function loretteShow()
+async function loretteShow()
 {
-    personagemNum = 11
+    personagemNum = 12
     showInfoAlunos()
 
     personagemNome.textContent = "Lorette Ey Mivida";
@@ -445,7 +765,7 @@ function loretteShow()
     txtEspecie.textContent = "TBA"
     txtFamilia.textContent = "Julian Otolive(Pai), Lucia Ey Mivida(Mãe)"
     txtPositivos.innerHTML = "Luna (Melhor amigo)<br>Nick(Incerto)"
-    txtNegativos.innerHTML = "Daniel"
+    txtNegativos.innerHTML = "Daniel<br>Alexander"
     txtData.textContent = "10 de Abril"
     txtApelidos.textContent = "Lory"
     txtMaterias.textContent = "Artes e Escrita"
@@ -456,11 +776,29 @@ function loretteShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#62124f"
+
+    await sleep(1000)
+    for (let i = 0; i < 2; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/lorette" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Lorette (Feito por Canto)\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Lorette do evento de espaço (Feito por St)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function lunaShow()
+async function lunaShow()
 {
-    personagemNum = 12
+    personagemNum = 13
     showInfoAlunos()
 
     personagemNome.textContent = "Luna Gutterson";
@@ -487,11 +825,37 @@ function lunaShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#0a3644"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/luna" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Luna 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Luna 2 (Feito por Canto)\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept de Luna 3 (Feito por Canto)\")")
+        }
+        else if(i === 4)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do emoji de Luna (Feito por Canto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function melissaShow()
+async function melissaShow()
 {
-    personagemNum = 13
+    personagemNum = 14
     showInfoAlunos()
 
     personagemNome.textContent = "Melissa Luciole";
@@ -518,11 +882,45 @@ function melissaShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#220a44"
+
+    await sleep(1000)
+    for (let i = 0; i < 6; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/melissa" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Melissa 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Melissa 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Melissa 3 (Feito por Canto)\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Melissa 4 (Feito por Canto)\")")
+        }
+        else if(i === 4)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept das cores da Melissa (Feito por Canto)\")")
+        }
+        else if(i === 5)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Melissa 5 (Feito por Canto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function nickShow()
+async function nickShow()
 {
-    personagemNum = 14
+    personagemNum = 15
     showInfoAlunos()
 
     personagemNome.textContent = "Nick Eldridge";
@@ -549,11 +947,37 @@ function nickShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#44330a"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/nick" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Nick 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Nick 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Nick do evento de espaço 1 (Feito por Lorax)\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Nick do evento de espaço 2 (Feito por St)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function pauloShow()
+async function pauloShow()
 {
-    personagemNum = 15
+    personagemNum = 16
     showInfoAlunos()
 
     personagemNome.textContent = "Paulo Santiago";
@@ -580,11 +1004,33 @@ function pauloShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#0a4428"
+
+    await sleep(1000)
+    for (let i = 0; i < 3; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/paulo" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Paulo 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Paulo 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Paulo do evento de espaço (Feito por St)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function stellaShow()
+async function stellaShow()
 {
-    personagemNum = 16
+    personagemNum = 17
     showInfoAlunos()
 
     personagemNome.textContent = "Stella Nightsky";
@@ -611,11 +1057,25 @@ function stellaShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#0c4c1a"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/stella" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Stella\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function stephanieShow()
+async function stephanieShow()
 {
-    personagemNum = 17
+    personagemNum = 18
     showInfoAlunos()
 
     personagemNome.textContent = "Stephanie Valinskez";
@@ -642,11 +1102,45 @@ function stephanieShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#126a64"
+
+    await sleep(1000)
+    for (let i = 0; i < 6; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/stephanie" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Stephanie 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Stephanie 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Stephanie do evento de espaço com roupas (Feito por Anjel)\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Stephanie do evento de espaço (Feito por St)\")")
+        }
+        else if(i === 4)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Stephanie do evento de espaço (Feito por Anjel)\")")
+        }
+        else if(i === 5)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Stephanie com tema de Mundo de Doces\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function ambrosioShow()
+async function ambrosioShow()
 {
-    personagemNum = 18
+    personagemNum = 19
     showInfoFuncionarios()
 
     personagemNome.textContent = "Ambrósio Becker";
@@ -673,11 +1167,29 @@ function ambrosioShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#361707"
+
+    await sleep(1000)
+    for (let i = 0; i < 2; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/ambrosio" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Ambrósio 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Ambrósio 2\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function elisangelaShow()
+async function elisangelaShow()
 {
-    personagemNum = 19
+    personagemNum = 20
     showInfoFuncionarios()
 
     personagemNome.textContent = "Elisângela Luckwee";
@@ -704,11 +1216,33 @@ function elisangelaShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#4a0b0a"
+
+    await sleep(1000)
+    for (let i = 0; i < 3; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/elisangela" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Elisângela 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Elisângela 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Elisângela 3\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function geronimoShow()
+async function geronimoShow()
 {
-    personagemNum = 20
+    personagemNum = 21
     showInfoFuncionarios()
 
     personagemNome.textContent = "Gerônimo Abigale";
@@ -735,11 +1269,25 @@ function geronimoShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#0a214a"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/geronimo" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Gerônimo do evento de espaço (Feito por Dandi)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function flarenceShow()
+async function flarenceShow()
 {
-    personagemNum = 21
+    personagemNum = 22
     showInfoFuncionarios()
 
     personagemNome.textContent = "Flarence Mysteriuss";
@@ -766,11 +1314,29 @@ function flarenceShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#3a0c0c"
+
+    await sleep(1000)
+    for (let i = 0; i < 2; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/flarence" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Flarence 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Flarence 2\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function gertrudesShow()
+async function gertrudesShow()
 {
-    personagemNum = 22
+    personagemNum = 23
     showInfoFuncionarios()
 
     personagemNome.textContent = "Gertrudes Sierra";
@@ -797,11 +1363,37 @@ function gertrudesShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#0c5840"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/gertrudes" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Gertrudes 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"O mesmo com a mão levemente diferente\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Gertrudes 2\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Gertrudes sem o avental\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function gomesShow()
+async function gomesShow()
 {
-    personagemNum = 23
+    personagemNum = 24
     showInfoFuncionarios()
 
     personagemNome.textContent = "Gomes Rex";
@@ -828,11 +1420,37 @@ function gomesShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#110c58"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/gomes" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Gomes 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Gomes 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Gomes 3\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Gomes do evento de espaço (Feito por St)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function luddenShow()
+async function luddenShow()
 {
-    personagemNum = 24
+    personagemNum = 25
     showInfoFuncionarios()
 
     personagemNome.textContent = "Ludden Nichols";
@@ -853,17 +1471,39 @@ function luddenShow()
     txtApelidos2.textContent = "TBA"
     txtCargo.textContent = "Astrônomo"
     txtHab2.textContent = "TBA"
-    imgAss2.src = "assinaturas/TBA.png"
+    imgAss2.src = "assinaturas/ludden.png"
     txtInterpretador2.textContent = "Floox"
     txtDesign2.textContent = "Sky"
 
     toggleBoxes()
     document.body.style.backgroundColor = "#140c3a"
+
+    await sleep(1000)
+    for (let i = 0; i < 3; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/ludden" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Ludden 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Ludden 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Rosto do Ludden\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function lunarisShow()
+async function lunarisShow()
 {
-    personagemNum = 25
+    personagemNum = 26
     showInfoFuncionarios()
 
     personagemNome.textContent = "Lunaris Supernova";
@@ -890,11 +1530,45 @@ function lunarisShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#230c3a"
+
+    await sleep(1000)
+    for (let i = 0; i < 6; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/lunaris" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Lunaris 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Lunaris 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Lunaris 3\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Lunaris 4\")")
+        }
+        else if(i === 4)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Lunaris 5\")")
+        }
+        else if(i === 5)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Lunaris 6\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function marcioShow()
+async function marcioShow()
 {
-    personagemNum = 26
+    personagemNum = 27
     showInfoFuncionarios()
 
     personagemNome.textContent = "Márcio Alaan";
@@ -921,11 +1595,25 @@ function marcioShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#613075"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/marcio" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Márcio do evento de espaço (Feito por Anjel)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function soniaShow()
+async function soniaShow()
 {
-    personagemNum = 27
+    personagemNum = 28
     showInfoFuncionarios()
 
     personagemNome.textContent = "Sonia Bullspade";
@@ -952,11 +1640,25 @@ function soniaShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#27410f"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/sonia" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Sonia\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function vincentShow()
+async function vincentShow()
 {
-    personagemNum = 28
+    personagemNum = 29
     showInfoFuncionarios()
 
     personagemNome.textContent = "Vincent Mysteriuss";
@@ -983,11 +1685,37 @@ function vincentShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#19231c"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/vincent" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Vincent 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Vincent 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Vincent do evento de espaço (Feito por St)\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Vincent com tema de Seres das Trevas\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function cuscolarShow()
+async function cuscolarShow()
 {
-    personagemNum = 29
+    personagemNum = 30
     showInfoPets()
 
     personagemNome.textContent = "Cuscolar";
@@ -1007,11 +1735,25 @@ function cuscolarShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#374d4c"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/cuscolar" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Cuscolar do evento de espaço (Feito por Anjel)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function mortimerShow()
+async function mortimerShow()
 {
-    personagemNum = 30
+    personagemNum = 31
     showInfoPets()
 
     personagemNome.textContent = "Mortimer";
@@ -1031,11 +1773,37 @@ function mortimerShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#454343"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/mortimer" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da foto do Mortimer\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Mortimer 1\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Mortimer 2 (Feito por Canto)\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do emoji do Mortimer (Feito por Canto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function nynphxShow()
+async function nynphxShow()
 {
-    personagemNum = 31
+    personagemNum = 32
     showInfoPets()
 
     personagemNome.textContent = "Nynphx";
@@ -1055,11 +1823,37 @@ function nynphxShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#257266"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/nynphx" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concepts do design da Nynphx\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Nynphx 1\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Nynphx 2\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Ideia do emoji da Nynphx (Feito por Canto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function starryShow()
+async function starryShow()
 {
-    personagemNum = 32
+    personagemNum = 33
     showInfoPets()
 
     personagemNome.textContent = "Starry";
@@ -1079,11 +1873,25 @@ function starryShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#6f6022"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/starry" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"bro\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function tomShow()
+async function tomShow()
 {
-    personagemNum = 33
+    personagemNum = 34
     showInfoPets()
 
     personagemNome.textContent = "Tom";
@@ -1105,9 +1913,9 @@ function tomShow()
     document.body.style.backgroundColor = "#33440f"
 }
 
-function vivyShow()
+async function vivyShow()
 {
-    personagemNum = 34
+    personagemNum = 35
     showInfoPets()
 
     personagemNome.textContent = "Vivy";
@@ -1129,9 +1937,9 @@ function vivyShow()
     document.body.style.backgroundColor = "#257266"
 }
 
-function eugenioShow()
+async function eugenioShow()
 {
-    personagemNum = 35
+    personagemNum = 36
     showInfoAlunos()
 
     personagemNome.textContent = "Eugênio Willems";
@@ -1158,11 +1966,37 @@ function eugenioShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#621c4c"
+
+    await sleep(1000)
+    for (let i = 0; i < 4; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/eugenio" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Eugênio do evento de espaço (Feito por St)\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Eugênio\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Eugênio do evento de espaço (Feito por St)\")")
+        }
+        else if(i === 4)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do emoji do Eugênio (Feito por Canto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function frederickShow()
+async function frederickShow()
 {
-    personagemNum = 36
+    personagemNum = 37
     showInfoAlunos()
 
     personagemNome.textContent = "Frederick Markus";
@@ -1189,11 +2023,57 @@ function frederickShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#2e241a"
+
+    await sleep(1000)
+    for (let i = 0; i < 9; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/frederick" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Frederick 1\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Frederick 2\")")
+        }
+        else if(i === 2)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Frederick 3\")")
+        }
+        else if(i === 3)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Frederick 4 (Feito por Canto)\")")
+        }
+        else if(i === 4)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Frederick 5 (Feito por Canto)\")")
+        }
+        else if(i === 5)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Frederick 6 (Feito por Canto)\")")
+        }
+        else if(i === 6)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept das cores do Frederick (Feito por Canto)\")")
+        }
+        else if(i === 7)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da foto do Frederick (Feito por Canto)\")")
+        }
+        else if(i === 8)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do emoji do Frederick (Feito por Canto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function jorgeShow()
+async function jorgeShow()
 {
-    personagemNum = 37
+    personagemNum = 38
     showInfoPets()
 
     personagemNome.textContent = "J.O.R.G.E.";
@@ -1215,9 +2095,9 @@ function jorgeShow()
     document.body.style.backgroundColor = "#1a5340"
 }
 
-function molduShow()
+async function molduShow()
 {
-    personagemNum = 38
+    personagemNum = 39
     showInfoAlunos()
 
     personagemNome.textContent = "Moldu Dulivan";
@@ -1244,11 +2124,25 @@ function molduShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#292d2e"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/moldu" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Moldu\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
-function vanessaShow()
+async function vanessaShow()
 {
-    personagemNum = 39
+    personagemNum = 40
     showInfoAlunos()
 
     personagemNome.textContent = "Vanessa Steffan";
@@ -1275,6 +2169,24 @@ function vanessaShow()
 
     toggleBoxes()
     document.body.style.backgroundColor = "#533160"
+
+    await sleep(1000)
+    for (let i = 0; i < 2; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/vanessa" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Vanessa do evento de espaço (Feito por St)\")")
+        }
+        else if(i === 1)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da pose da Vanessa (Feito por Canto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
 }
 
 
@@ -1307,6 +2219,7 @@ async function toggleBoxes()
 
     await sleep(300)
     personagem.style.display = "flex"
+    galeriaFull.style.display = "block"
     await sleep(100)
     if (window.screen.width <= 600)
     {
@@ -1368,6 +2281,13 @@ async function hidePersonagem()
         personagem.style.display = "none"
         imgPersonagem.style.zIndex = "1"
         personagemFront = false
+
+        galeriaFull.style.display = "none"
+
+        while (galeria.firstChild)
+        {
+            galeria.firstChild.remove()
+        }
     }
 }
 
@@ -1486,7 +2406,7 @@ async function btnAnterior()
     await sleep(300)
     if(personagemNum === 0)
     {
-       funcShow[39](); 
+       funcShow[40](); 
     }
     else
     {
@@ -1498,7 +2418,7 @@ async function btnProximo()
 {
     hidePersonagem()
     await sleep(300)
-    if(personagemNum === 39)
+    if(personagemNum === 40)
     {
        funcShow[0](); 
     }
@@ -1522,4 +2442,21 @@ async function changeLogo()
     document.body.style.backgroundColor = "#3b6de1"
     await sleep(500)
     window.location.href = "mu.html";
+}
+
+function clickGaleria(img, txt)
+{
+    if (window.screen.width > 600)
+    {
+        modalTxt.textContent = txt
+        modalImg.src = img.src
+        modal.style.display = "block"
+        document.body.style.overflowY = "hidden" 
+    }
+}
+
+function fechaModal()
+{
+    modal.style.display = "none"
+    document.body.style.overflowY = "scroll"
 }
