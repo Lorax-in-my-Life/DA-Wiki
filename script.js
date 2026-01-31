@@ -107,7 +107,7 @@ async function alexShow()
     
     txtEspecial.textContent = ""
 
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Dragão Flamejante"
     txtFamilia.textContent = "Kate(Irmã Gêmea), Christopher Jackson(Pai), Lake Bourgeoisie(Mãe)"
     txtPositivos.innerHTML = "Nick(Incerto)"
     txtNegativos.innerHTML = "TBA"
@@ -225,7 +225,7 @@ async function angelaShow()
 
     txtEspecial.textContent = "Deixe seu sorriso mudar o mundo, Mas não deixe o mundo mudar seu sorriso."
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Karista Psíquica"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
@@ -347,7 +347,7 @@ async function bleedsShow()
     
     txtEspecial.textContent = "ugh... oi"
 
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Troll das Trevas"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
@@ -392,7 +392,7 @@ async function crisShow()
 
     txtEspecial.textContent = "Gadzooks!"
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Trincerontos"
     txtFamilia.textContent = "Gertrudes(Tia), Vanny Alecsant(Mãe), Jason Bush(Pai)"
     txtPositivos.innerHTML = "Vivy<br>Felix(Amigo)"
     txtNegativos.innerHTML = "Daniel"
@@ -457,7 +457,7 @@ async function crystalShow()
     document.body.style.backgroundColor = "#561041"
 
     await sleep(1000)
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 10; i++) {
         var newimg = document.createElement('img');
         newimg.src = "galeria/crystal" + i + ".png";
         newimg.setAttribute("class", "imgGallery")
@@ -498,6 +498,10 @@ async function crystalShow()
         {
             newimg.setAttribute("onclick", "clickGaleria(this, \"Design final da Crystal sem sombreamento\")")
         }
+        else if(i === 9)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da Crystal 3\")")
+        }
 
         galeria.appendChild(newimg);
     }
@@ -518,7 +522,7 @@ async function danielShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie.textContent = "Demônio"
+    txtEspecie.textContent = "Demônio Tradicional"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
@@ -550,7 +554,7 @@ async function evelynShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Chinchila das Montanhas"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
@@ -603,7 +607,7 @@ async function felixShow()
 
     txtEspecial.textContent = "esse passarinho tá descontrolado!"
     
-    txtEspecie.textContent = "Gato"
+    txtEspecie.textContent = "Gato Cinzento"
     txtFamilia.textContent = "Colt Squashtone(Pai)"
     txtPositivos.innerHTML = "Cristian(Amigo)<br>Lorette(Amiga)"
     txtNegativos.innerHTML = "TBA"
@@ -656,7 +660,7 @@ async function kateShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Dragão Flamejante"
     txtFamilia.textContent = "Alexander(Irmão Gêmeo), Christopher Jackson(Pai), Lake Bourgeoisie(Mãe)"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
@@ -705,7 +709,7 @@ async function leoShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Tubarino"
     txtFamilia.textContent = "Luna Griffin(Irmã Gêmea), Cuscolar(Filho Adotado)"
     txtPositivos.innerHTML = "Bellie(Namorada)"
     txtNegativos.innerHTML = "TBA"
@@ -762,7 +766,7 @@ async function loretteShow()
 
     txtEspecial.textContent = "You can't get away from me! Ever! hihihihihi"
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Caella Grudenta"
     txtFamilia.textContent = "Julian Otolive(Pai), Lucia Ey Mivida(Mãe)"
     txtPositivos.innerHTML = "Luna (Melhor amigo)<br>Nick(Incerto)"
     txtNegativos.innerHTML = "Daniel<br>Alexander"
@@ -933,7 +937,7 @@ async function nickShow()
 
     txtEspecial.textContent = "Willkommen, bienvenue, welcome!"
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Bode das Montanhas"
     txtFamilia.textContent = "Mãe, pai e irmão mais velho(Nomes desconhecidos)"
     txtPositivos.innerHTML = "Alexander(Incerto)<br>Lorette(Incerto)"
     txtNegativos.innerHTML = "TBA"
@@ -990,7 +994,7 @@ async function pauloShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Lula Subterrânea"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
@@ -1088,7 +1092,7 @@ async function stephanieShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Feneco"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
@@ -1242,7 +1246,7 @@ async function elisangelaShow()
 
 async function geronimoShow()
 {
-    personagemNum = 21
+    personagemNum = 22
     showInfoFuncionarios()
 
     personagemNome.textContent = "Gerônimo Abigale";
@@ -1287,7 +1291,7 @@ async function geronimoShow()
 
 async function flarenceShow()
 {
-    personagemNum = 22
+    personagemNum = 21
     showInfoFuncionarios()
 
     personagemNome.textContent = "Flarence Mysteriuss";
@@ -1349,7 +1353,7 @@ async function gertrudesShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie2.textContent = "TBA"
+    txtEspecie2.textContent = "Sierricerontos"
     txtFamilia2.textContent = "Cristian(Sobrinho), Jason Bush(Irmão)"
     txtPositivos2.innerHTML = "TBA"
     txtNegativos2.innerHTML = "TBA"
@@ -1728,7 +1732,7 @@ async function cuscolarShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie3.textContent = "TBA"
+    txtEspecie3.textContent = "Desconhecido"
     txtDono.textContent = "Leonard"
     txtInterpretador3.textContent = "Liro"
     txtDesign3.textContent = "St"
@@ -1952,7 +1956,7 @@ async function eugenioShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Alormoletl Rosado"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
@@ -2110,7 +2114,7 @@ async function molduShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Morcegário das Planícies"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"
@@ -2155,7 +2159,7 @@ async function vanessaShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie.textContent = "TBA"
+    txtEspecie.textContent = "Axolote do Pântano"
     txtFamilia.textContent = "TBA"
     txtPositivos.innerHTML = "TBA"
     txtNegativos.innerHTML = "TBA"

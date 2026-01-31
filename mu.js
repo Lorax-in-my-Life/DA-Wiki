@@ -838,7 +838,7 @@ function gertrudesShow()
 
     txtEspecial.textContent = ""
     
-    txtEspecie2.textContent = "TBA"
+    txtEspecie2.textContent = "Sierricerontos"
     txtFamilia2.textContent = "Cristian(Sobrinho), Jason Bush(Irmão)"
     txtPositivos2.innerHTML = "TBA"
     txtNegativos2.innerHTML = "TBA"
