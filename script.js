@@ -9,6 +9,7 @@ const mainPets = document.getElementById("mainPets");
 const mainOutros = document.getElementById("mainOutros");
 
 const main = document.querySelectorAll("main")
+const descBox = document.querySelectorAll("descBox")
 
 const imgPersonagem = document.getElementById("imgPersonagem");
 const personagem = document.getElementById("personagem");
@@ -65,6 +66,14 @@ let funcShow = [
     molduShow, vanessaShow
 ]
 
+let nomes = [
+    "alexander", "alow", "angela", "bellie", "bleeds", "cristian", "crystal", "daniel", "evelyn", "félix",
+    "kate", "leonard", "lorette", "luna", "melissa", "nick", "paulo", "stella", "stephanie", "ambrósio",
+    "elisângela", "flarence", "gerônimo", "gertrudes", "gomes", "ludden", "lunaris", "márcio", "sonia",
+    "vincent", "cuscolar", "mortimer", "nynphx", "starry", "tom", "vivy", "eugênio", "frederick", "jorge", 
+    "moldu", "vanessa"
+]
+
 let personagemNum = 0
 
 const galeriaFull = document.getElementById("galeriaFull")
@@ -86,9 +95,24 @@ function load()
     mainOutros.style.opacity = 1
 }
 
+const searchBar = document.getElementById("searchBar")
+const allpersonagensBox = document.getElementsByClassName("characterbox")
 
-
-
+function search()
+{
+    nomes.forEach(nome =>{
+        if(nome.includes(searchBar.value.toLowerCase()))
+        {
+            allpersonagensBox[nomes.indexOf(nome)].style.display = "block"
+        }
+        else
+        {
+            console.log(nome)
+            console.log(searchBar.value)
+            allpersonagensBox[nomes.indexOf(nome)].style.display = "none"
+        }
+    })
+}
 
 
 
@@ -349,8 +373,8 @@ async function bleedsShow()
 
     txtEspecie.textContent = "Troll das Trevas"
     txtFamilia.textContent = "TBA"
-    txtPositivos.innerHTML = "TBA"
-    txtNegativos.innerHTML = "TBA"
+    txtPositivos.innerHTML = "Ninguém"
+    txtNegativos.innerHTML = "Alow"
     txtData.textContent = "13 de Novembro"
     txtApelidos.textContent = "Blee, Bliss"
     txtMaterias.textContent = "Música, Cinema, Biologia"
@@ -1469,10 +1493,10 @@ async function luddenShow()
     
     txtEspecie2.textContent = "TBA"
     txtFamilia2.textContent = "TBA"
-    txtPositivos2.innerHTML = "Vincent(Amigo)"
-    txtNegativos2.innerHTML = "TBA"
-    txtData2.textContent = "TBA"
-    txtApelidos2.textContent = "TBA"
+    txtPositivos2.innerHTML = "Ambrósio<br>Alow<br>Lunaris<br>Márcio<br>Vincent(Amigo)"
+    txtNegativos2.innerHTML = "Ninguém"
+    txtData2.textContent = "2 de Dezembro"
+    txtApelidos2.textContent = "Lud"
     txtCargo.textContent = "Astrônomo"
     txtHab2.textContent = "TBA"
     imgAss2.src = "assinaturas/ludden.png"
@@ -2213,6 +2237,8 @@ async function toggleBoxes()
     mainFuncionarios.style.opacity = 0 
     mainPets.style.opacity = 0 
     mainOutros.style.opacity = 0
+    searchBar.style.opacity = 0
+    searchBar.disabled = true
 
     await sleep(300)
 
@@ -2338,6 +2364,8 @@ async function btnTodos()
     mainFuncionarios.style.opacity = 1
     mainPets.style.opacity = 1
     mainOutros.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 async function btnAlunos()
@@ -2350,6 +2378,8 @@ async function btnAlunos()
     mainAlunos.style.display = "grid"
     await sleep(100)
     mainAlunos.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 async function btnFuncionarios()
@@ -2362,6 +2392,8 @@ async function btnFuncionarios()
     mainFuncionarios.style.display = "grid"
     await sleep(100)
     mainFuncionarios.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 async function btnPets()
@@ -2374,6 +2406,8 @@ async function btnPets()
     mainPets.style.display = "grid"
     await sleep(100)
     mainPets.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 async function btnOutros()
@@ -2386,6 +2420,8 @@ async function btnOutros()
     mainOutros.style.display = "grid"
     await sleep(100)
     mainOutros.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 function clickPersonagem()
@@ -2463,4 +2499,9 @@ function fechaModal()
 {
     modal.style.display = "none"
     document.body.style.overflowY = "scroll"
+}
+
+function btnRelacao()
+{
+    descBox
 }

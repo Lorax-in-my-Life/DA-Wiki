@@ -69,6 +69,13 @@ let funcShow = [
     jorgeShow, starryShow, vivyShow, markShow, melissaShow, stellaShow, timotheyShow, zugShow
 ]
 
+let nomes = [
+    "alexander", "angela", "bellie", "cristian", "daniel", "eugênio", "evelyn", "felix", "hank", "kate",
+    "leonard", "lorette", "moldu", "nick", "patty", "paulo", "stephanie", "vanessa", "ambrósio", "elisângela",
+    "gerônimo", "gertrudes", "king gomes", "márcio", "sonia", "vincent", "cuscolar", "jorge", "starry", "vivy",
+    "mark", "melissa", "stella", "timothey", "zug"
+]
+
 let personagemNum = 0
 
 
@@ -82,6 +89,25 @@ function load()
     mainFuncionarios.style.opacity = 1
     mainPets.style.opacity = 1
     mainOutros.style.opacity = 1
+}
+
+const searchBar = document.getElementById("searchBar")
+const allpersonagensBox = document.getElementsByClassName("characterbox")
+
+function search()
+{
+    nomes.forEach(nome =>{
+        if(nome.includes(searchBar.value.toLowerCase()))
+        {
+            allpersonagensBox[nomes.indexOf(nome)].style.display = "block"
+        }
+        else
+        {
+            console.log(nome)
+            console.log(searchBar.value)
+            allpersonagensBox[nomes.indexOf(nome)].style.display = "none"
+        }
+    })
 }
 
 
@@ -1283,6 +1309,8 @@ async function toggleBoxes()
     mainFuncionarios.style.opacity = 0 
     mainPets.style.opacity = 0 
     mainOutros.style.opacity = 0
+    searchBar.style.opacity = 0
+    searchBar.disabled = true
 
     await sleep(300)
 
@@ -1403,6 +1431,8 @@ async function btnTodos()
     mainFuncionarios.style.opacity = 1
     mainPets.style.opacity = 1
     mainOutros.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 async function btnAlunos()
@@ -1415,6 +1445,8 @@ async function btnAlunos()
     mainAlunos.style.display = "grid"
     await sleep(100)
     mainAlunos.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 async function btnFuncionarios()
@@ -1427,6 +1459,8 @@ async function btnFuncionarios()
     mainFuncionarios.style.display = "grid"
     await sleep(100)
     mainFuncionarios.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 async function btnPets()
@@ -1439,6 +1473,8 @@ async function btnPets()
     mainPets.style.display = "grid"
     await sleep(100)
     mainPets.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 async function btnOutros()
@@ -1451,6 +1487,8 @@ async function btnOutros()
     mainOutros.style.display = "grid"
     await sleep(100)
     mainOutros.style.opacity = 1
+    searchBar.style.opacity = 1
+    searchBar.disabled = false
 }
 
 function clickPersonagem()

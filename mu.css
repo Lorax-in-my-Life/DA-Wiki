@@ -33,13 +33,13 @@ body{
 #buttons_header button{
     background-image: linear-gradient(to bottom,rgb(220, 208, 33) 80%, rgb(222, 172, 11));
     color: rgb(0, 0, 0);
-    height: 80%;
+    height: 60%;
     padding: 1%;
     outline: none;
     justify-content: space-between;
     margin-left: 2%;
-    width: 15%;
-    font-size: 18px;
+    width: 17%;
+    font-size: 11px;
     border: none;
     border-radius: 5%;
 }
@@ -57,24 +57,38 @@ body{
     padding: 1%;
     outline: none;
     justify-content: space-between;
-    width: 20%;
+    width: 200px;
     font-size: 18px;
     border: none;
     border-radius: 5%;
     font-weight: bold;
 }
 
+#searchBar
+{
+    width: 75%;
+    height: 50%;
+    font-size: 32px;
+    border: none;
+    outline: none;
+    background-color: rgba(43, 43, 43, 0.5);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: opacity 0.2s ease-out; 
+}
+
 #header h1{
     margin-top: 1%;
     font-weight: bold;
-    margin-right: 7%;  
+    margin-right: 3%;  
     color: blue;
 }
 
 #buttons_header
 {
     z-index: 50;
-    margin-top: 3%;
+    margin-top: 1%;
     width: 80%;
     height: 75px;
 }
@@ -285,6 +299,33 @@ body{
 
 @media (max-width: 600px)
 {
+
+    #header{
+        background-image: url("MU/fundo.png");
+        background-size: contain;
+        width: 100%;
+        height: 125px;
+        display: grid;
+        grid-template-areas: "logo logotxt searchbar"
+        "buttons";
+    }
+
+    #searchBar
+    {
+        width: 50%;
+        height: 10%;
+        font-size: 28px;
+        border: none;
+        outline: none;
+        background-color: rgba(43, 43, 43, 0.5);
+        color: white;
+        border-radius: 10px;
+        margin-top: 20px;
+        transition: opacity 0.2s ease-out; 
+        grid-area: searchbar;
+        margin-left: 45%;
+    }
+
     .boxGrid{
         width: 100%;
         height: 98vh;
@@ -350,8 +391,9 @@ body{
 
     #buttons_header
     {
-        width: 80%;
-        height: 75px;
+        width: 100%;
+        grid-area: buttons;
+        margin-top: 20%;
     }
 
     #buttons_header button{
@@ -361,13 +403,11 @@ body{
         padding: 1%;
         outline: none;
         justify-content: space-between;
-        margin-left: 2%;
-        width: 25%;
+        width: 16%;
         font-size: 6px;
         font-weight: bold;
         border: none;
         border-radius: 5%;
-        margin-bottom: 2%;
     }
 
     #header h1{
@@ -375,6 +415,8 @@ body{
         font-weight: bold;
         margin-right: 2%;  
         color: blue;
+        margin-left: 20%;
+        grid-area: logotxt;
     }
 
     .namebox{
@@ -392,7 +434,11 @@ body{
     }
 
     #logoDA{
-        margin-left: 2%;
+        grid-area: logo;
+        max-width: 100%;
+        max-height: 20%;
+        height: auto;
+        width: auto;
     }
 
     #txtEspecial{
