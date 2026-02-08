@@ -62,16 +62,16 @@ let funcShow = [
     alexShow, alowShow, angelaShow, bellieShow, bleedsShow, crisShow, crystalShow, danielShow, evelynShow, felixShow,
     kateShow, leoShow, loretteShow, lunaShow, melissaShow, nickShow, pauloShow, stellaShow, stephanieShow, ambrosioShow,
     elisangelaShow, flarenceShow, geronimoShow, gertrudesShow, gomesShow, luddenShow, lunarisShow, marcioShow, soniaShow,
-    vincentShow, cuscolarShow, mortimerShow, nynphxShow, starryShow, tomShow, vivyShow, eugenioShow, frederickShow, jorgeShow, 
-    molduShow, vanessaShow
+    vincentShow, cuscolarShow, faiscaShow, mortimerShow, nynphxShow, starryShow, tomShow, vivyShow, eugenioShow, frederickShow, jorgeShow, 
+    molduShow, sfxShow, srpinheirosShow, vanessaShow, vfxShow
 ]
 
 let nomes = [
     "alexander", "alow", "angela", "bellie", "bleeds", "cristian", "crystal", "daniel", "evelyn", "félix",
     "kate", "leonard", "lorette", "luna", "melissa", "nick", "paulo", "stella", "stephanie", "ambrósio",
     "elisângela", "flarence", "gerônimo", "gertrudes", "gomes", "ludden", "lunaris", "márcio", "sonia",
-    "vincent", "cuscolar", "mortimer", "nynphx", "starry", "tom", "vivy", "eugênio", "frederick", "jorge", 
-    "moldu", "vanessa"
+    "vincent", "cuscolar", "faisca", "mortimer", "nynphx", "starry", "tom", "vivy", "eugênio", "frederick", "jorge", 
+    "moldu", "sfx", "srpinheiros", "vanessa", "vfx"
 ]
 
 let personagemNum = 0
@@ -308,8 +308,8 @@ async function bellieShow()
     
     txtEspecie.textContent = "Demônio Sedutora"
     txtFamilia.textContent = "Merline Belial(Mãe)"
-    txtPositivos.innerHTML = "Leonard(Namorado)"
-    txtNegativos.innerHTML = "Flarence"
+    txtPositivos.innerHTML = "Leonard(Namorado)<br>Alow"
+    txtNegativos.innerHTML = "Flarence<br>Crystal"
     txtData.textContent = "7 de Dezembro"
     txtApelidos.textContent = "Bell"
     txtMaterias.textContent = "Educação Física e Dança"
@@ -1779,9 +1779,47 @@ async function cuscolarShow()
     }
 }
 
-async function mortimerShow()
+async function faiscaShow()
 {
     personagemNum = 31
+    showInfoPets()
+
+    personagemNome.textContent = "Faísca";
+    personagemDesc.textContent = 'Ele é uma pequena criaturinha meio-aracnídeo que foi um presente de Crystal para Luna em sua proposta. Assim como sua dona, ele não gosta muito de quem ele é, por isso se esconde por dentro de um velho tronco com um rosto que ele mesmo arranhou na casca; o que chama a atenção sobre sua espécie, é o fogo fátuo presente na ponta de sua antena e o controle que ele tem por isso, podendo deixar mais quente e brilhante ou apenas apagar por completo.'
+    
+    imgPersonagem.src = "personagens/faisca.png"
+    emoji.src = "emojis/faisca.png"
+    foto.src = "fotos/faisca.png"
+    genero.src = "genero/masc.png"
+
+    txtEspecial.textContent = ""
+    
+    txtEspecie3.textContent = "Meio-aracnídeo"
+    txtDono.textContent = "Luna"
+    txtInterpretador3.textContent = "Guto"
+    txtDesign3.textContent = "Guto"
+
+    toggleBoxes()
+    document.body.style.backgroundColor = "#28460d"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/faisca" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept do Faísca (Feito por Guto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
+}
+
+async function mortimerShow()
+{
+    personagemNum = 32
     showInfoPets()
 
     personagemNome.textContent = "Mortimer";
@@ -1831,7 +1869,7 @@ async function mortimerShow()
 
 async function nynphxShow()
 {
-    personagemNum = 32
+    personagemNum = 33
     showInfoPets()
 
     personagemNome.textContent = "Nynphx";
@@ -1881,7 +1919,7 @@ async function nynphxShow()
 
 async function starryShow()
 {
-    personagemNum = 33
+    personagemNum = 34
     showInfoPets()
 
     personagemNome.textContent = "Starry";
@@ -1919,7 +1957,7 @@ async function starryShow()
 
 async function tomShow()
 {
-    personagemNum = 34
+    personagemNum = 35
     showInfoPets()
 
     personagemNome.textContent = "Tom";
@@ -1943,7 +1981,7 @@ async function tomShow()
 
 async function vivyShow()
 {
-    personagemNum = 35
+    personagemNum = 36
     showInfoPets()
 
     personagemNome.textContent = "Vivy";
@@ -1967,7 +2005,7 @@ async function vivyShow()
 
 async function eugenioShow()
 {
-    personagemNum = 36
+    personagemNum = 37
     showInfoAlunos()
 
     personagemNome.textContent = "Eugênio Willems";
@@ -2024,7 +2062,7 @@ async function eugenioShow()
 
 async function frederickShow()
 {
-    personagemNum = 37
+    personagemNum = 38
     showInfoAlunos()
 
     personagemNome.textContent = "Frederick Markus";
@@ -2101,7 +2139,7 @@ async function frederickShow()
 
 async function jorgeShow()
 {
-    personagemNum = 38
+    personagemNum = 39
     showInfoPets()
 
     personagemNome.textContent = "J.O.R.G.E.";
@@ -2125,7 +2163,7 @@ async function jorgeShow()
 
 async function molduShow()
 {
-    personagemNum = 39
+    personagemNum = 40
     showInfoAlunos()
 
     personagemNome.textContent = "Moldu Dulivan";
@@ -2168,9 +2206,86 @@ async function molduShow()
     }
 }
 
+async function sfxShow()
+{
+    personagemNum = 41
+    showInfoFuncionarios()
+
+    personagemNome.textContent = "SFX";
+    personagemDesc.textContent = 'Conhecidas como as irmãs efeitos, responsáveis por toda a magia do rp como efeitos sonoros, que vão desde o sinal tocando até o barulho de uma explosão e efeitos visuais, que vão desde o brilho de Starry até o segundo plano de Alow. Com tamanho trabalho você deve pensar que ambas devem ser bem pagas, mas muito pelo contrário, elas nem sequer são pagas; SFX não se importa muito com isso, mas por outro lado, VFX detesta isso por sempre ficar com o maior esforço para nada.'
+    
+    imgPersonagem.src = "personagens/sfx.png"
+    emoji.src = "emojis/sfx.png"
+    foto.src = "fotos/vfxsfx.png"
+    genero.src = "genero/fem.png"
+
+    txtEspecial.textContent = ""
+    
+    txtEspecie2.textContent = "TBA"
+    txtFamilia2.textContent = "VFX(Irmã)"
+    txtPositivos2.innerHTML = "TBA"
+    txtNegativos2.innerHTML = "TBA"
+    txtData2.textContent = "TBA"
+    txtApelidos2.textContent = "TBA"
+    txtCargo.textContent = "Bastidores"
+    txtHab2.textContent = "TBA"
+    imgAss2.src = "assinaturas/TBA.png"
+    txtInterpretador2.textContent = "Canto"
+    txtDesign2.textContent = "Canto"
+
+    toggleBoxes()
+    document.body.style.backgroundColor = "#2d2834"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/sfx" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da SFX (Feito por Canto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
+}
+
+async function srpinheirosShow()
+{
+    personagemNum = 42
+    showInfoFuncionarios()
+
+    personagemNome.textContent = "Sr. Pinheiros";
+    personagemDesc.textContent = 'Já se perguntou o que se esconde pela Dreamy Academy durante a madrugada? Caso sim, aqui está sua resposta. Não se sabe o que ou quem é este "ser" ou "coisa", apenas se sabe que ele vaga pelo local.'
+    
+    imgPersonagem.src = "personagens/srpinheiros.png"
+    emoji.src = "emojis/srpinheiros.png"
+    foto.src = "fotos/srpinheiros.png"
+    genero.src = "genero/masc.png"
+
+    txtEspecial.textContent = ""
+    
+    txtEspecie2.textContent = "TBA"
+    txtFamilia2.textContent = "TBA"
+    txtPositivos2.innerHTML = "TBA"
+    txtNegativos2.innerHTML = "TBA"
+    txtData2.textContent = "TBA"
+    txtApelidos2.textContent = "TBA"
+    txtCargo.textContent = "???"
+    txtHab2.textContent = "TBA"
+    imgAss2.src = "assinaturas/TBA.png"
+    txtInterpretador2.textContent = "???"
+    txtDesign2.textContent = "TBA"
+
+    toggleBoxes()
+    document.body.style.backgroundColor = "#767676"
+
+}
+
 async function vanessaShow()
 {
-    personagemNum = 40
+    personagemNum = 43
     showInfoAlunos()
 
     personagemNome.textContent = "Vanessa Steffan";
@@ -2211,6 +2326,51 @@ async function vanessaShow()
         else if(i === 1)
         {
             newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da pose da Vanessa (Feito por Canto)\")")
+        }
+
+        galeria.appendChild(newimg);
+    }
+}
+
+async function vfxShow()
+{
+    personagemNum = 44
+    showInfoFuncionarios()
+
+    personagemNome.textContent = "VFX";
+    personagemDesc.textContent = 'Conhecidas como as irmãs efeitos, responsáveis por toda a magia do rp como efeitos sonoros, que vão desde o sinal tocando até o barulho de uma explosão e efeitos visuais, que vão desde o brilho de Starry até o segundo plano de Alow. Com tamanho trabalho você deve pensar que ambas devem ser bem pagas, mas muito pelo contrário, elas nem sequer são pagas; SFX não se importa muito com isso, mas por outro lado, VFX detesta isso por sempre ficar com o maior esforço para nada.'
+    
+    imgPersonagem.src = "personagens/vfx.png"
+    emoji.src = "emojis/vfx.png"
+    foto.src = "fotos/vfxsfx.png"
+    genero.src = "genero/fem.png"
+
+    txtEspecial.textContent = ""
+    
+    txtEspecie2.textContent = "TBA"
+    txtFamilia2.textContent = "SFX(Irmã)"
+    txtPositivos2.innerHTML = "TBA"
+    txtNegativos2.innerHTML = "TBA"
+    txtData2.textContent = "TBA"
+    txtApelidos2.textContent = "TBA"
+    txtCargo.textContent = "Bastidores"
+    txtHab2.textContent = "TBA"
+    imgAss2.src = "assinaturas/TBA.png"
+    txtInterpretador2.textContent = "Canto"
+    txtDesign2.textContent = "Canto"
+
+    toggleBoxes()
+    document.body.style.backgroundColor = "#042221"
+
+    await sleep(1000)
+    for (let i = 0; i < 1; i++) {
+        var newimg = document.createElement('img');
+        newimg.src = "galeria/vfx" + i + ".png";
+        newimg.setAttribute("class", "imgGallery")
+
+        if(i === 0)
+        {
+            newimg.setAttribute("onclick", "clickGaleria(this, \"Concept da VFX (Feito por Canto)\")")
         }
 
         galeria.appendChild(newimg);
@@ -2446,7 +2606,7 @@ async function btnAnterior()
     await sleep(300)
     if(personagemNum === 0)
     {
-       funcShow[40](); 
+       funcShow[44](); 
     }
     else
     {
@@ -2458,7 +2618,7 @@ async function btnProximo()
 {
     hidePersonagem()
     await sleep(300)
-    if(personagemNum === 40)
+    if(personagemNum === 44)
     {
        funcShow[0](); 
     }

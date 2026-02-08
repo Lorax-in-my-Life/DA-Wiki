@@ -63,20 +63,6 @@ body{
     border-radius: 5%;
 }
 
-#btnRelacoes{
-    background-image: linear-gradient(to bottom,rgb(220, 33, 117) 80%, rgb(172, 21, 79));
-    color: white;
-    font-size: large;
-    height: 80%;
-    padding: 1%;
-    outline: none;
-    justify-content: space-between;
-    width: 20%;
-    font-size: 24px;
-    border: none;
-    border-radius: 5%;
-}
-
 #searchBar
 {
     width: 75%;
@@ -359,12 +345,12 @@ body{
     }
 
     #boxGridPets{
-        grid-template-rows: repeat(3, 20%);
-        margin-bottom: -55%;
+        grid-template-rows: repeat(4, 20%);
+        margin-bottom: 0%;
     }
 
     #boxGridOutros{
-        grid-template-rows: repeat(3, 20%);
+        grid-template-rows: repeat(4, 20%);
         margin-bottom: -200%;
     }
 
