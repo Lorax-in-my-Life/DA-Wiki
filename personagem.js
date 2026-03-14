@@ -316,6 +316,9 @@ async function btnAnterior()
             {
                 personagemPath = Object.values(data)[44]
 
+                btnInfo()
+                relacionamentoBox.innerHTML = ''
+                galeriaBox.innerHTML = ''
                 showPersonagem(personagemPath, 44)
             }
             else
@@ -351,6 +354,9 @@ async function btnProximo()
             {
                 personagemPath = Object.values(data)[44]
 
+                btnInfo()
+                relacionamentoBox.innerHTML = ''
+                galeriaBox.innerHTML = ''
                 showPersonagem(personagemPath, 44)
             }
             else
