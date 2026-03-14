@@ -6,42 +6,53 @@
     scroll-behavior: smooth;
 }
 
-#uparrow
+#wrapper
 {
-    position: fixed;
-    scale: 0.3;
-    left: 87%;
-    top: 75%;
-    z-index: 99;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
 }
 
 body{
-    background-color: #1e1e1e;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     overflow-x: hidden;
-    max-width: 100%;
-    transition: background-color 0.5s ease-in; 
+    max-width: 100%; 
+    position: relative;
 }
+
 
 #header{
     background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
     width: 100%;
-    height: 75px;
+    height: 25%;
+    position: fixed;
+    z-index: 999;
     display: flex;
+    top:0;
 }
 
-#buttons_header button{
-    background-image: linear-gradient(to bottom,rgb(83, 33, 220) 80%, rgb(7, 26, 96));
-    color: white;
+#logoDA{
+    transition: rotate 0.2s ease-in; 
+    height: 85%;
+    margin: 0.5%;
+}
+
+#buttons_header img{
     font-size: large;
-    height: 60%;
     padding: 1%;
     outline: none;
     justify-content: space-between;
     margin-left: 2%;
-    width: 17%;
-    font-size: 16px;
-    border: none;
-    border-radius: 5%;
+    width: 15%;
+    transition: 0.2s;
+}
+
+.btnheader:hover, .btnPersonagem:hover
+{
+    scale: 1.1;
 }
 
 #btnProximos
@@ -63,30 +74,18 @@ body{
     border-radius: 5%;
 }
 
-#searchBar
-{
-    width: 75%;
-    height: 50%;
-    font-size: 32px;
-    border: none;
-    outline: none;
-    background-color: rgb(217, 217, 217);
-    border-radius: 10px;
-    margin-top: 20px;
-    transition: opacity 0.2s ease-out; 
-}
-
 #header h1{
     margin-top: 1%;
     font-weight: bold;
-    margin-right: 3%;  
+    margin-right: 1%;  
     color: blue;
+    font-size: 48px;
 }
 
 #buttons_header
 {
     z-index: 50;
-    margin-top: 1%;
+    margin-top: 3%;
     width: 80%;
     height: 75px;
 }
@@ -95,36 +94,55 @@ body{
 {
     opacity: 0;
     transition: opacity 0.2s ease-out; 
-    height: 100%;
+    height: auto;
+    margin-top: 15%;
+}
+
+#mainAlunos
+{
+    margin-bottom: 25%;
+}
+
+#mainFuncionarios
+{
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+
+#mainPets
+{
+    margin-top: 5%;
+}
+
+#mainOutros
+{
+    margin-top: -15%;
 }
 
 .boxGrid{
     width: 100%;
     height: 98vh;
     display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(5, 15%);
     column-gap: 4%;
     row-gap: 10%;
     padding: 4%;
 }
 
 #boxGridAlunos{
-    grid-template-rows: repeat(5, 40%);
-    margin-bottom: 1050px;
+    grid-template-rows: repeat(5, 30%);
 }
 
 #boxGridFuncionarios{
-    grid-template-rows: repeat(3, 40%);
-    margin-bottom: 22%;
+    grid-template-rows: repeat(3, 30%);
 }
 
 #boxGridPets{
-    grid-template-rows: repeat(2, 40%);
-    margin-bottom: -5%;
+    grid-template-rows: repeat(2, 30%);
 }
 
 #boxGridOutros{
-    grid-template-rows: repeat(2, 40%);
+    grid-template-rows: repeat(2, 30%);
 }
 
 .characterbox{
@@ -138,6 +156,7 @@ body{
 
 .characterbox:hover{
     transform: scale(1.1)
+    rotate(5deg)
 }
 
 .characterbox img{
@@ -149,8 +168,7 @@ body{
 
 .maintext{
     text-align: center;
-    margin: 5%;
-    font-size: 60px;
+    font-size: 100px;
     color: white;
 }
 
@@ -174,49 +192,95 @@ body{
     transition: opacity 0.2s ease-out; 
 }
 
+#mainPersonagem
+{
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+#persoBox
+{
+    display:flex;
+}
+
 #imgPersonagem
 {
-    margin-left: -100%;
     transition: margin-left 0.3s ease;
-    filter: drop-shadow(20px 0px 0 rgb(255, 255, 255));
-    height: 100%;
+    filter: drop-shadow(10px 0px 0 rgb(255, 255, 255));
+    margin-top: -10%;
+    margin-left: -10%;
+    width: 55%;
 }
 
-#personagemNome{
-    font-size: 48px;
-    margin-right: 2%;
-}
-
-#descBox
+#descBox, #relacionamentoBox, #galeriaBox
 {
     z-index: 2;
+    margin-top: 1%;
     padding: 2%;
-    margin-top: 10%;
-    margin-left: -15%;
     background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
     border-radius: 5%;
     text-align: center;
     width: 45%;
-    margin-bottom: 5%;
-    height: 1400px;
+    height: 400px;
+    margin-left: -42%;
+    overflow: auto;
+    transition: scale 0.1s ease-out;
 }
 
-#personagemDesc{
-    margin-bottom: 5%;
-}
-
-.tituloDesc
+#relacionamentoBox, #galeriaBox
 {
+    display: none;
+}
+
+#galeriaBox
+{
+    align-items: center;
+}
+
+#descPersonagem, .tituloDesc{
+    font-size: 32px;
+    margin-bottom: 2%;
+}
+
+.infoPersonagem
+{
+    margin-left: 2%;
     font-size: 24px;
 }
 
-#imgAss, #imgAss2, #emoji, #genero, .imgGallery
+#tituloPersonagem
 {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
 }
+
+#personagemNome, #btnSetas{
+    font-size: 64px;
+    color:white;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#btnSetas
+{
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ #personagemEmoji, #personagemGenero
+ {
+    height: 100px;
+ }
+
+ .infos
+ {
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
 
 #tituloNome{
     height: 7%;
@@ -225,77 +289,34 @@ body{
     justify-content: center;
 }
 
-#foto
+#rightSide
 {
-    position: relative;
-    z-index: 3;
-    width: 30%;
-    rotate: 7deg;
-    margin-right: -70%;
-    margin-top: -10%
+    margin-top: -5%;
+    margin-right: -57%;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
 }
 
-#logoDA{
-    margin-left: 1%;
-    transition: rotate 0.2s ease-in; 
-    height: 75px;
+#personagemFoto
+{
+    width: 16%;
+    rotate: 7deg;
+    margin-left: 5%;
+}
+
+.btnPersonagem
+{
+    margin-top: -5%;
+    width: 15%;
+    transition: 0.2s;
+    margin-left: 5%;
 }
 
 #txtEspecial{
     color: white;
-    margin-top: -15%;
     font-size: 24px;
     text-align: center;
-    margin-left: -95%;
-}
-
-
-.relacionamentos
-{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-}
-
-#galeriaFull
-{
-    display: none;
-    text-align: center;
-    justify-content: center;
-}
-
-#galeria
-{
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    grid-auto-rows: min-content;
-    column-gap: 5%;
-    row-gap: 5%;
-    padding: 2%;
-}
-
-#modal
-{
-    z-index: 200;
-    display: none;
-    justify-content: center;
-    align-content: center;
-    position: fixed;
-}
-
-#modalImg{
-    height: 80%;
-    margin-top: 5%;
-}
-
-#modalBox
-{
-    height: 100vh;
     width: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.25);
-    text-align: center;
-    color: white;
 }
 
 @media (max-width: 600px)
@@ -303,143 +324,139 @@ body{
     #header{
         background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
         width: 100%;
-        height: 125px;
-        display: grid;
-        grid-template-areas: "logo logotxt searchbar"
-        "buttons";
+        height: 10%;
+        position: fixed;
+        display: inline;
+        z-index: 999;
+        top:0;
     }
 
-    #searchBar
+    #logoDA{
+        height: 50%;
+        margin-left: 0.5%;
+        margin-top: 0.5%;
+    }
+
+    #buttons_header img{
+        justify-content: space-between;
+        margin-left: 1%;
+        width: 20%;
+        height: 35%;
+        transition: 0.2s;
+    }
+
+    .btnheader:hover, .btnPersonagem:hover
     {
-        width: 65%;
-        height: 20%;
-        font-size: 28px;
-        border: none;
-        outline: none;
-        background-color: rgb(217, 217, 217);
-        border-radius: 10px;
-        margin-top: 20px;
+        scale: 1.1;
+    }
+
+    #header h1{
+        margin-top: 1%;
+        font-weight: bold;
+        margin-right: 1%;  
+        color: blue;
+        font-size: 48px;
+    }
+
+    #buttons_header
+    {
+        z-index: 50;
+        margin-top: -1%;
+        width: 100%;
+        height: 75px;
+        display: flex;
+    }
+
+    .main
+    {
+        opacity: 0;
         transition: opacity 0.2s ease-out; 
-        grid-area: searchbar;
-        margin-left: 25%;
+        height: auto;
+        margin-top: 30%;
+    }
+
+    #mainAlunos
+    {
+        margin-bottom: 195%;
+    }
+
+    #mainFuncionarios
+    {
+        margin-top: 25%;
+        margin-bottom: 55%;
+    }
+
+    #mainPets
+    {
+        margin-top: 5%;
+    }
+
+    #mainOutros
+    {
+        margin-top: -85%;
+        margin-bottom: 10%;
     }
 
     .boxGrid{
         width: 100%;
         height: 98vh;
         display: grid;
-        grid-template-columns: repeat(2, 40%);
+        grid-template-columns: repeat(2, 43%);
         column-gap: 5%;
-        row-gap: 5%;
-        padding: 5%;
+        row-gap: 3%;
+        padding: 4%;
     }
 
     #boxGridAlunos{
-        grid-template-rows: repeat(10, 20%);
-        margin-bottom: 1350px;
+        grid-template-rows: repeat(9, 18%);
     }
 
     #boxGridFuncionarios{
-        grid-template-rows: repeat(6, 20%);
-        margin-bottom: 100%;
+        grid-template-rows: repeat(6, 18%);
     }
 
     #boxGridPets{
-        grid-template-rows: repeat(4, 20%);
-        margin-bottom: 0%;
+        grid-template-rows: repeat(3, 18%);
     }
 
     #boxGridOutros{
-        grid-template-rows: repeat(4, 20%);
-        margin-bottom: -200%;
+        grid-template-rows: repeat(5, 18%);
     }
 
-    #imgPersonagem
-    {
-        margin-left: -200%;
-        transition: margin-left 0.3s ease;
-        filter: drop-shadow(20px 0px 0 rgb(255, 255, 255));
-        height: 100%;
-        top: 0;
-    }
-
-    #personagemNome{
-        font-size: 32px;
-        margin-right: 2%;
-    }
-
-    #descBox
-    {
-        z-index: 2;
-        padding: 2%;
-        margin-top: 20%;
-        margin-left: -150%;
+    .characterbox{
         background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
-        border-radius: 2%;
+        border-radius: 10%;
         text-align: center;
-        width: 65%;
-        height: 1700px;
+        align-content: center;
+        transition: transform 0.3s ease; 
+        transform-origin: center;
     }
 
-    #tituloNome{
-        margin-top: -5%;
-        height: 7%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .characterbox:hover{
+        transform: scale(1.1)
+        rotate(5deg)
     }
 
-    #foto
-    {
-        position: relative;
-        z-index: 3;
-        width: 50%;
-        rotate: 7deg;
-        margin-right: -70%;
-        margin-top: -20%
-    }
-    
-    #buttons_header
-    {
-        width: 100%;
-        grid-area: buttons;
-        margin-top: 25%;
-        margin-left: -10%;
+    .characterbox img{
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
     }
 
-    #buttons_header button{
-        background-image: linear-gradient(to bottom,rgb(83, 33, 220) 80%, rgb(7, 26, 96));
+    .maintext{
+        text-align: center;
+        font-size: 25px;
         color: white;
-        height: 35%;
-        padding: 1%;
-        outline: none;
-        justify-content: space-between;
-        width: 16%;
-        font-size: 8px;
-        border: none;
-        border-radius: 5%;
-    }
-
-    #header h1{
-        margin-top: 4%;
-        font-weight: bold;
-        margin-right: 2%;  
-        color: blue;
-        margin-left: 7%;
-        grid-area: logotxt;
-    }
-
-    #logoDA{
-        grid-area: logo;
-        margin-left: -15%;
     }
 
     .namebox{
         z-index: 2;
         background-color: rgb(83, 33, 220);
         color: rgb(255, 255, 255);
-        width: 65%;
-        height: 20%;
+        font-size: 12px;
+        width: 45%;
+        height: 10%;
         text-align: center;
         align-content: center;
         margin-left: 30%;
@@ -447,66 +464,161 @@ body{
         border-radius: 5%;
     }
 
+    #personagem{
+        display: none;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.2s ease-out; 
+    }
+
+    #mainPersonagem
+    {
+        opacity: 0;
+        transition: opacity 0.2s ease-out;
+    }
+
+    #persoBox
+    {
+        display:block;
+        text-align: center;
+    }
+
+    #imgPersonagem
+    {
+        filter: drop-shadow(5px 0px 0 rgb(255, 255, 255));
+        margin-top: -10%;
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    #descBox, #relacionamentoBox, #galeriaBox
+    {
+        z-index: 2;
+        margin-top: 1%;
+        padding: 2%;
+        background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
+        border-radius: 5%;
+        text-align: center;
+        width: 80%;
+        height: 400px;
+        margin-left: 10%;
+        overflow: auto;
+        transition: scale 0.1s ease-out;
+    }
+
+    #relacionamentoBox, #galeriaBox
+    {
+        display: none;
+    }
+
+    #galeriaBox
+    {
+        align-items: center;
+    }
+
+    #descPersonagem, .tituloDesc{
+        font-size: 20px;
+        margin-bottom: 2%;
+    }
+
+    .infoPersonagem
+    {
+        margin-left: 2%;
+        font-size: 16px;
+    }
+
+    #tituloPersonagem
+    {
+        width: 100%;
+        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #personagemNome, #btnSetas{
+        font-size: 28px;
+        color:white;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #btnSetas
+    {
+        cursor: pointer;
+    }
+
+    #personagemEmoji, #personagemGenero
+    {
+        height: 50px;
+    }
+
+    .infos
+    {
+        margin-bottom: 2%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #tituloNome{
+        height: 7%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #rightSide
+    {
+        margin-top: -5%;
+        margin-right: -57%;
+        display: grid;
+        grid-template-areas: "foto btn1"
+        "foto btn2"
+        "foto btn3";
+    }
+
+    #personagemFoto
+    {
+        width: 75%;
+        rotate: 7deg;
+        margin-left: 5%;
+        grid-area: foto;
+        margin-top: 15%;
+    }
+
+    #btnInfo
+    {
+        margin-top: 25%;
+        grid-area: btn1;
+    }
+
+    #btnRelacionamento
+    {
+        grid-area: btn2;
+    }
+
+    #btnGaleria
+    {
+        grid-area: btn3;
+    }
+
+    .btnPersonagem
+    {
+        width: 35%;
+        transition: 0.2s;
+        margin-left: -15%;
+    }
+
     #txtEspecial{
         color: white;
-        margin-top: -15%;
         font-size: 12px;
         text-align: center;
-        margin-left: -45%;
+        width: 100%;
+        margin-bottom: 5%;
     }
 
-    #emoji, #genero
+    #assPersonagem
     {
-        max-width: 50%;
-        max-height: 50%;
-        height: auto;
-        width: auto;
-    }
-
-    #btnProximos
-    {
-        margin-bottom: 10%;
-    }
-
-    #btnProximos button{
-        background-image: linear-gradient(to bottom,rgb(83, 33, 220) 80%, rgb(7, 26, 96));
-        color: white;
-        font-size: large;
-        height: 80%;
-        padding: 1%;
-        outline: none;
-        justify-content: space-between;
-        margin-left: 2%;
-        width: 30%;
-        font-size: 18px;
-        border: none;
-        border-radius: 5%;
-    }
-
-    #uparrow
-    {
-        position: fixed;
-        scale: 0.3;
-        left: 50%;
-        top: 80%;
-        z-index: 99;
-    }
-
-    #galeria
-    {
-        display: grid;
-        grid-template-columns: repeat(2, 40%);
-        grid-auto-rows: min-content;
-        column-gap: 10%;
-        row-gap: 5%;
-        padding: 4%;
-    }
-
-    .imgGallery
-    {
-        max-width: 100%;
-        max-height: 100%;
-        height: auto;
-        width: auto;
+        width: 100%;
     }
 }

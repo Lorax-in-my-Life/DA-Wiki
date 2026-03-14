@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>DA Wiki</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+<body onload="load()">
+
+    <div id="wrapper">
+
+        <div id="header">
+            <img id="logoDA" onclick="changeLogo()" src="logowiki.png" alt="">
+            <div id="buttons_header">
+                <img class="btnheader" onclick="btnTodos()" src="imagens/btntodos.png" alt="">
+                <img class="btnheader" onclick="btnAlunos()" src="imagens/btnalunos.png" alt="">
+                <img class="btnheader" onclick="btnFuncionarios()" src="imagens/btnfunc.png" alt="">
+                <img class="btnheader" onclick="btnPets()" src="imagens/btnpets.png" alt="">
+                <img class="btnheader" onclick="btnOutros()" src="imagens/btnoutros.png" alt="">
+            </div>
+        </div>
+
+        <div id="mainPersonagem">
+
+            <div id="tituloPersonagem">
+                <h1 onclick="btnAnterior()" id="btnSetas">&lt</h1>
+                <img id="personagemEmoji" src="" alt="">
+                <h1 id="personagemNome"></h1>
+                <img id="personagemGenero" src="" alt="">
+                <h1 onclick="btnProximo()" id="btnSetas">&gt</h1>
+            </div>
+
+            <div id="txtEspecial"></div>
+
+            <div id="persoBox">
+                <div><img id="imgPersonagem" src="" alt=""></div>
+                <div id="descBox">
+                    <h1 id="descPersonagem"></h1>
+
+                    <div class="infos">
+                        <h1 class="tituloDesc">Espécie</h1>
+                        <h1 class="infoPersonagem" id="especiePersonagem"></h1>
+                    </div>
+
+                    <div class="infos" id="infoData">
+                        <h1 class="tituloDesc">Data de Aniversário</h1>
+                        <h1 class="infoPersonagem" id="dataPersonagem"></h1>
+                    </div>
+
+                    <div class="infos" id="infoDono">
+                        <h1 class="tituloDesc">Dono</h1>
+                        <h1 class="infoPersonagem" id="donoPersonagem"></h1>
+                    </div>
+
+                    <div class="infos" id="infoCargo">
+                        <h1 class="tituloDesc">Cargo</h1>
+                        <h1 class="infoPersonagem" id="cargoPersonagem"></h1>
+                    </div>
+
+                    <div class="infos">
+                        <h1 class="tituloDesc">Altura</h1>
+                        <h1 class="infoPersonagem" id="alturaPersonagem"></h1>
+                    </div>
+
+                    <div class="infos" id="infoMateria">
+                        <h1 class="tituloDesc">Matérias Favoritas</h1>
+                        <h1 class="infoPersonagem" id="materiasPersonagem"></h1>
+                    </div>
+
+                    <div class="infos">
+                        <h1 class="tituloDesc">Interpretador</h1>
+                        <h1 class="infoPersonagem" id="interpretadorPersonagem"></h1>
+                    </div>
+
+                    <div class="infos">
+                        <h1 class="tituloDesc">Design</h1>
+                        <h1 class="infoPersonagem" id="designPersonagem"></h1>
+                    </div>
+
+                    <h1 class="assinaturaTitulo" id="infoAss">Assinatura</h1>
+                    <img id="assPersonagem" src="" alt="">
+                </div>
+
+                <div id="relacionamentoBox"></div>
+                <div id="galeriaBox"></div>
+
+                <div id="rightSide">
+                    <img id="personagemFoto" src="" alt="">
+                    <img onclick="btnInfo()" class="btnPersonagem" id="btnInfo" src="imagens/btninfo.png" alt="">
+                    <img onclick="btnRelacionamento()" class="btnPersonagem" id="btnRelacionamento" src="imagens/btnrelacionamentos.png" alt="">
+                    <img onclick="btnGaleria()" class="btnPersonagem" id="btnGaleria" src="imagens/btngaleria.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+               
+    <script src="personagem.js"></script>
+</body>
