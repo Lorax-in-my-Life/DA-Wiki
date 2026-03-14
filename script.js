@@ -158,8 +158,6 @@ async function btnAlunos()
     mainAlunos.style.display = "block"
     await sleep(100)
     mainAlunos.style.opacity = 1
-    searchBar.style.opacity = 1
-    searchBar.disabled = false
 }
 
 async function btnFuncionarios()
@@ -172,8 +170,6 @@ async function btnFuncionarios()
     mainFuncionarios.style.marginTop = "15%"
     await sleep(100)
     mainFuncionarios.style.opacity = 1
-    searchBar.style.opacity = 1
-    searchBar.disabled = false
 }
 
 async function btnPets()
@@ -186,8 +182,6 @@ async function btnPets()
     mainPets.style.marginTop = "15%"
     await sleep(100)
     mainPets.style.opacity = 1
-    searchBar.style.opacity = 1
-    searchBar.disabled = false
 }
 
 async function btnOutros()
@@ -200,6 +194,4 @@ async function btnOutros()
     mainOutros.style.marginTop = "15%"
     await sleep(100)
     mainOutros.style.opacity = 1
-    searchBar.style.opacity = 1
-    searchBar.disabled = false
 }
