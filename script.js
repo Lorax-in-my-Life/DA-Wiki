@@ -15,6 +15,8 @@ const boxGridOutros = document.getElementById("boxGridOutros");
 
 const main = document.querySelectorAll("main")
 
+const screenWidth = window.innerWidth;
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -139,7 +141,14 @@ async function btnTodos()
     mainPets.style.display = "block"
     mainPets.style.marginTop = "5%"
     mainOutros.style.display = "block"
-    mainOutros.style.marginTop = "-15%"
+    if(screenWidth > 600)
+    {
+        mainOutros.style.marginTop = "-15%"
+    }
+    else
+    {
+        mainOutros.style.marginTop = "-85%"
+    }
 
     await sleep(100)
 
@@ -167,7 +176,7 @@ async function btnFuncionarios()
     hideOutros()
 
     mainFuncionarios.style.display = "block"
-    mainFuncionarios.style.marginTop = "15%"
+    mainFuncionarios.style.marginTop = "25%"
     await sleep(100)
     mainFuncionarios.style.opacity = 1
 }
@@ -179,7 +188,7 @@ async function btnPets()
     hideOutros()
 
     mainPets.style.display = "block"
-    mainPets.style.marginTop = "15%"
+    mainPets.style.marginTop = "5%"
     await sleep(100)
     mainPets.style.opacity = 1
 }
@@ -191,7 +200,14 @@ async function btnOutros()
     hidePets()
 
     mainOutros.style.display = "block"
-    mainOutros.style.marginTop = "15%"
+    if(screenWidth > 600)
+    {
+        mainOutros.style.marginTop = "-15%"
+    }
+    else
+    {
+        mainOutros.style.marginTop = "-85%"
+    }
     await sleep(100)
     mainOutros.style.opacity = 1
 }

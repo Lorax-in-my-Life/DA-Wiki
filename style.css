@@ -319,6 +319,11 @@ body{
     width: 100%;
 }
 
+#assPersonagem
+{
+    width: 100%;
+}
+
 @media (max-width: 600px)
 {
     #header{
