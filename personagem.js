@@ -101,7 +101,31 @@ function showPersonagem(personagemPath, id)
     }
 
     imgPersonagem.src = "personagens/" + personagemPath.img + ".png";
-    personagemNome.textContent = personagemPath.nome;
+    if(id === 36)
+    {
+        const golden = Math.floor(Math.random() * 250);
+        if(golden === 0)
+        {
+            imgPersonagem.style.filter = "sepia(1) saturate(7) hue-rotate(10deg) brightness(1)";
+        }
+    }
+
+    if(id === 7)
+    {
+        const bucsetan = Math.floor(Math.random() * 50);
+        if(bucsetan === 0)
+        {
+            personagemNome.textContent = "Daniel Bucsetan"
+        }
+        else
+        {
+            personagemNome.textContent = personagemPath.nome;
+        }
+    }
+    else
+    {
+        personagemNome.textContent = personagemPath.nome;
+    }
     descPersonagem.textContent = personagemPath.desc;
     personagemEmoji.src = "emojis/" + personagemPath.emoji + ".png";
     personagemGenero.src = "genero/" + personagemPath.genero + ".png";
