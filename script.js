@@ -15,7 +15,7 @@ const boxGridOutros = document.getElementById("boxGridOutros");
 
 const main = document.querySelectorAll("main")
 
-const screenWidth = window.innerWidth;
+const screenWidth = screen.width;
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));

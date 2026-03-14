@@ -23,9 +23,9 @@ const infoCargo = document.getElementById('infoCargo')
 const infoAss = document.getElementById('infoAss')
 const infoDono = document.getElementById('infoDono')
 
-const screenWidth = window.innerWidth;
+const screenWidth = screen.width;
 
-if(window.width > 600)
+if(screen.width > 600)
 {
     document.body.style.overflowY = "hidden"
 }
