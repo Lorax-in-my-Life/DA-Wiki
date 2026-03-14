@@ -176,7 +176,14 @@ async function btnFuncionarios()
     hideOutros()
 
     mainFuncionarios.style.display = "block"
-    mainFuncionarios.style.marginTop = "25%"
+    if(screenWidth > 600)
+    {
+        mainFuncionarios.style.marginTop = "15%"
+    }
+    else
+    {
+        mainFuncionarios.style.marginTop = "30%"
+    }
     await sleep(100)
     mainFuncionarios.style.opacity = 1
 }
@@ -188,7 +195,14 @@ async function btnPets()
     hideOutros()
 
     mainPets.style.display = "block"
-    mainPets.style.marginTop = "5%"
+    if(screenWidth > 600)
+    {
+        mainPets.style.marginTop = "15%"
+    }
+    else
+    {
+        mainPets.style.marginTop = "30%"
+    }
     await sleep(100)
     mainPets.style.opacity = 1
 }
@@ -202,11 +216,11 @@ async function btnOutros()
     mainOutros.style.display = "block"
     if(screenWidth > 600)
     {
-        mainOutros.style.marginTop = "-15%"
+        mainOutros.style.marginTop = "15%"
     }
     else
     {
-        mainOutros.style.marginTop = "-85%"
+        mainOutros.style.marginTop = "30%"
     }
     await sleep(100)
     mainOutros.style.opacity = 1
