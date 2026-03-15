@@ -25,25 +25,11 @@ const infoDono = document.getElementById('infoDono')
 
 const screenWidth = screen.width;
 
-if(screen.width > 600)
-{
-    document.body.style.overflowY = "hidden"
-}
-
 const descBox = document.getElementById('descBox')
 const relacionamentoBox = document.getElementById('relacionamentoBox')
 const galeriaBox = document.getElementById('galeriaBox')
 
-let nomes = [
-    "alexander", "alow", "angela", "bellie", "bleeds", "cristian", "crystal", "daniel", "evelyn", "félix",
-    "kate", "leonard", "lorette", "luna", "melissa", "nick", "paulo", "stella", "stephanie", "ambrósio",
-    "elisângela", "flarence", "gerônimo", "gertrudes", "gomes", "ludden", "lunaris", "márcio", "sonia",
-    "vincent", "cuscolar", "faisca", "mortimer", "nynphx", "starry", "tom", "vivy", "eugênio", "frederick", "jorge", 
-    "moldu", "sfx", "srpinheiros", "vanessa", "vfx"
-]
-
 let personagemPath = null
-
 let personagemNum = 0
 
 

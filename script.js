@@ -50,6 +50,70 @@ function load()
     }
 }
 
+async function fetchJsonData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const jsonData = await response.json();
+    return jsonData;
+  } catch (error) {
+    console.error("Error fetching JSON:", error);
+    return null;
+  }
+}
+
+fetchJsonData('./personagens.json').then(data => {
+    if (data) 
+    {
+        for (let i = 0; i < 45; i++) {
+            personagemPath = Object.values(data)[i];
+            var newdiv = document.createElement('div');
+            newdiv.id = personagemPath.nome
+            newdiv.className = "listaPersonagem"
+            newdiv.style.display = "none"
+            newdiv.addEventListener("click", escolhePersonagem)
+            var imgchar = document.createElement('img');
+            imgchar.src = "personagens/" + personagemPath.img + ".png";
+            imgchar.style.width = "100px";
+            var newh1 = document.createElement('h1');
+            newh1.textContent = personagemPath.nome
+
+            newdiv.appendChild(imgchar);
+            newdiv.appendChild(newh1);
+
+            personagemLista.appendChild(newdiv)
+            listadepersonagens.push(personagemPath.img)
+        }
+        fullpersonagemLista = document.querySelectorAll('.listaPersonagem')
+    }
+});
+
+function searchBar()
+{
+    if(pesquisa.value === "")
+    {
+        personagemLista.style.display = "none"
+    }
+    else
+    {
+        personagemLista.style.display = "block"
+        for (let i = 0; i < 45; i++)
+        {
+            const element = document.getElementById(fullpersonagemLista[i].id)
+            if(fullpersonagemLista[i].id.toLowerCase().includes(pesquisa.value.toLowerCase()))
+            {
+                element.style.display = "flex"
+            }
+            else
+            {
+                element.style.display = "none"
+            }
+        }
+    }
+}
+
 async function personagemShow(personagem)
 {
     sessionStorage.setItem("personagem", personagem);
