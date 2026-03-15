@@ -86,8 +86,9 @@ function showPersonagem(personagemPath, id)
         infoOutro(personagemPath)
     }
 
+    imgPersonagem.style.filter = "none"
     imgPersonagem.src = "personagens/" + personagemPath.img + ".png";
-    if(id === 36)
+    if(id === 36 || id === 44)
     {
         const golden = Math.floor(Math.random() * 250);
         if(golden === 0)
