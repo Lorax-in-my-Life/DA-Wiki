@@ -29,6 +29,12 @@ const descBox = document.getElementById('descBox')
 const relacionamentoBox = document.getElementById('relacionamentoBox')
 const galeriaBox = document.getElementById('galeriaBox')
 
+const btnDA = document.getElementById('btnDA')
+const btnMU = document.getElementById('btnMU')
+const btnNatal = document.getElementById('btnNatal')
+const btnDemonio = document.getElementById('btnDemonio')
+const btnShenanigans = document.getElementById('btnShenanigans')
+
 let personagemPath = null
 let personagemNum = 0
 
@@ -86,9 +92,50 @@ function showPersonagem(personagemPath, id)
         infoOutro(personagemPath)
     }
 
+    if(personagemPath.formas[0] === false)
+    {
+        btnDA.style.display = "none"
+    }
+    else
+    {
+        btnDA.style.display = "block"
+    }
+    if(personagemPath.formas[1] === false)
+    {
+        btnMU.style.display = "none"
+    }
+    else
+    {
+        btnMU.style.display = "block"
+    }
+    if(personagemPath.formas[2] === false)
+    {
+        btnNatal.style.display = "none"
+    }
+    else
+    {
+        btnNatal.style.display = "block"
+    }
+    if(personagemPath.formas[3] === false)
+    {
+        btnDemonio.style.display = "none"
+    }
+    else
+    {
+        btnDemonio.style.display = "block"
+    }
+    if(personagemPath.formas[4] === false)
+    {
+        btnShenanigans.style.display = "none"
+    }
+    else
+    {
+        btnShenanigans.style.display = "block"
+    }
+
     imgPersonagem.style.filter = "none"
     imgPersonagem.src = "personagens/" + personagemPath.img + ".png";
-    if(id === 36 || id === 44)
+    if(id === 36 || id === 49)
     {
         const golden = Math.floor(Math.random() * 250);
         if(golden === 0)
@@ -287,6 +334,16 @@ async function btnOutros()
     window.location.href = "index.html";
 }
 
+async function btnExclusivosMU()
+{
+    sessionStorage.setItem("botao", "mu");
+
+    mainPersonagem.style.opacity = 1
+    await sleep(300)
+    
+    window.location.href = "index.html";
+}
+
 async function btnInfo()
 {
     relacionamentoBox.style.display = "none"
@@ -325,18 +382,18 @@ async function btnAnterior()
 
             if(srpinheiros === 0)
             {
-                personagemPath = Object.values(data)[44]
+                personagemPath = Object.values(data)[49]
 
                 btnInfo()
                 relacionamentoBox.innerHTML = ''
                 galeriaBox.innerHTML = ''
-                showPersonagem(personagemPath, 44)
+                showPersonagem(personagemPath, 49)
             }
             else
             {
                 if(personagemNum === 0)
                 {
-                    personagemNum = 43
+                    personagemNum = 48
                 }
                 else
                 {
@@ -363,16 +420,16 @@ async function btnProximo()
             
             if(srpinheiros === 0)
             {
-                personagemPath = Object.values(data)[44]
+                personagemPath = Object.values(data)[49]
 
                 btnInfo()
                 relacionamentoBox.innerHTML = ''
                 galeriaBox.innerHTML = ''
-                showPersonagem(personagemPath, 44)
+                showPersonagem(personagemPath, 49)
             }
             else
             {
-                if(personagemNum === 43)
+                if(personagemNum === 48)
                 {
                     personagemNum = 0
                 }
@@ -400,3 +457,108 @@ document.addEventListener('keydown', function(event) {
         btnProximo()
     }
 });
+
+function btnFormaDA()
+{
+    fetchJsonData('./personagens.json').then(data => {
+        if (data) 
+        {
+            personagemPath = Object.values(data)[personagemNum]
+            imgPersonagem.src = "personagens/" + personagemPath.img + ".png";
+            personagemEmoji.src = "emojis/" + personagemPath.emoji + ".png"
+            descPersonagem.textContent = personagemPath.desc
+            if(personagemNum === 4)
+            {
+                personagemNome.textContent = "Bleeds Ooxrot"
+            }
+            else if(personagemNum === 22)
+            {
+                personagemNome.textContent = "Gomes Rex"
+            }
+        }
+    });
+}
+
+function btnFormaMU()
+{
+    fetchJsonData('./personagens.json').then(data => {
+        if (data) 
+        {
+            personagemPath = Object.values(data)[personagemNum]
+            imgPersonagem.src = "personagens/MU/personagens/" + personagemPath.img + ".png";
+            personagemEmoji.src = "emojis/MU/" + personagemPath.emoji + ".png"
+            descPersonagem.textContent = personagemPath.descMU
+            if(personagemNum === 4)
+            {
+                personagemNome.textContent = "Patty Liniker"
+            }
+            else if(personagemNum === 22)
+            {
+                personagemNome.textContent = "King Gomes"
+            }
+        }
+    });
+}
+
+function btnFormaNatal()
+{
+    fetchJsonData('./personagens.json').then(data => {
+        if (data) 
+        {
+            personagemPath = Object.values(data)[personagemNum]
+            imgPersonagem.src = "personagens/MU/formas/" + personagemPath.img + "N.png";
+            personagemEmoji.src = "emojis/MU/" + personagemPath.emoji + ".png"
+            descPersonagem.textContent = personagemPath.descMU
+            if(personagemNum === 4)
+            {
+                personagemNome.textContent = "Patty Liniker"
+            }
+            else if(personagemNum === 22)
+            {
+                personagemNome.textContent = "King Gomes"
+            }
+        }
+    });
+}
+
+function btnFormaDemonio()
+{
+    fetchJsonData('./personagens.json').then(data => {
+        if (data) 
+        {
+            personagemPath = Object.values(data)[personagemNum]
+            imgPersonagem.src = "personagens/MU/formas/" + personagemPath.img + "D.png";
+            personagemEmoji.src = "emojis/MU/" + personagemPath.emoji + ".png"
+            descPersonagem.textContent = personagemPath.descMU
+            if(personagemNum === 4)
+            {
+                personagemNome.textContent = "Patty Liniker"
+            }
+            else if(personagemNum === 22)
+            {
+                personagemNome.textContent = "King Gomes"
+            }
+        }
+    });
+}
+
+function btnFormaShenanigans()
+{
+    fetchJsonData('./personagens.json').then(data => {
+        if (data) 
+        {
+            personagemPath = Object.values(data)[personagemNum]
+            imgPersonagem.src = "personagens/MU/formas/" + personagemPath.img + "A.png";
+            personagemEmoji.src = "emojis/MU/" + personagemPath.emoji + ".png"
+            descPersonagem.textContent = personagemPath.descMU
+            if(personagemNum === 4)
+            {
+                personagemNome.textContent = "Patty Liniker"
+            }
+            else if(personagemNum === 22)
+            {
+                personagemNome.textContent = "King Gomes"
+            }
+        }
+    });
+}

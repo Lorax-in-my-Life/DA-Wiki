@@ -22,7 +22,9 @@
         "relacionamento_categoria": ["familia", "incerto", "familia", "familia"],
         "relacionamento_desc": ["Irmã Gêmea", "Incerto", "Pai", "Mãe"],
         "galeria": "alexkate",
-        "galeria_desc": ["Concept dos gêmeos 1", "Concept dos gêmeos 2"]
+        "galeria_desc": ["Concept dos gêmeos 1", "Concept dos gêmeos 2"],
+        "formas": [true, true, true, false, false],
+        "descMU": "Eles são conhecidos como Irmãos Jacksons,para simplificar;Alexander é sempre caótico e encrenqueiro que vive tentando causar caos e destruição,mas muitas vezes tem seus planos arruinados por sua irmã gêmea,Kate,que também gosta um pouco de caos,mas ela sabe os limites que não devem ser ultrapassados e também sabe se comportar quando deve,muito pelo contrário de seu irmão...Algumas pegadinhas deles já levaram várias criaturas para o hospital com ferimentos,isso fez com que Kate mudasse suas atitudes,mas para Alexander,isso foi apenas um gatilho para continuar com isso.Apesar de parecerem infantis,eles já são Dragões adolescentes,o espírito da Ira de sua forma dragão está aprisionado em seus colares,que pode ser despertado ao juntar as duas peças,os transformando em um terrível e enorme dragão de 2 cabeças descontrolado,mas enquanto os dois estiverem cada um com sua parte do colar,não apresentam nenhum risco...acredito eu..."
     },
     "alow":
     {
@@ -47,7 +49,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "alow",
-        "galeria_desc": ["Concept de Alow na capa da primeira Temporada", "Silhueta de Alow", "Concept de Alow 1", "Concept de Alow 2", "Concept de Alow 3", "Concept de Alow 4", "Alow com tema de Tempos Antigos"]
+        "galeria_desc": ["Concept de Alow na capa da primeira Temporada", "Silhueta de Alow", "Concept de Alow 1", "Concept de Alow 2", "Concept de Alow 3", "Concept de Alow 4", "Alow com tema de Tempos Antigos"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "angela":
     {
@@ -72,7 +76,9 @@
         "relacionamento_categoria": ["amor"],
         "relacionamento_desc": ["Namorada"],
         "galeria": "angela",
-        "galeria_desc": ["Concept da Angela 1", "Concept da Angela 2", "Pé da Angela", "Angela do evento de espaço (Feito por Anjel)"]
+        "galeria_desc": ["Concept da Angela 1", "Concept da Angela 2", "Pé da Angela", "Angela do evento de espaço (Feito por Anjel)"],
+        "formas": [true, true, true, false, true],
+        "descMU": "Uma das garotas mais doces que você pode conhecer,é uma amante de música em geral,sempre carrega seu fone consigo para o melhor momento para relaxar enquanto escuta sua playlist.Além de adorar ouvir música,ela também é uma ótima cantora com sua voz angelical,que agrada até os mais duros corações,também sabe tocar alguns instrumentos simples e sonha em se tornar uma Popstar algum dia.Seu pelo é super macio e sedoso,mas ela só deixa tocar nele se for alguém que ela goste muito;além disso ela tem poderes psíquicos,capaz de conjurar objetos ou até mesmo membros extras temporariamente,mesmo que ela não saiba usar muito ele ainda,em contrapartida,ela tem a habilidade de ler mentes e sabe usá-la muito bem,mas por enquanto ela só pode ler a mente de uma criatura por vez."
     },
     "bellie":
     {
@@ -97,7 +103,9 @@
         "relacionamento_categoria": ["amor", "gosta", "odeia", "odeia", "familia"],
         "relacionamento_desc": ["Namorado", "Amigo", "Odeia", "Odeia", "Mãe"],
         "galeria": "bellie",
-        "galeria_desc": ["Concept da Bellie 1", "Concept da Bellie 2", "Concept da Bellie 3", "Concept da Bellie 4", "Concept da Bellie do evento de espaço (Feito por Dandi)", "Bellie do evento de espaço (Feito por Anjel)"]
+        "galeria_desc": ["Concept da Bellie 1", "Concept da Bellie 2", "Concept da Bellie 3", "Concept da Bellie 4", "Concept da Bellie do evento de espaço (Feito por Dandi)", "Bellie do evento de espaço (Feito por Anjel)"],
+        "formas": [true, true, true, true, true],
+        "descMU": "Sempre assistindo esportes masculinos de olho no músculo dos atletas...Essa é Bellie...a líder de torcida das ocasiões especiais da Universidade,considerada uma das mais bonitas daqui,mas talvez seja por sua aparência natural de Demônio Sedutora.Ela ainda é quase que uma demônio criança para a sua espécie,mas já possui a habilidade de forma demoníaca e a sedução,mesmo que ela ainda não saiba usar muito esses poderes.É sempre ativa nas redes sociais e deseja ser famosa e conhecida,ela é um pouco burrinha em algumas atividades,mas é uma ótima atleta e incrivelmente se dá bem com a maioria de seus colegas!"
     },
     "bleeds":
     {
@@ -122,7 +130,9 @@
         "relacionamento_categoria": ["odeia"],
         "relacionamento_desc": ["Não gosta"],
         "galeria": "bleeds",
-        "galeria_desc": ["Design da Bleeds (Feito por Floox)"]
+        "galeria_desc": ["Design da Bleeds (Feito por Floox)"],
+        "formas": [true, true, true, false, true],
+        "descMU": "Uma completa durona que adora coisas mais escuras e o estilo punk no geral,sempre pronta para brigar,com essas faixas amarradas em braços e pernas para ter alguns golpes mais fortes.Apesar de não parecer,ela é muito forte,sendo capaz de quebrar alguns metais com um simples soco ou chute,e também possuí o controle sobre uma energia presente em apenas sua espécie,podendo usar isso para materializar coisas de seu desejo,como sua Guitarra-Machado,que foi herdada de seu pai."
     },
     "cris":
     {
@@ -147,14 +157,16 @@
         "relacionamento_categoria": ["familia", "familia", "familia", "familia", "gosta", "odeia", "odeia"],
         "relacionamento_desc": ["Tia", "Mãe", "Pai", "Pet", "Amigo", "Odeia", "Odeia"],
         "galeria": "cris",
-        "galeria_desc": ["Concept do Cristian"]
+        "galeria_desc": ["Concept do Cristian"],
+        "formas": [true, true, true, false, true],
+        "descMU": "O cientista que fica todo o tempo livre no laboratório fazendo algum experimento,já fez diversos remédios para sua família e amigos,apenas usando sua intuição.Ele é fissurado em estudar todos os tipos de plantas,tanto que já tentou dar consciência para uma,mas digamos que não funcionou 100%,mas com frequência ele tenta fazer novas poções que possam mudar isso e frequentemente falha...Sua espécie não apresenta poderes mágicos,então ele mesmo fez um estoque de poções que podem dar habilidades para ele,como força,proteção,regeneração e etc,mas ele ainda está trabalhando em tentar fazer uma poção dessas com efeito permanente;também sempre anda com seu equipamento de laboratório pois diz que \"nunca se sabe quando é hora de um experimento\",um completo nerd,né?"
     },
     "crystal":
     {
         "categoria": "aluno",
         "id": 6,
         "nome": "Crystal Blosser",
-        "desc": "Uma inventora e tanto, capaz de transformar qualquer ferro velho em uma máquina capaz de fazer qualquer coisa que quiser, uma pena que ela não é uma aluna de verdade e sim uma infiltrada na universidade aguardando o Equinócio. Ela é um demônio temporal, capaz de mudar o tempo de um certo local para o passado ou para futuro, além de poder retroceder ou avançar outras criaturas no tempo, mas é algo que ela ainda treina; apesar desses poderes especiais e poderes normais de demônio, ela possui um arco e flecha capaz de realizar seus poderes a longa distância, seja em objetos, lugares ou criaturas, já que suas flechas somem assim que aplicam o efeito ou realizam o feitiço. Como qualquer criatura nascida originalmente na dimensão do tempo, ela faz parte do departamento temporal, seu cargo lá é construir portais e outras máquinas poderosas, carregar peças foi como um treinamento para ela e sua força inigualável, mas como ainda é uma simples adolescente, não sabe as consequências que podem ocorrer na linha do tempo caso ela faça algo que não deveria.",
+        "desc": "Uma inventora e tanto, capaz de transformar qualquer ferro velho em uma máquina capaz de fazer qualquer coisa que quiser, uma pena que ela não é uma aluna de verdade e sim uma infiltrada na universidade aguardando o Equinócio. Ela é um demônio temporal, capaz de mudar o tempo de um certo local para o passado ou para futuro, além de poder retroceder ou avançar outras criaturas no tempo, mas é algo que ela ainda treina; apesar desses poderes especiais e poderes normais de demônio, ela possui um arco e flecha capaz de realizar seus poderes a longa distância, seja em objetos, lugares ou criaturas, já que suas flechas somem assim que aplicam o efeito ou realizam o feitiço. Como qualquer criatura nascida originalmente na dimensão do tempo, ela faz parte do departamento temporal, seu cargo lá é construir portais e outras máquinas poderosas, carregar peças foi como um treinamento para ela e sua força inigualável, mas como ainda é uma simples adolescente, não sabe as consequências que podem ocorrer na linha do tempo caso ela faça algo que não deveria. Mas talvez, as intenções dela não sejam tão ruins como todos pensam, talvez ela apenas queira justiça.",
         "img": "crystal",
         "emoji": "crystal",
         "foto": "crystal",
@@ -172,7 +184,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "crystal",
-        "galeria_desc": ["Crimson", "Crystal sem o casaco", "Concept da Crystal 1", "Concept da Crystal 2", "Concept das cores da Crystal 1", "Concept das cores da Crystal 2", "Concept das cores da Crystal 3", "Concept das cores da Crystal 4", "Design final da Crystal sem sombreamento", "Concept da Crystal 3"]
+        "galeria_desc": ["Crimson", "Crystal sem o casaco", "Concept da Crystal 1", "Concept da Crystal 2", "Concept das cores da Crystal 1", "Concept das cores da Crystal 2", "Concept das cores da Crystal 3", "Concept das cores da Crystal 4", "Design final da Crystal sem sombreamento", "Concept da Crystal 3"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "daniel":
     {
@@ -197,7 +211,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "",
-        "galeria_desc": []
+        "galeria_desc": [],
+        "formas": [true, true, true, true, true],
+        "descMU": "Ele é um cara durão que não liga para absolutamente nada e sempre está pegando no pé dos alunos mais fracos só por puro entretenimento próprio,talvez seja porque ele cresceu e viveu com sua tia sem saber o que realmente aconteceu com seus pais.Ele tem uma forma demoníaca como qualquer demônio adulto e a habilidade de virar uma criatura de chamas que todo demônio consegue após passar por uma batalha difícil;ele chama atenção pois ele não tem uma cauda como todos de sua espécie,mas em sua forma demoníaca aparece uma cauda de fogo para substituir a original,alguns dizem que ele mesmo a arrancou para mostrar o quão durão ele é,o que também chama a atenção é que sua chama é azul,a chama mais ardente de todos,poucos demônios simples consegue atingir esse nível;tudo sobre ele é um mistério,talvez seja um segredo doloroso escondido dentro de si mesmo e das correntes que aparecem em seu corpo quando assume sua forma demoníaca,talvez isso seja revelado com o tempo,ou com ajuda de alguém que amoleça seu coração..."
     },
     "evelyn":
     {
@@ -222,7 +238,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "evelyn",
-        "galeria_desc": ["Concept da Evelyn 1", "Concept da Evelyn 2", "Evelyn do evento de espaço (Feito por St)"]
+        "galeria_desc": ["Concept da Evelyn 1", "Concept da Evelyn 2", "Evelyn do evento de espaço (Feito por St)"],
+        "formas": [true, true, false, false, true],
+        "descMu": "Ela é a prova viva de que tamanho não é documento...ou limite para energia,ela é de longe a mais rápida de toda a universidade e também a mais elétrica,literalmente.Seu poderes são todos baseados em eletricidade,quando está correndo é visível apenas como uma espécie de raio,o seu pelo é um ótimo condutor de energia,mas ela também deixa tocá-lo sem te eletrocutar;é melhor se afastar quando ela estiver com algum sentimento no ápice,pois ela solta uma descarga elétrica em uma pequena área ao redor dela,que pode te machucar um pouco.Ela apenas chegou na universidade por causa da Stephanie,que é sua maior ídolo,também é totalmente submissa à ela e a quem mais ela gostar,pena que é ingênua..."
     },
     "felix":
     {
@@ -247,7 +265,9 @@
         "relacionamento_categoria": ["familia", "gosta", "gosta"],
         "relacionamento_desc": ["Pai", "Amigo", "Amiga"],
         "galeria": "felix",
-        "galeria_desc": ["Concept de Félix 1", "Concept de Félix 2", "Concept de Félix 3"]
+        "galeria_desc": ["Concept de Félix 1", "Concept de Félix 2", "Concept de Félix 3"],
+        "formas": [true, true, false, false, false],
+        "descMU": "Ele pode parecer apenas um gatinho fofinho em uma nave de tecnologia extremamente avançada,mas na verdade ele é um músico profissional,mas aí você se pergunta o que ele toca?A resposta é simples,sua nave!Ela tem todos os instrumentos existentes dentro de si,e ele sabe exatamente como fazer para soltar cada som,já que ele ajudou seu pai à construir sua nave que também pode criar braços mecânicos para ajudar ele em outras tarefas;ele precisou usar essa nave pois ele perdeu o movimento de suas pernas traseiras após sofrer um acidente,mas isso não desanimou ele.Ele queria ser adorado por sua habilidade musical,e não por sua aparência,mas mesmo assim,fica feliz quando alguém pede para ele tocar uma música!"
     },
     "kate":
     {
@@ -272,7 +292,9 @@
         "relacionamento_categoria": ["familia", "familia", "familia"],
         "relacionamento_desc": ["Irmão Gêmeo", "Pai", "Mãe"],
         "galeria": "alexkate",
-        "galeria_desc": ["Concept dos gêmeos 1", "Concept dos gêmeos 2"]
+        "galeria_desc": ["Concept dos gêmeos 1", "Concept dos gêmeos 2"],
+        "formas": [true, true, true, false, false],
+        "descMU": "Eles são conhecidos como Irmãos Jacksons,para simplificar;Alexander é sempre caótico e encrenqueiro que vive tentando causar caos e destruição,mas muitas vezes tem seus planos arruinados por sua irmã gêmea,Kate,que também gosta um pouco de caos,mas ela sabe os limites que não devem ser ultrapassados e também sabe se comportar quando deve,muito pelo contrário de seu irmão...Algumas pegadinhas deles já levaram várias criaturas para o hospital com ferimentos,isso fez com que Kate mudasse suas atitudes,mas para Alexander,isso foi apenas um gatilho para continuar com isso.Apesar de parecerem infantis,eles já são Dragões adolescentes,o espírito da Ira de sua forma dragão está aprisionado em seus colares,que pode ser despertado ao juntar as duas peças,os transformando em um terrível e enorme dragão de 2 cabeças descontrolado,mas enquanto os dois estiverem cada um com sua parte do colar,não apresentam nenhum risco...acredito eu..."
     },
     "leo":
     {
@@ -297,7 +319,9 @@
         "relacionamento_categoria": ["familia", "familia", "amor", "odeia", "odeia"],
         "relacionamento_desc": ["Irmã Gêmea", "Filho Adotado", "Namorada", "Odeia", "Odeia"],
         "galeria": "leo",
-        "galeria_desc": ["Concept do Leo 1", "Leonard do evento de espaço 1 (Feito por Lorax)", "Concept do Leonard do evento de espaço (Feito por Dandi)", "Leonard do evento de espaço 2 (Feito por Anjel)"]
+        "galeria_desc": ["Concept do Leo 1", "Leonard do evento de espaço 1 (Feito por Lorax)", "Concept do Leonard do evento de espaço (Feito por Dandi)", "Leonard do evento de espaço 2 (Feito por Anjel)"],
+        "formas": [true, true, true, false, true],
+        "descMU": "Manobras de Skate e Bike?É com ele mesmo!Leo é o radical da universidade,mas não deixe sua aparência fazer você pensar que ele é durão e malvado,na verdade ele é alguém muito amigável,amigo de quase todos da universidade.Apesar de ser um tubarão,ele é um péssimo nadador,por isso escolheu ir para meios mais terrestres,mas ainda consegue respirar embaixo da água;seu dentes são completamente afiados e sua mordida é forte a ponto de cortar o mais resistente metal.Uma vez ele já tentou postar vídeos na internet de suas manobras,mas infelizmente não tinha muitas visualizações,e ele esconde esse seu canal até de seus amigos mais próximos,a única que sabe disso é sua irmã;ele também é um grande fã da banda \"Taiga's Rock\",mesmo que eles pararam de lançar música há anos,ele ainda espera que algum dia tenha algum novo hit deles."
     },
     "lorette":
     {
@@ -322,7 +346,9 @@
         "relacionamento_categoria": ["familia", "familia", "gosta", "incerto", "odeia", "incerto"],
         "relacionamento_desc": ["Pai", "Mãe", "Melhor Amiga", "Incerto", "Odeia", "Incerto"],
         "galeria": "lorette",
-        "galeria_desc": ["Concept da Lorette (Feito por Canto)", "Concept da Lorette do evento de espaço (Feito por St)", "Concept da Lorette"]
+        "galeria_desc": ["Concept da Lorette (Feito por Canto)", "Concept da Lorette do evento de espaço (Feito por St)", "Concept da Lorette"],
+        "formas": [true, true, false, false, true],
+        "descMU": "Um pouco maluquinha...mas bem amigável,essa é Lorette,conhecida como a \"Fanfiqueira\" da turma,são só amigos?Não importa,ela vai shippar,criar todo tipo de ficção em seu livro,envolvendo ela mesma ou apenas outras pessoas,e por sinal,ninguém nem sabe o que se esconde nesse livro dela,pois ela se torna um animal selvagem quando encostam a mão nele.Ela possui um incrível poder de regeneração,que é questão de minutos,isso é extremamente útil para seu cabelo que guarda sua habilidade principal,lançar tufos grudentos de seu cabelo para...melhor não saber para o que exatamente ela usa isso...Ninguém sabe o porquê dela ser assim,mas teorizam que é por conta das coisas que ela assistia quando era pequena,um pequeno detalhe de sua loucura é que ela está sempre de pijama,mas é bom para dormir em qualquer lugar né?"
     },
     "luna":
     {
@@ -347,7 +373,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "luna",
-        "galeria_desc": ["Concept de Luna 1", "Concept de Luna 2 (Feito por Canto)", "Concept de Luna 3 (Feito por Canto)", "Concept do emoji de Luna (Feito por Canto)"]
+        "galeria_desc": ["Concept de Luna 1", "Concept de Luna 2 (Feito por Canto)", "Concept de Luna 3 (Feito por Canto)", "Concept do emoji de Luna (Feito por Canto)"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "melissa":
     {
@@ -372,7 +400,9 @@
         "relacionamento_categoria": ["amor"],
         "relacionamento_desc": ["Namorada"],
         "galeria": "melissa",
-        "galeria_desc": ["Concept da Melissa 1", "Concept da Melissa 2", "Concept da Melissa 3 (Feito por Canto)", "Concept da Melissa 4 (Feito por Canto)", "Concept das cores da Melissa (Feito por Canto)"]
+        "galeria_desc": ["Concept da Melissa 1", "Concept da Melissa 2", "Concept da Melissa 3 (Feito por Canto)", "Concept da Melissa 4 (Feito por Canto)", "Concept das cores da Melissa (Feito por Canto)"],
+        "formas": [true, true, false, false, false],
+        "descMU": "A festeira,sempre encontra alguma maneira de transformar qualquer coisa em uma festa,a maioria dos estudantes adoram ela por essa sua vibe descolada.Vinda de outro planeta,seus poderes não tem muita força aqui,mas mesmo assim ela consegue flutuar calmamente como se controlasse a gravidade,com suas antenas menores e maiores,ela pode emitir alguns sons que lembram músicas eletrônicas,por isso muitas vezes ela mesma é a DJ de sua própria festa,então,topa participar da festa?"
     },
     "nick":
     {
@@ -397,7 +427,9 @@
         "relacionamento_categoria": ["familia", "familia", "familia", "incerto", "incerto"],
         "relacionamento_desc": ["Mãe", "Pai", "irmão mais velho", "Incerto", "Incerto"],
         "galeria": "nick",
-        "galeria_desc": ["Concept do Nick 1", "Concept do Nick 2", "Concept do Nick do evento de espaço 1 (Feito por Lorax)", "Concept do Nick do evento de espaço 2 (Feito por St)"]
+        "galeria_desc": ["Concept do Nick 1", "Concept do Nick 2", "Concept do Nick do evento de espaço 1 (Feito por Lorax)", "Concept do Nick do evento de espaço 2 (Feito por St)"],
+        "formas": [true, true, false, false, false],
+        "descMU": "Ele é praticamente o \"palhaço\" da turma,mas não de um jeito bom.Ele faz piadas de humor ácido e zomba de todos os alunos sem exceção,e de alguma forma ele sabe dos pontos fracos de cada um.Ele é bem misterioso,ninguém sabe de onde veio,nem mesmo sua jaqueta parece ser oficial da universidade.Apesar de ter chego do nada,ele conhece os funcionários e alunos tão bem quanto os outros,até mesmo seus segredos,apesar de sua espécie ser uma das mais simples.Ele é uma caixa de surpresas com seu conhecimento avançado e habilidade de atrapalhar as aulas,acho que só o tempo mostrará mais sobre ele."
     },
     "stella":
     {
@@ -422,7 +454,9 @@
         "relacionamento_categoria": ["familia", "familia", "amor"],
         "relacionamento_desc": ["Mãe", "Mãe", "Namorada"],
         "galeria": "stella",
-        "galeria_desc": ["Concept da Stella"]
+        "galeria_desc": ["Concept da Stella"],
+        "formas": [true, true, false, false, false],
+        "descMU": "A carinhosa,sempre tenta ajudar todos,não gosta de ver ninguém se machucando,ela é super doce e fofa,sempre cheia de glitter e esperta,ela tem uma pelúcia de dragão que não consegue dormir sem ela.Ela tem diversas habilidades como uma aderência inimaginável em suas mãos e pés,uma camuflagem sem igual,é uma ótima nadadora e tem um veneno letal para alguns,de fato são algumas habilidades meio inútil para alguém tão inofensiva como ela...Ela sempre prefere usar sua cauda ao invés dos braços para fazer algumas tarefas,por conta da maior força em sua cauda."
     },
     "stephanie":
     {
@@ -447,7 +481,9 @@
         "relacionamento_categoria": ["amor"],
         "relacionamento_desc": ["Namorada"],
         "galeria": "stephanie",
-        "galeria_desc": ["Concept da Stephanie 1", "Concept da Stephanie 2", "Stephanie do evento de espaço com roupas (Feito por Anjel)", "Concept da Stephanie do evento de espaço (Feito por St)", "Stephanie do evento de espaço (Feito por Anjel)", "Stephanie com tema de Mundo de Doces"]
+        "galeria_desc": ["Concept da Stephanie 1", "Concept da Stephanie 2", "Stephanie do evento de espaço com roupas (Feito por Anjel)", "Concept da Stephanie do evento de espaço (Feito por St)", "Stephanie do evento de espaço (Feito por Anjel)", "Stephanie com tema de Mundo de Doces"],
+        "formas": [true, true, true, false, true],
+        "descMU": "Famosa em todas as redes sociais e admirada por muitos,principalmente na universidade,ela é alguém sempre muito energética e sempre disposta a interagir com todos;ela tem uma estrela de estimação desde quando ela era uma raposinha,que acompanha ela em todas as encrencas que se mete,ela pode ser alguém bem calma,mas você não vai querer ver sua reação quando alguém pegar seu celular.Ela teve um problema em sua genética que fez com que ela crescesse muito mais do que o padrão de sua espécie,tanto que seu pai teve que aumentar a casa deles por conta dela,isso também dificulta ela na hora de comprar roupas e sapatos,mas uma parte desse problema facilmente foi resolvido por sua tia costureira;esse problema na genética também afetou um dos poderes principal da espécie,que era gerar uma ventania de areia com as mãos,mas ela só consegue gerar uma quantidade aceitável de areia com os pés e cauda mas por outra parte,seu poder de super velocidade pode ser visto como um teleporte por alguns,ela também pode se transformar em uma simples raposa e possui uma audição extremamente aguçada.Ela sempre cuida muito bem de seu pelo,sendo o mais macio e fofo possível,sorte dela que ninguém descobriu ainda que sua fraqueza é carinho no queixo..."
     },
     "ambrosio":
     {
@@ -472,7 +508,9 @@
         "relacionamento_categoria": ["familia"],
         "relacionamento_desc": ["Irmão"],
         "galeria": "ambrosio",
-        "galeria_desc": ["Concept do Ambrósio 1", "Concept do Ambrósio 2"]
+        "galeria_desc": ["Concept do Ambrósio 1", "Concept do Ambrósio 2"],
+        "formas": [true, true, false, false, false],
+        "descMU": "O bibliotecário,sempre muito misterioso,mesmo que ele pareça estar sempre bravo e sério,ele é um amor,sempre dedicado a tirar dúvidas dos outros sobre literatura,ele apenas quer silêncio na sua biblioteca.Ele veio trabalhar aqui para ficar mais perto de seu querido irmão mais novo,Márcio,e também guarda uma pedra com olhos como um peso de papel,que foi um presente de seu irmão de quando eles ainda eram jovens."
     },
     "elisangela":
     {
@@ -497,7 +535,9 @@
         "relacionamento_categoria": ["gosta"],
         "relacionamento_desc": ["Mentor"],
         "galeria": "elisangela",
-        "galeria_desc": ["Concept da Elisângela 1", "Concept da Elisângela 2", "Concept da Elisângela 3"]
+        "galeria_desc": ["Concept da Elisângela 1", "Concept da Elisângela 2", "Concept da Elisângela 3"],
+        "formas": [true, true, false, false, false],
+        "descMU": "Uma enfermeira descolada,sempre sabe exatamente do que os alunos precisam,mas não se engane,ela não é apenas uma enfermeira,ela também sabe dar conselhos muito bons para resolver problemas.Ela já estudou na Mystic University,e logo que terminou os estudos,já aceitou a vaga de emprego para poder ajudar os próximos alunos."
     },
     "geronimo":
     {
@@ -522,7 +562,9 @@
         "relacionamento_categoria": ["gosta"],
         "relacionamento_desc": ["Aprendiz"],
         "galeria": "geronimo",
-        "galeria_desc": ["Concept do Gerônimo do evento de espaço (Feito por Dandi)"]
+        "galeria_desc": ["Concept do Gerônimo do evento de espaço (Feito por Dandi)"],
+        "formas": [true, true, false, false, false],
+        "descMU": "Um zelador amigável e calmo,adora todos os estudantes e ama contar as histórias de sua juventude para eles,ele sempre poderá te ajudar com conselhos e outras coisas.Ele mora e trabalha na escola há anos,desde quando ela foi fundada,sua blusa é da época que ele era coordenador e braço direito do pai de Vincent,por isso tem a logo diferente,ele decidiu se tornar zelador por conta própria,pois de acordo com ele,é melhor para essa sua idade,mesmo que Vincent tenha insistido para ele continuar no cargo de coordenador."
     },
     "flarence":
     {
@@ -547,7 +589,9 @@
         "relacionamento_categoria": ["familia"],
         "relacionamento_desc": ["Primo"],
         "galeria": "flarence",
-        "galeria_desc": ["Concept do Flarence 1", "Concept do Flarence 2"]
+        "galeria_desc": ["Concept do Flarence 1", "Concept do Flarence 2"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "gertrudes":
     {
@@ -572,7 +616,9 @@
         "relacionamento_categoria": ["familia", "familia"],
         "relacionamento_desc": ["Sobrinho", "Irmão"],
         "galeria": "gertrudes",
-        "galeria_desc": ["Concept da Gertrudes 1", "O mesmo com a mão levemente diferente", "Concept da Gertrudes 2", "Gertrudes sem o avental"]
+        "galeria_desc": ["Concept da Gertrudes 1", "O mesmo com a mão levemente diferente", "Concept da Gertrudes 2", "Gertrudes sem o avental"],
+        "formas": [true, true, false, false, false],
+        "descMU": "Uma tia da cantina que é o contrário da outra,sempre quer o melhor para os alunos, principalmente para seu sobrinho e os amigos dele,se quiser comer algo diferente fora do horário do lanche,é só falar com ela,que ela irá te oferecer um banquete.Todos adoram sua comida,que na maioria das vezes serve de um banquete inteiro com o tanto de coisa que ela faz,seja doce ou salgado,quem mais se dá bem é Cristian,já que ela sempre quer que ele esteja bem alimentado..."
     },
     "gomes":
     {
@@ -597,7 +643,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "gomes",
-        "galeria_desc": ["Concept do Gomes 1", "Concept do Gomes 2", "Concept do Gomes 3", "Gomes do evento de espaço (Feito por St)"]
+        "galeria_desc": ["Concept do Gomes 1", "Concept do Gomes 2", "Concept do Gomes 3", "Gomes do evento de espaço (Feito por St)"],
+        "formas": [true, true, false, false, false],
+        "descMU": "O inspetor de alunos,por mais que ele possa parecer extremamente durão e nada amigável,ele é a criatura mais doce e pacífica que você vai conhecer em toda sua vida.Gomes foi encontrado nas ruas por Vincent depois de ter sido abandonado por sua família,que decidiu dar um lar e um emprego para ele,que também possui muitas habilidades culinárias,sendo sua mais especial,suas torradas,ele sempre está disposto a ajudar qualquer um,ele é extremamente forte,mas NUNCA usa essa sua força."
     },
     "ludden":
     {
@@ -622,7 +670,9 @@
         "relacionamento_categoria": ["gosta", "gosta", "gosta", "gosta", "gosta"],
         "relacionamento_desc": ["Amigo", "Gosta", "Amiga", "Amigo", "Amigo"],
         "galeria": "ludden",
-        "galeria_desc": ["Concept do Ludden 1", "Concept do Ludden 2", "Rosto do Ludden"]
+        "galeria_desc": ["Concept do Ludden 1", "Concept do Ludden 2", "Rosto do Ludden"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "lunaris":
     {
@@ -647,7 +697,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "lunaris",
-        "galeria_desc": ["Concept da Lunaris 1", "Concept da Lunaris 2", "Concept da Lunaris 3", "Concept da Lunaris 4", "Concept da Lunaris 5", "Concept da Lunaris 6"]
+        "galeria_desc": ["Concept da Lunaris 1", "Concept da Lunaris 2", "Concept da Lunaris 3", "Concept da Lunaris 4", "Concept da Lunaris 5", "Concept da Lunaris 6"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "marcio":
     {
@@ -672,7 +724,9 @@
         "relacionamento_categoria": ["familia", "gosta"],
         "relacionamento_desc": ["Irmão", "Amigo"],
         "galeria": "marcio",
-        "galeria_desc": ["Márcio do evento de espaço (Feito por Anjel)"]
+        "galeria_desc": ["Márcio do evento de espaço (Feito por Anjel)"],
+        "formas": [true, true, true, false, true],
+        "descMU": "O Professor,ele é um tanto quanto misterioso,bem,atualmente,já que ele é novo para todos os alunos,mas apesar de parecer alguém bravo,ele é o melhor professor que você poderá ter em toda sua vida,consegue transformar qualquer aula em diversão,alguns alunos antigos dizem que ele já fez até uma espécie de Battle Royale na aula de educação física.Ele é o segundo mais importante de toda a universidade,por ser considerado incrível,é o único professor da Mystic University,ele tem poderes simples,como teleportar e criar objetos,porém ele não se importa com seus poderes,ele apenas se importa com a educação de todos os estudantes."
     },
     "sonia":
     {
@@ -697,7 +751,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "sonia",
-        "galeria_desc": ["Concept da Sonia"]
+        "galeria_desc": ["Concept da Sonia"],
+        "formas": [true, true, false, false, false],
+        "descMU": "Uma tia da cantina rabugenta,ela não se importa com os alunos e sempre serve qualquer coisa para eles,ela apenas está ali por falta de opção de trabalho.Sua comida é sempre deixada de lado por não parecer comestível...apenas Timothey consegue comer suas comidas,mas não é culpa dela,talvez seja o que ela aprendeu crescendo em um pântano..."
     },
     "vincent":
     {
@@ -722,7 +778,9 @@
         "relacionamento_categoria": ["familia", "gosta", "gosta", "gosta"],
         "relacionamento_desc": ["Primo", "Mordomo", "Amigo", "Amigo"],
         "galeria": "vincent",
-        "galeria_desc": ["Concept do Vincent 1", "Concept do Vincent 2", "Concept do Vincent do evento de espaço (Feito por St)", "Vincent com tema de Seres das Trevas"]
+        "galeria_desc": ["Concept do Vincent 1", "Concept do Vincent 2", "Concept do Vincent do evento de espaço (Feito por St)", "Vincent com tema de Seres das Trevas"],
+        "formas": [true, true, false, false, true],
+        "descMU": "O Diretor,é alguém bem amigável e sempre disponibilizado a ajudar os outros,por mais que sua aparência não demonstre isso.Ele herdou a universidade de seu tio,mas decidiu realmente transformá-la em uma universidade,já que antes era apenas uma escola normal,onde ele mesmo estudou,junto de seu primo que também morava com ele.Os poderes de sua espécie se resumem em sombras,podendo vagar facilmente e criar tentáculos puramente feitos de sombra,ele também possui uma forma monstruosa extremamente poderosa,que ele usa apenas com alunos extremamente levados,e sua sombra tem uma cor por conta de características familiares,onde cada um de sua família tem uma cor de sombra."
     },
     "cuscolar":
     {
@@ -745,7 +803,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "cuscolar",
-        "galeria_desc": ["Cuscolar do evento de espaço (Feito por Anjel)"]
+        "galeria_desc": ["Cuscolar do evento de espaço (Feito por Anjel)"],
+        "formas": [true, true, false, false, true],
+        "descMU": "Ele não tem um dono ou dona em específico,mas é considerado como o mascote da universidade inteira desde que ele saiu do esgoto,mas como ninguém viu isso acontecer,ninguém sabe disso,mas ele é amado por muitos.Apesar de parecer inocente e fofo,ele frequentemente tem sonhos onde seus amigos do esgoto escapam para fora e às vezes até imagina planos para ajudá-los a escapar de lá,mas não se sabe ao certo se o universo está pronto para o impacto de Cuscolar..."
     },
     "faisca":
     {
@@ -768,7 +828,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "faisca",
-        "galeria_desc": ["Concept do Faísca (Feito por Guto)"]
+        "galeria_desc": ["Concept do Faísca (Feito por Guto)"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "mortimer":
     {
@@ -791,7 +853,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "mortimer",
-        "galeria_desc": ["Concept da foto do Mortimer", "Concept do Mortimer 1", "Concept do Mortimer 2 (Feito por Canto)", "Concept do emoji do Mortimer (Feito por Canto)"]
+        "galeria_desc": ["Concept da foto do Mortimer", "Concept do Mortimer 1", "Concept do Mortimer 2 (Feito por Canto)", "Concept do emoji do Mortimer (Feito por Canto)"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "nynphx":
     {
@@ -814,7 +878,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "nynphx",
-        "galeria_desc": ["Concepts do design da Nynphx", "Concept da Nynphx 1", "Concept da Nynphx 2", "Ideia do emoji da Nynphx (Feito por Canto)"]
+        "galeria_desc": ["Concepts do design da Nynphx", "Concept da Nynphx 1", "Concept da Nynphx 2", "Ideia do emoji da Nynphx (Feito por Canto)"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "starry":
     {
@@ -837,7 +903,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "starry",
-        "galeria_desc": ["bro"]
+        "galeria_desc": ["bro"],
+        "formas": [true, true, true, false, true],
+        "descMU": "Ela é a estrela de estimação da Stephanie,Starry sempre tenta cuidar de Stephanie e não gosta que os outros cheguem perto dela,mas não é como se ela pudesse fazer algo de verdade,mas ela se acha amedrontadora..."
     },
     "vivy":
     {
@@ -860,7 +928,9 @@
         "relacionamento_categoria": ["familia"],
         "relacionamento_desc": ["Dono"],
         "galeria": "",
-        "galeria_desc": []
+        "galeria_desc": [],
+        "formas": [true, true, true, false, true],
+        "descMU": "Ela é a planta de estimação de Cristian,ela nasceu quando ele estava tentando dar consciência a uma planta,não foi exatamente o que ele queria,mas ele cuida dela como se fosse sua filha."
     },
     "eugenio":
     {
@@ -879,13 +949,15 @@
         "materias": "",
         "ass": "TBA",
         "interpretador": "Will",
-        "design": "Canto",
+        "design": "Sky",
         "relacionamento": [],
         "relacionamento_emojis": [],
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "eugenio",
-        "galeria_desc": ["Concept do Eugênio do evento de espaço (Feito por St)", "Concept do Eugênio", "Eugênio do evento de espaço (Feito por St)", "Concept do emoji do Eugênio (Feito por Canto)"]
+        "galeria_desc": ["Concept do Eugênio do evento de espaço (Feito por St)", "Concept do Eugênio", "Eugênio do evento de espaço (Feito por St)", "Concept do emoji do Eugênio (Feito por Canto)"],
+        "formas": [true, true, true, false, true],
+        "descMU": "ALERTA DE NERD!Esse é Eugênio,viciado em quadrinhos,animes e jogos;ele é profissional em qualquer matéria que não seja algo físico,pois vive estudando mais o que já sabe e pesquisando novos assuntos para saber mais.Ele também não fica atrás em aulas que envolvem algo físico tipo educação física,pois ele construiu um relógio capaz de transformar ele em qualquer criatura existente e sumonar objetos em forma de polígonos;esse relógio também é seu primeiro robô,que foi feito quando ele tinha apenas 14 anos,mas ele decidiu transferir a memória toda para seu relógio para tê-lo como companheiro para toda hora,mesmo que eles não se dêem completamente bem.Como uma forma rara de sua espécie,ele não tem poderes elementais nem transformações fortes sem seu relógio,mas ele até que aguenta isso bem,se mostrando sempre o destaque da sala de aula."
     },
     "frederick":
     {
@@ -909,7 +981,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "frederick",
-        "galeria_desc": ["Concept do Frederick 1", "Concept do Frederick 2", "Concept do Frederick 3", "Concept do Frederick 4 (Feito por Canto)", "Concept do Frederick 5 (Feito por Canto)", "Concept do Frederick 6 (Feito por Canto)", "Concept das cores do Frederick (Feito por Canto)", "Concept da foto do Frederick (Feito por Canto)", "Concept do emoji do Frederick (Feito por Canto)"]
+        "galeria_desc": ["Concept do Frederick 1", "Concept do Frederick 2", "Concept do Frederick 3", "Concept do Frederick 4 (Feito por Canto)", "Concept do Frederick 5 (Feito por Canto)", "Concept do Frederick 6 (Feito por Canto)", "Concept das cores do Frederick (Feito por Canto)", "Concept da foto do Frederick (Feito por Canto)", "Concept do emoji do Frederick (Feito por Canto)"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "jorge":
     {
@@ -932,7 +1006,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "",
-        "galeria_desc": []
+        "galeria_desc": [],
+        "formas": [true, true, false, false, true],
+        "descMU": "Ele é o relógio de Eugênio,mas é como se fosse um pet,Eugênio conversa com ele às vezes,e também pode ser considerado como seu primeiro robô,mas o que significa essa sigla?ninguém sabe..."
     },
     "moldu":
     {
@@ -957,7 +1033,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "moldu",
-        "galeria_desc": ["Concept do Moldu"]
+        "galeria_desc": ["Concept do Moldu"],
+        "formas": [true, true, true, true, false],
+        "descMU": "Ele é o aluno exemplar,sempre dá seu melhor para dar orgulho aos seus professores,mas além disso,ele também se dá muito bem com a maioria dos alunos,quando não é odiado por querer cuidar da sala quando o professor sai ou lembrar das tarefas...Apesar de ser uma espécie de morcego,ele apenas consegue planar,mas em compensação,ele tem uma audição que escuta até 2 km de distância,e uma visão extremamente aguçada,podendo adaptar ela para enxergar no escuro ou ter uma visão de calor.Ele é alguém muito fácil de se manipular e isso já trouxe diversos problemas para ele uma vez...espero que não aconteça novamente."
     },
     "paulo":
     {
@@ -982,7 +1060,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "paulo",
-        "galeria_desc": ["Concept do Paulo 1", "Concept do Paulo 2", "Paulo do evento de espaço (Feito por St)"]
+        "galeria_desc": ["Concept do Paulo 1", "Concept do Paulo 2", "Paulo do evento de espaço (Feito por St)"],
+        "formas": [true, true, true, false, false],
+        "descMU": "Quem é o melhor aluno nos esportes e pior nas notas?Ele mesmo,Paulo!Apesar de ser horrível de uma forma imensurável nas notas de sala de aula,ele se acha o melhor da Universidade,algo que já mostra que sua inteligência não é a das melhores...Além de ser bom em qualquer tipo de esporte terrestre e que envolva bolas,ele é também um ótimo nadador e tem uma ótima visão embaixo da água,seus tentáculos são completamente elásticos,que se estivam até 250 metros e possui uma regeneração bem rápida até."
     },
     "sfx":
     {
@@ -1006,7 +1086,9 @@
         "relacionamento_categoria": ["familia"],
         "relacionamento_desc": ["Irmã"],
         "galeria": "sfx",
-        "galeria_desc": ["Concept da SFX (Feito por Canto)"]
+        "galeria_desc": ["Concept da SFX (Feito por Canto)"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "tom":
     {
@@ -1029,7 +1111,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "",
-        "galeria_desc": []
+        "galeria_desc": [],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "vanessa":
     {
@@ -1054,7 +1138,9 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "vanessa",
-        "galeria_desc": ["Vanessa do evento de espaço (Feito por St)", "Concept da pose da Vanessa (Feito por Canto)"]
+        "galeria_desc": ["Vanessa do evento de espaço (Feito por St)", "Concept da pose da Vanessa (Feito por Canto)"],
+        "formas": [true, true, false, false, true],
+        "descMU": "A maior patricinha que você pode conhecer,sempre se gabando por sua riqueza (que na verdade é só de seus pais),ela sempre quer fazer questão de que saibam que ela está no ambiente,seja sendo extravagante ou apenas gritando por atenção mesmo,ela não se dá muito bem com a maioria dos garotos,mas com as garotas é totalmente diferente.Ela vive se exibindo por aí com sua beleza (mesmo que na realidade não seja tão bela assim),seu poder é uma cantoria que pode manipular os outros,mas ela ainda não sabe como fazer isso sem que os outros sem libertem facilmente,sua voz também pode ser doce como o canto de uma sereia,ou estridente como uma cabra."
     },
     "vfx":
     {
@@ -1078,12 +1164,148 @@
         "relacionamento_categoria": ["familia"],
         "relacionamento_desc": ["Irmã"],
         "galeria": "vfx",
-        "galeria_desc": ["Concept da VFX (Feito por Canto)"]
+        "galeria_desc": ["Concept da VFX (Feito por Canto)"],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
+    },
+    "hank":
+    {
+        "categoria": "aluno",
+        "id": 44,
+        "nome": "Hank Miller",
+        "desc": "Um Hippie?Um Hipster?As duas Coisas!Hank é o aluno mais calmo e amigável de toda a universo,ele não liga pra nada,mas de um jeito bom,sempre na paz e amor.Apesar de ser um pé grande e morar em uma floresta,seu pelo é extremamente fofo por causa de um condicionador especial de sua família,seu pai é a pessoa que ele mais ama...pelo menos era antes de sua mãe ser morta por caçadores,que foi o mesmo motivo que fez ele entrar na universidade para se distrair mentalmente,esse colar em seu pescoço foi um presente de sua mãe;mesmo que ele seja pacífico,ele jura que não terá piedade se descobrir quem são os caçadores.Como todos de sua espécie,sua força física é inigualável e possui um ótimo senso de localização,conseguindo identificar o lugar que está sem nunca ter passado por lá antes.",
+        "img": "MU/personagens/hank",
+        "emoji": "MU/hank",
+        "foto": "",
+        "genero": "masc",
+        "txtespecial": "",
+        "especie": "",
+        "data": "",
+        "altura": "",
+        "materias": "",
+        "ass": "TBA",
+        "interpretador": "Hotekal",
+        "design": "Sky",
+        "relacionamento": [],
+        "relacionamento_emojis": [],
+        "relacionamento_categoria": [],
+        "relacionamento_desc": [],
+        "galeria": "hank",
+        "galeria_desc": [],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
+    },
+    "mark":
+    {
+        "categoria": "aluno",
+        "id": 45,
+        "nome": "Mark",
+        "desc": "O desenhista,não importa a hora,toda hora é hora de desenhar com qualquer tipo de material,impressiona todos com seus desenhos,ás vezes ele tem que fazer retratos para os outros estudantes,mas para ele não é problema,sempre está pronto para criar uma obra nova.Seus poderes são um dos mais impressionantes da universidade,podendo variar de formas,entrando em sua forma Lobo total,onde ele vira um quadrúpede extremamente veloz, enquanto durante luas cheias,ele vira uma besta que pode estraçalhar tudo que vê pela frente,também possuí uma voz suave e uma visão muito aguçada,e claro,você não vai querer estragar algum desenho dele,se fizer isso,ele automaticamente entra em sua forma besta.",
+        "img": "MU/personagens/mark",
+        "emoji": "MU/mark",
+        "foto": "",
+        "genero": "masc",
+        "txtespecial": "",
+        "especie": "",
+        "data": "",
+        "altura": "",
+        "materias": "",
+        "ass": "TBA",
+        "interpretador": "Math",
+        "design": "Sky",
+        "relacionamento": [],
+        "relacionamento_emojis": [],
+        "relacionamento_categoria": [],
+        "relacionamento_desc": [],
+        "galeria": "mark",
+        "galeria_desc": [],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
+    },
+    "pastno":
+    {
+        "categoria": "outro",
+        "id": 46,
+        "nome": "Pastno/M0ldu",
+        "desc": "M0ldu foi o apelido dado quando Pastno usou Moldu como seu hospedeiro,enquanto sugava suas energias espirituais para se tornar mais poderoso.Ele usou Moldu para tentar roubar a energia dos demais e matar Vincent,mas para nossa felicidade,ele falhou completamente em seu plano de sugar a energia de todos da universidade e depois dominar o mundo.Pastno foi liberado por Vincent acidentalmente em sua infância,durante anos ele viveu na mata da Mystic University atraindo alunos para lá e sugando suas energias.Sua forma original é intangível e completamente distorcida,por isso ele sempre tenta encontrar um hospedeiro.",
+        "img": "MU/formas/molduD",
+        "emoji": "MU/m0ldu",
+        "foto": "",
+        "genero": "nb",
+        "txtespecial": "",
+        "especie": "Espírito Parasita",
+        "data": "",
+        "altura": "",
+        "ass": "TBA",
+        "interpretador": "Dudubodu",
+        "design": "Sky",
+        "relacionamento": [],
+        "relacionamento_emojis": [],
+        "relacionamento_categoria": [],
+        "relacionamento_desc": [],
+        "galeria": "m0ldu",
+        "galeria_desc": [],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
+    },
+    "timothey":
+    {
+        "categoria": "aluno",
+        "id": 47,
+        "nome": "Timothey Buhzeye Emsem",
+        "desc": "O preguiçoso,esse é o claro exemplo de quem apenas vai para a escola pelo lanche,ele dorme na maior parte do tempo,exceto nas aulas de culinária e intervalos,às vezes ele tenta fazer um trabalho para a aula,mas ele só tenta mesmo...Sempre carrega qualquer tipo de comida consigo.Ele não possui tantos poderes,mas tem uma aderência imensa em sua cauda e sua boca da barriga que pode engolir qualquer coisa e logo depois,cuspir com a potência de até 10 snipers,quando ele está com fome,pode confundir qualquer coisa com comida,e se você atrapalhar a soneca dele,vai ser a última vez que você fez isso.",
+        "img": "MU/personagens/timothey",
+        "emoji": "MU/timothey",
+        "foto": "",
+        "genero": "masc",
+        "txtespecial": "",
+        "especie": "",
+        "data": "",
+        "altura": "",
+        "materias": "",
+        "ass": "TBA",
+        "interpretador": "Toey",
+        "design": "Sky",
+        "relacionamento": [],
+        "relacionamento_emojis": [],
+        "relacionamento_categoria": [],
+        "relacionamento_desc": [],
+        "galeria": "timothey",
+        "galeria_desc": [],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
+    },
+    "zug":
+    {
+        "categoria": "aluno",
+        "id": 48,
+        "nome": "Zug",
+        "desc": "O atleta,sempre leva todos os troféus e medalhas de qualquer esporte para a universidade,durante as aulas de educação física ele pode ser um pouco competitivo demais,mas talvez seja de família.Ele pode facilmente mudar de forma por ser uma espécie de criatura espiritual,pode aumentar ou diminuir de tamanho quando quiser,sua cor também pode mudar dependendo do que ele estiver sentindo,ele é o mais poderoso de toda a universidade...bem...no caso,ainda não,ele apenas tem que esperar sua noite de ascensão para ganhar seus poderes espirituais.",
+        "img": "MU/personagens/zug",
+        "emoji": "MU/zug",
+        "foto": "",
+        "genero": "masc",
+        "txtespecial": "",
+        "especie": "",
+        "data": "",
+        "altura": "",
+        "materias": "",
+        "ass": "TBA",
+        "interpretador": "Guto",
+        "design": "Sky",
+        "relacionamento": [],
+        "relacionamento_emojis": [],
+        "relacionamento_categoria": [],
+        "relacionamento_desc": [],
+        "galeria": "zug",
+        "galeria_desc": [],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     },
     "srpinheiros":
     {
         "categoria": "outro",
-        "id": 44,
+        "id": 49,
         "nome": "Sr. Pinheiros",
         "desc": "Já se perguntou o que se esconde pela Dreamy Academy durante a madrugada? Caso sim, aqui está sua resposta. Não se sabe o que ou quem é este \"ser\" ou \"coisa\", apenas se sabe que ele vaga pelo local.",
         "img": "srpinheiros",
@@ -1102,6 +1324,8 @@
         "relacionamento_categoria": [],
         "relacionamento_desc": [],
         "galeria": "",
-        "galeria_desc": []
+        "galeria_desc": [],
+        "formas": [false, false, false, false, false],
+        "descMU": ""
     }
 }

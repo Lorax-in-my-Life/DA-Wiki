@@ -7,11 +7,13 @@ const mainAlunos = document.getElementById("mainAlunos");
 const mainFuncionarios = document.getElementById("mainFuncionarios");
 const mainPets = document.getElementById("mainPets");
 const mainOutros = document.getElementById("mainOutros");
+const mainMU = document.getElementById("mainMU");
 
 const boxGridAlunos = document.getElementById("boxGridAlunos");
 const boxGridFuncionarios = document.getElementById("boxGridFuncionarios");
 const boxGridPets = document.getElementById("boxGridPets");
 const boxGridOutros = document.getElementById("boxGridOutros");
+const boxGridMU = document.getElementById("boxGridMU");
 
 const main = document.querySelectorAll("main")
 
@@ -27,6 +29,7 @@ function load()
     mainFuncionarios.style.opacity = 1
     mainPets.style.opacity = 1
     mainOutros.style.opacity = 1
+    mainMU.style.opacity = 1
 
     if (botaoClicado === "todos")
     {
@@ -48,69 +51,9 @@ function load()
     {
         btnOutros()
     }
-}
-
-async function fetchJsonData(url) {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const jsonData = await response.json();
-    return jsonData;
-  } catch (error) {
-    console.error("Error fetching JSON:", error);
-    return null;
-  }
-}
-
-fetchJsonData('./personagens.json').then(data => {
-    if (data) 
+    else if (botaoClicado === "mu")
     {
-        for (let i = 0; i < 45; i++) {
-            personagemPath = Object.values(data)[i];
-            var newdiv = document.createElement('div');
-            newdiv.id = personagemPath.nome
-            newdiv.className = "listaPersonagem"
-            newdiv.style.display = "none"
-            newdiv.addEventListener("click", escolhePersonagem)
-            var imgchar = document.createElement('img');
-            imgchar.src = "personagens/" + personagemPath.img + ".png";
-            imgchar.style.width = "100px";
-            var newh1 = document.createElement('h1');
-            newh1.textContent = personagemPath.nome
-
-            newdiv.appendChild(imgchar);
-            newdiv.appendChild(newh1);
-
-            personagemLista.appendChild(newdiv)
-            listadepersonagens.push(personagemPath.img)
-        }
-        fullpersonagemLista = document.querySelectorAll('.listaPersonagem')
-    }
-});
-
-function searchBar()
-{
-    if(pesquisa.value === "")
-    {
-        personagemLista.style.display = "none"
-    }
-    else
-    {
-        personagemLista.style.display = "block"
-        for (let i = 0; i < 45; i++)
-        {
-            const element = document.getElementById(fullpersonagemLista[i].id)
-            if(fullpersonagemLista[i].id.toLowerCase().includes(pesquisa.value.toLowerCase()))
-            {
-                element.style.display = "flex"
-            }
-            else
-            {
-                element.style.display = "none"
-            }
-        }
+        btnMU()
     }
 }
 
@@ -136,8 +79,7 @@ async function toggleBoxes()
     mainFuncionarios.style.opacity = 0 
     mainPets.style.opacity = 0 
     mainOutros.style.opacity = 0
-    searchBar.style.opacity = 0
-    searchBar.disabled = true
+    mainMU.style.opacity = 0
 
     await sleep(300)
 
@@ -145,6 +87,7 @@ async function toggleBoxes()
     mainFuncionarios.style.display = "none"
     mainPets.style.display = "none"
     mainOutros.style.display = "none"
+    mainMU.style.display = "none"
 }
 
 
@@ -197,22 +140,24 @@ async function hideOutros()
     mainOutros.style.display = "none"
 }
 
+async function hideMU()
+{
+    mainMU.style.opacity = 0
+    await sleep(100)
+    mainMU.style.display = "none"
+}
+
 async function btnTodos()
 {
     mainAlunos.style.display = "block"
     mainFuncionarios.style.display = "block"
-    mainFuncionarios.style.marginTop = "25%"
+    mainFuncionarios.style.marginTop = "0%"
     mainPets.style.display = "block"
-    mainPets.style.marginTop = "5%"
+    mainPets.style.marginTop = "0%"
     mainOutros.style.display = "block"
-    if(screenWidth > 600)
-    {
-        mainOutros.style.marginTop = "-15%"
-    }
-    else
-    {
-        mainOutros.style.marginTop = "-85%"
-    }
+    mainOutros.style.marginTop = "0%"
+    mainMU.style.display = "block"
+    mainMU.style.marginTop = "0%"
 
     await sleep(100)
 
@@ -220,6 +165,7 @@ async function btnTodos()
     mainFuncionarios.style.opacity = 1
     mainPets.style.opacity = 1
     mainOutros.style.opacity = 1
+    mainMU.style.opacity = 1
 }
 
 async function btnAlunos()
@@ -227,6 +173,7 @@ async function btnAlunos()
     hideFuncionarios()
     hidePets()
     hideOutros()
+    hideMU()
 
     mainAlunos.style.display = "block"
     await sleep(100)
@@ -238,6 +185,7 @@ async function btnFuncionarios()
     hideAlunos()
     hidePets()
     hideOutros()
+    hideMU()
 
     mainFuncionarios.style.display = "block"
     if(screenWidth > 600)
@@ -257,6 +205,7 @@ async function btnPets()
     hideAlunos()
     hideFuncionarios()
     hideOutros()
+    hideMU()
 
     mainPets.style.display = "block"
     if(screenWidth > 600)
@@ -276,6 +225,7 @@ async function btnOutros()
     hideAlunos()
     hideFuncionarios()
     hidePets()
+    hideMU()
 
     mainOutros.style.display = "block"
     if(screenWidth > 600)
@@ -288,4 +238,24 @@ async function btnOutros()
     }
     await sleep(100)
     mainOutros.style.opacity = 1
+}
+
+async function btnMU()
+{
+    hideAlunos()
+    hideFuncionarios()
+    hidePets()
+    hideOutros()
+
+    mainMU.style.display = "block"
+    if(screenWidth > 600)
+    {
+        mainMU.style.marginTop = "15%"
+    }
+    else
+    {
+        mainMU.style.marginTop = "30%"
+    }
+    await sleep(100)
+    mainMU.style.opacity = 1
 }
