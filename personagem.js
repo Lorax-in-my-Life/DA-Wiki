@@ -134,7 +134,7 @@ function showPersonagem(personagemPath, id)
     }
 
     imgPersonagem.style.filter = "none"
-    imgPersonagem.src = "personagens/" + personagemPath.img + ".png";
+    imgPersonagem.src = "assets/personagens/" + personagemPath.img + ".png";
     if(id === 36 || id === 49)
     {
         const golden = Math.floor(Math.random() * 250);
@@ -161,9 +161,9 @@ function showPersonagem(personagemPath, id)
         personagemNome.textContent = personagemPath.nome;
     }
     descPersonagem.textContent = personagemPath.desc;
-    personagemEmoji.src = "emojis/" + personagemPath.emoji + ".png";
-    personagemGenero.src = "genero/" + personagemPath.genero + ".png";
-    personagemFoto.src = "fotos/" + personagemPath.foto + ".png";
+    personagemEmoji.src = "assets/emojis/" + personagemPath.emoji + ".png";
+    personagemGenero.src = "assets/genero/" + personagemPath.genero + ".png";
+    personagemFoto.src = "assets/fotos/" + personagemPath.foto + ".png";
     txtEspecial.textContent = personagemPath.txtespecial;
     especiePersonagem.textContent = personagemPath.especie;
     alturaPersonagem.textContent = personagemPath.altura;
@@ -187,7 +187,7 @@ function showPersonagem(personagemPath, id)
         newdiv.style.display = "flex"
         newdiv.style.alignItems = "center"
         var emoji = document.createElement('img');
-        emoji.src = "emojis/" + personagemPath.relacionamento_emojis[i] + ".png";
+        emoji.src = "assets/emojis/" + personagemPath.relacionamento_emojis[i] + ".png";
         if(screenWidth > 600)
         {
             emoji.style.height = "150px"
@@ -197,7 +197,7 @@ function showPersonagem(personagemPath, id)
             emoji.style.height = "100px"
         }
         var categoria = document.createElement('img');
-        categoria.src = "imagens/cat" + personagemPath.relacionamento_categoria[i] + ".png";
+        categoria.src = "assets/imagens/cat" + personagemPath.relacionamento_categoria[i] + ".png";
         if(screenWidth > 600)
         {
             categoria.style.height = "75px"
@@ -220,7 +220,7 @@ function showPersonagem(personagemPath, id)
     for (let i = 0; i < personagemPath.galeria_desc.length; i++)
     {
         var newimg = document.createElement('img');
-        newimg.src = "galeria/" + personagemPath.galeria + i + ".png";
+        newimg.src = "assets/galeria/" + personagemPath.galeria + i + ".png";
         newimg.style.width = "40%"
         var newdescimg = document.createElement('h1');
         newdescimg.textContent = personagemPath.galeria_desc[i];
@@ -242,7 +242,7 @@ function infoAluno(personagemPath)
 
     dataPersonagem.textContent = personagemPath.data;
     materiasPersonagem.textContent = personagemPath.materias;
-    assPersonagem.src = "assinaturas/" + personagemPath.ass + ".png";
+    assPersonagem.src = "assets/assinaturas/" + personagemPath.ass + ".png";
 }
 
 function infoFunc(personagemPath)
@@ -256,7 +256,7 @@ function infoFunc(personagemPath)
 
     dataPersonagem.textContent = personagemPath.data;
     cargoPersonagem.textContent = personagemPath.cargo;
-    assPersonagem.src = "assinaturas/" + personagemPath.ass + ".png";
+    assPersonagem.src = "assets/assinaturas/" + personagemPath.ass + ".png";
 }
 
 function infoPet(personagemPath)
@@ -281,7 +281,7 @@ function infoOutro(personagemPath)
     infoDono.style.display = "none"
 
     dataPersonagem.textContent = personagemPath.data;
-    assPersonagem.src = "assinaturas/" + personagemPath.ass + ".png";
+    assPersonagem.src = "assets/assinaturas/" + personagemPath.ass + ".png";
 }
 
 async function btnTodos()
@@ -464,14 +464,14 @@ function btnFormaDA()
         if (data) 
         {
             personagemPath = Object.values(data)[personagemNum]
-            imgPersonagem.src = "personagens/" + personagemPath.img + ".png";
-            personagemEmoji.src = "emojis/" + personagemPath.emoji + ".png"
+            imgPersonagem.src = "assets/personagens/" + personagemPath.img + ".png";
+            personagemEmoji.src = "assets/emojis/" + personagemPath.emoji + ".png"
             descPersonagem.textContent = personagemPath.desc
             if(personagemNum === 4)
             {
                 personagemNome.textContent = "Bleeds Ooxrot"
             }
-            else if(personagemNum === 22)
+            else if(personagemNum === 23)
             {
                 personagemNome.textContent = "Gomes Rex"
             }
@@ -485,14 +485,14 @@ function btnFormaMU()
         if (data) 
         {
             personagemPath = Object.values(data)[personagemNum]
-            imgPersonagem.src = "personagens/MU/personagens/" + personagemPath.img + ".png";
-            personagemEmoji.src = "emojis/MU/" + personagemPath.emoji + ".png"
+            imgPersonagem.src = "assets/personagens/MU/personagens/" + personagemPath.img + ".png";
+            personagemEmoji.src = "assets/emojis/MU/" + personagemPath.emoji + ".png"
             descPersonagem.textContent = personagemPath.descMU
             if(personagemNum === 4)
             {
                 personagemNome.textContent = "Patty Liniker"
             }
-            else if(personagemNum === 22)
+            else if(personagemNum === 23)
             {
                 personagemNome.textContent = "King Gomes"
             }
@@ -506,14 +506,14 @@ function btnFormaNatal()
         if (data) 
         {
             personagemPath = Object.values(data)[personagemNum]
-            imgPersonagem.src = "personagens/MU/formas/" + personagemPath.img + "N.png";
-            personagemEmoji.src = "emojis/MU/" + personagemPath.emoji + ".png"
+            imgPersonagem.src = "assets/personagens/MU/formas/" + personagemPath.img + "N.png";
+            personagemEmoji.src = "assets/emojis/MU/" + personagemPath.emoji + ".png"
             descPersonagem.textContent = personagemPath.descMU
             if(personagemNum === 4)
             {
                 personagemNome.textContent = "Patty Liniker"
             }
-            else if(personagemNum === 22)
+            else if(personagemNum === 23)
             {
                 personagemNome.textContent = "King Gomes"
             }
@@ -527,14 +527,14 @@ function btnFormaDemonio()
         if (data) 
         {
             personagemPath = Object.values(data)[personagemNum]
-            imgPersonagem.src = "personagens/MU/formas/" + personagemPath.img + "D.png";
-            personagemEmoji.src = "emojis/MU/" + personagemPath.emoji + ".png"
+            imgPersonagem.src = "assets/personagens/MU/formas/" + personagemPath.img + "D.png";
+            personagemEmoji.src = "assets/emojis/MU/" + personagemPath.emoji + ".png"
             descPersonagem.textContent = personagemPath.descMU
             if(personagemNum === 4)
             {
                 personagemNome.textContent = "Patty Liniker"
             }
-            else if(personagemNum === 22)
+            else if(personagemNum === 23)
             {
                 personagemNome.textContent = "King Gomes"
             }
@@ -548,17 +548,22 @@ function btnFormaShenanigans()
         if (data) 
         {
             personagemPath = Object.values(data)[personagemNum]
-            imgPersonagem.src = "personagens/MU/formas/" + personagemPath.img + "A.png";
-            personagemEmoji.src = "emojis/MU/" + personagemPath.emoji + ".png"
+            imgPersonagem.src = "assets/personagens/MU/formas/" + personagemPath.img + "A.png";
+            personagemEmoji.src = "assets/emojis/MU/" + personagemPath.emoji + ".png"
             descPersonagem.textContent = personagemPath.descMU
             if(personagemNum === 4)
             {
                 personagemNome.textContent = "Patty Liniker"
             }
-            else if(personagemNum === 22)
+            else if(personagemNum === 23)
             {
                 personagemNome.textContent = "King Gomes"
             }
         }
     });
+}
+
+function anuncioClick()
+{
+    window.location.href = "sitesuperhipermegasecretodada.html";
 }

@@ -188,13 +188,13 @@ async function btnFuncionarios()
     hideMU()
 
     mainFuncionarios.style.display = "block"
-    if(screenWidth > 600)
+    if(screenWidth > 800)
     {
         mainFuncionarios.style.marginTop = "15%"
     }
     else
     {
-        mainFuncionarios.style.marginTop = "30%"
+        mainFuncionarios.style.marginTop = "25%"
     }
     await sleep(100)
     mainFuncionarios.style.opacity = 1
@@ -208,13 +208,13 @@ async function btnPets()
     hideMU()
 
     mainPets.style.display = "block"
-    if(screenWidth > 600)
+    if(screenWidth > 800)
     {
         mainPets.style.marginTop = "15%"
     }
     else
     {
-        mainPets.style.marginTop = "30%"
+        mainPets.style.marginTop = "25%"
     }
     await sleep(100)
     mainPets.style.opacity = 1
@@ -228,13 +228,13 @@ async function btnOutros()
     hideMU()
 
     mainOutros.style.display = "block"
-    if(screenWidth > 600)
+    if(screenWidth > 800)
     {
         mainOutros.style.marginTop = "15%"
     }
     else
     {
-        mainOutros.style.marginTop = "30%"
+        mainOutros.style.marginTop = "25%"
     }
     await sleep(100)
     mainOutros.style.opacity = 1
@@ -248,14 +248,19 @@ async function btnMU()
     hideOutros()
 
     mainMU.style.display = "block"
-    if(screenWidth > 600)
+    if(screenWidth > 800)
     {
         mainMU.style.marginTop = "15%"
     }
     else
     {
-        mainMU.style.marginTop = "30%"
+        mainMU.style.marginTop = "25%"
     }
     await sleep(100)
     mainMU.style.opacity = 1
+}
+
+function anuncioClick()
+{
+    window.location.href = "sitesuperhipermegasecretodada.html";
 }

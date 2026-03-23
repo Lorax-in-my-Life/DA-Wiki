@@ -14,7 +14,7 @@
 }
 
 body{
-    background-image: url(bg.png);
+    background-image: url(assets/imagens/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -53,10 +53,11 @@ body{
 
 #buttons_header
 {
-    margin-left: 42%;
+    margin-left: 39%;
+    margin-right: 2%;
     z-index: 50;
     margin-top: 1.5%;
-    width: 35%;
+    width: 40%;
     height: 75px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -326,307 +327,14 @@ body{
     scale: 1.1
 }
 
-@media (max-width: 600px)
+#ad img
 {
-    #header{
-        background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
-        width: 100%;
-        height: 10%;
-        position: fixed;
-        display: inline;
-        z-index: 99;
-        top:0;
-    }
+    width: 100%;
+}
 
-    #logoDA{
-        height: 50%;
-        margin-left: 0.5%;
-        margin-top: 0.5%;
-    }
-
-    #buttons_header img{
-        justify-content: space-between;
-        width: 100%;
-        transition: 0.2s;
-    }
-
-    .btnheader:hover, .btnPersonagem:hover
-    {
-        scale: 1.1;
-    }
-
-    #buttons_header
-    {
-        z-index: 50;
-        margin-top: -10%;
-        width: 50%;
-        height: 75px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .main
-    {
-        opacity: 0;
-        transition: opacity 0.2s ease-out; 
-        height: auto;
-    }
-
-    #mainAlunos
-    {
-        margin-top: 30%;
-        margin-bottom: 105%;
-    }
-
-    #mainFuncionarios
-    {
-        margin-bottom: 45%;
-    }
-
-    #mainPets
-    {
-        margin-bottom: 15%;
-    }
-
-    #mainOutros
-    {
-        margin-bottom: 30%;
-    }
-
-    #mainMU
-    {
-        margin-bottom: 15%;
-    }
-
-    .boxGrid{
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 43%);
-        column-gap: 5%;
-        row-gap: 3%;
-        padding: 4%;
-    }
-
-    #boxGridAlunos{
-        grid-template-rows: repeat(9, 1fr);
-    }
-
-    #boxGridFuncionarios{
-        grid-template-rows: repeat(6, 1fr);
-    }
-
-    #boxGridPets{
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    #boxGridOutros{
-        grid-template-rows: repeat(5, 1fr);
-    }
-
-    #boxGridMU{
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .characterbox{
-        background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
-        border-radius: 10%;
-        text-align: center;
-        align-content: center;
-        transition: transform 0.3s ease; 
-        transform-origin: center;
-    }
-
-    .characterbox:hover{
-        transform: scale(1.1)
-        rotate(5deg)
-    }
-
-    .characterbox img{
-        max-width: 100%;
-        max-height: 100%;
-        height: auto;
-        width: auto;
-    }
-
-    .maintext{
-        text-align: center;
-        font-size: 25px;
-        color: white;
-    }
-
-    .namebox{
-        z-index: 2;
-        background-color: rgb(83, 33, 220);
-        color: rgb(255, 255, 255);
-        font-size: 12px;
-        width: 45%;
-        height: 10%;
-        text-align: center;
-        align-content: center;
-        margin-left: 30%;
-        margin-top: -5%;
-        border-radius: 5%;
-    }
-
-    #personagem{
-        display: none;
-        width: 100%;
-        height: 100%;
-        transition: opacity 0.2s ease-out; 
-    }
-
-    #mainPersonagem
-    {
-        opacity: 0;
-        transition: opacity 0.2s ease-out;
-    }
-
-    #persoBox
-    {
-        display:block;
-        text-align: center;
-    }
-
-    #imgPersonagem
-    {
-        filter: drop-shadow(5px 0px 0 rgb(255, 255, 255));
-        margin-top: -10%;
-        width: 100%;
-        margin-left: 2%;
-    }
-
-    #descBox, #relacionamentoBox, #galeriaBox
-    {
-        z-index: 2;
-        margin-top: 1%;
-        padding: 2%;
-        background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
-        border-radius: 5%;
-        text-align: center;
-        width: 80%;
-        height: 400px;
-        margin-left: 10%;
-        overflow: auto;
-        transition: scale 0.1s ease-out;
-    }
-
-    #relacionamentoBox, #galeriaBox
-    {
-        display: none;
-    }
-
-    #galeriaBox
-    {
-        align-items: center;
-    }
-
-    #descPersonagem, .tituloDesc{
-        font-size: 20px;
-        margin-bottom: 2%;
-    }
-
-    .infoPersonagem
-    {
-        margin-left: 2%;
-        font-size: 16px;
-    }
-
-    #tituloPersonagem
-    {
-        width: 100%;
-        margin-top: 30%;
-        display: flex;
-        justify-content: center;
-    }
-
-    #personagemNome, #btnSetas{
-        font-size: 28px;
-        color:white;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-
-    #btnSetas
-    {
-        cursor: pointer;
-    }
-
-    #personagemEmoji, #personagemGenero
-    {
-        height: 50px;
-    }
-
-    .infos
-    {
-        margin-bottom: 2%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-
-    #tituloNome{
-        height: 7%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    #rightSide
-    {
-        margin-top: -5%;
-        margin-right: -57%;
-        display: grid;
-        grid-template-areas: "foto btn1"
-        "foto btn2"
-        "foto btn3";
-    }
-
-    #personagemFoto
-    {
-        width: 75%;
-        rotate: 7deg;
-        margin-left: 5%;
-        grid-area: foto;
-        margin-top: 15%;
-    }
-
-    #btnInfo
-    {
-        margin-top: 25%;
-        grid-area: btn1;
-    }
-
-    #btnRelacionamento
-    {
-        grid-area: btn2;
-    }
-
-    #btnGaleria
-    {
-        grid-area: btn3;
-    }
-
-    .btnPersonagem
-    {
-        width: 35%;
-        transition: 0.2s;
-        margin-left: -15%;
-    }
-
-    #txtEspecial{
-        color: white;
-        font-size: 12px;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 5%;
-    }
-
-    #assPersonagem
-    {
-        width: 100%;
-    }
+#ad
+{
+    margin: 1%;
 }
 
 @media (max-width: 800px)
@@ -634,9 +342,9 @@ body{
     #header{
         background-image: linear-gradient(to bottom, white 80%, rgb(193, 193, 193));
         width: 100%;
-        height: 15%;
+        height: 11%;
         position: fixed;
-        display: inline;
+        display: flex;
         z-index: 99;
         top:0;
     }
@@ -649,7 +357,7 @@ body{
 
     #buttons_header img{
         justify-content: space-between;
-        width: 100%;
+        width: 115%;
         transition: 0.2s;
     }
 
@@ -661,12 +369,17 @@ body{
     #buttons_header
     {
         z-index: 50;
-        margin-top: -14%;
-        width: 55%;
+        width: 40%;
         height: 75px;
+        margin-left: 37%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    #ad img
+    {
+        width: 75%;
     }
 
     .main
@@ -763,7 +476,7 @@ body{
         z-index: 2;
         background-color: rgb(83, 33, 220);
         color: rgb(255, 255, 255);
-        font-size: 12px;
+        font-size: 50%;
         width: 45%;
         height: 10%;
         text-align: center;
